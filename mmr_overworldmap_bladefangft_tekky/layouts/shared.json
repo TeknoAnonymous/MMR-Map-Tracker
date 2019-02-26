@@ -14,7 +14,7 @@
             "firearrow",
             "icearrow",
             "lightarrow",
-            "nodeed"
+            "moontear"
           ],
           [
             "bombs",
@@ -22,7 +22,7 @@
             "sticks",
             "nuts",
             "beans",
-            "nomisc1"
+            "roomkey"
           ],
           [
             "powderkeg",
@@ -30,7 +30,15 @@
             "lensoftruth",
             "hookshot",
             "fairysword",
-            "nomisc2"
+            "kafeiletter"
+          ],
+          [
+            "landdeed",
+            "swampdeed",
+            "mountaindeed",
+            "oceandeed",
+            "express",
+            "pendant"
           ],
           [
             "bottle1",
@@ -144,7 +152,7 @@
         "margin": "0,0,0,0",
         "rows": [
           ["", "odolwa", ""],
-          ["gyorg", "everything_off", "goht"],
+          ["gyorg", "", "goht"],
           ["","twinmold", ""]
         ]
       }
@@ -166,9 +174,9 @@
             "firearrow",
             "icearrow",
             "lightarrow",
-            "nodeed",
+            "moontear",
             "sword1",
-            "shield1"
+            "odolwaremains"
           ],
           [
             "bombs",
@@ -176,9 +184,9 @@
             "sticks",
             "nuts",
             "beans",
-            "nomisc1",
-            "magic",
-            "wallet"
+            "roomkey",
+            "shield1",
+            "gohtremains"
           ],
           [
             "powderkeg",
@@ -186,9 +194,19 @@
             "lensoftruth",
             "hookshot",
             "fairysword",
-            "nomisc2",
-            "timecheck",
-            "healingcheck"
+            "kafeiletter",
+            "magic",
+            "gyorgremains"
+          ],
+          [
+            "landdeed",
+            "swampdeed",
+            "mountaindeed",
+            "oceandeed",
+            "express",
+            "pendant",
+            "wallet",
+            "twinmoldremains"
           ],
           [
             "bottle1",
@@ -197,8 +215,8 @@
             "bottle4",
             "bottle5",
             "bottle6",
-            "eponacheck",
-            "soaringcheck"
+            "timecheck",
+            "sonatacheck"
           ],
           [
             "postmanhat",
@@ -207,8 +225,8 @@
             "stonemask",
             "fairymask",
             "dekumask",
-            "stormcheck",
-            "sonatacheck"
+            "healingcheck",
+            "lullabycheck"
           ],
           [
             "keatonmask",
@@ -217,7 +235,7 @@
             "dongeromask",
             "maskofscents",
             "goronmask",
-            "lullabycheck",
+            "eponacheck",
             "newwavecheck"
           ],
           [
@@ -227,8 +245,8 @@
             "couplesmask",
             "maskoftruth",
             "zoramask",
-            "elegycheck",
-            "oathcheck"
+            "soaringcheck",
+            "elegycheck"
           ],
           [
             "kamaromask",
@@ -237,34 +255,8 @@
             "captainhat",
             "giantmask",
             "fiercedeitymask",
-            "",
-            ""
-          ],
-          [
-            "odolwa",
-            "goht",
-            "gyorg",
-            "twinmold",
-            "",
-            "notebook",
-            "",
-            ""
-          ]
-        ]
-      },
-      {
-        "type": "itemgrid",
-        "h_alignment": "left",
-        "itemgrid": "1,1",
-        "margin": "110,0,0,0",
-        "item_margin": "-8,-40,-8,0",
-        "rows": [
-          [
-            "code1-1",
-            "code2-1",
-            "code3-1",
-            "code4-1",
-            "code5-1"
+            "stormcheck",
+            "oathcheck"
           ]
         ]
       }

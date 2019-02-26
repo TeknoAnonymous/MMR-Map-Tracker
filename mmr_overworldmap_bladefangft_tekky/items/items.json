@@ -50,42 +50,34 @@
     "codes": "lightarrow,light,larrow,la"
   },
   {
-    "name": "Deed Trading",
-    "type": "progressive",
-    "loop": true,
-    "allow_disabled": false,
-    "stages": [
-      {
-        "img": "images/moon_tear.png",
-        "img_mods": "@disabled",
-        "codes": "nodeed"
-      },
-      {
-        "img": "images/moon_tear.png",
-        "codes": "moontear",
-        "inherit_codes": false
-      },
-      {
-        "img": "images/land_deed.png",
-        "codes": "landdeed",
-        "inherit_codes": false
-      },
-      {
-        "img": "images/swamp_deed.png",
-        "codes": "swampdeed",
-        "inherit_codes": false
-      },
-      {
-        "img": "images/mountain_deed.png",
-        "codes": "mountaindeed",
-        "inherit_codes": false
-      },
-      {
-        "img": "images/ocean_deed.png",
-        "codes": "oceandeed",
-        "inherit_codes": false
-      }
-    ]
+    "name": "Moon Tear",
+    "type": "toggle",
+    "img": "images/moon_tear.png",
+    "codes": "moontear"
+  },
+  {
+    "name": "Land Deed",
+    "type": "toggle",
+    "img": "images/land_deed.png",
+    "codes": "landdeed"
+  },
+  {
+    "name": "Swamp Deed",
+    "type": "toggle",
+    "img": "images/swamp_deed.png",
+    "codes": "swampdeed"
+  },
+  {
+    "name": "Mountain Deed",
+    "type": "toggle",
+    "img": "images/mountain_deed.png",
+    "codes": "mountaindeed"
+  },
+  {
+    "name": "Ocean Deed",
+    "type": "toggle",
+    "img": "images/ocean_deed.png",
+    "codes": "oceandeed"
   },
   {
     "name": "Bombs",
@@ -138,27 +130,16 @@
     "max_quantity": 10
   },
   {
-    "name": "Misc. 1",
-    "type": "progressive",
-    "loop": true,
-    "allow_disabled": false,
-    "stages": [
-      {
-        "img": "images/room_key.png",
-        "img_mods": "@disabled",
-        "codes": "nomisc1"
-      },
-      {
-        "img": "images/room_key.png",
-        "codes": "roomkey",
-        "inherit_codes": false
-      },
-      {
-        "img": "images/express.png",
-        "codes": "express,mamaletter",
-        "inherit_codes": false
-      }
-    ]
+    "name": "Room Key",
+    "type": "toggle",
+    "img": "images/room_key.png",
+    "codes": "roomkey"
+  },
+  {
+    "name": "Express Letter",
+    "type": "toggle",
+    "img": "images/express.png",
+    "codes": "express,mamaletter"
   },
   {
     "name": "Powder Keg",
@@ -191,27 +172,16 @@
     "codes": "fairysword,gfs"
   },
   {
-    "name": "Misc. 2",
-    "type": "progressive",
-    "loop": true,
-    "allow_disabled": false,
-    "stages": [
-      {
-        "img": "images/kafei_letter.png",
-        "img_mods": "@disabled",
-        "codes": "nomisc2"
-      },
-      {
-        "img": "images/kafei_letter.png",
-        "codes": "kafeiletter",
-        "inherit_codes": false
-      },
-      {
-        "img": "images/pendant.png",
-        "codes": "memoriespendant,pendant",
-        "inherit_codes": false
-      }
-    ]
+    "name": "Letter to Kafei",
+    "type": "toggle",
+    "img": "images/kafei_letter.png",
+    "codes": "kafeiletter"
+  },
+  {
+    "name": "Pendant of Memories",
+    "type": "toggle",
+    "img": "images/pendant.png",
+    "codes": "memoriespendant,pendant"
   },
   {
     "name": "Bottle 1",

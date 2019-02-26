@@ -1,0 +1,92 @@
+{
+  "tracker_capture_item": {
+    "type": "container",
+    "content": {
+      "type": "itemgrid",
+      "h_alignment": "center",
+      "item_margin": "1,2",
+      "rows": [
+          [
+            "bow",
+            "firearrow",
+            "icearrow",
+            "lightarrow",
+            "moontear",
+            "sword1",
+            "shield1",
+            "map"
+          ],
+          [
+            "bombs",
+            "bombchus",
+            "beans",
+            "bottle6",
+            "roomkey",
+            "magic",
+            "wallet",
+            "rupee"
+          ],
+          [
+            "powderkeg",
+            "pictobox",
+            "lensoftruth",
+            "hookshot",
+            "fairysword",
+            "kafeiletter",
+            "HP",
+            "HC"
+          ],
+          [
+            "landdeed",
+            "swampdeed",
+            "mountaindeed",
+            "oceandeed",
+            "express",
+            "pendant",
+            "smallkey",
+            "sonata"
+          ],
+          [
+            "postmanhat",
+            "allnightmask",
+            "blastmask",
+            "stonemask",
+            "fairymask",
+            "dekumask",
+            "bosskey",
+            "lullaby"
+          ],
+          [
+            "keatonmask",
+            "bremenmask",
+            "bunnyhood",
+            "dongeromask",
+            "maskofscents",
+            "goronmask",
+            "epona",
+            "newwave"
+          ],
+          [
+            "romanimask",
+            "circusleadermask",
+            "kafeimask",
+            "couplesmask",
+            "maskoftruth",
+            "zoramask",
+            "soaring",
+            "elegy"
+          ],
+          [
+            "kamaromask",
+            "gibdomask",
+            "garomask",
+            "captainhat",
+            "giantmask",
+            "fiercedeitymask",
+            "storm",
+            "oath"
+          ]
+        ]
+    }
+  }
+}

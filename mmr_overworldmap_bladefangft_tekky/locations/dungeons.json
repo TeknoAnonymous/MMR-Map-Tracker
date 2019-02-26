@@ -1,0 +1,559 @@
+[
+  {
+    "name": "Woodfall Temple",
+    "parent": "South Swamp",
+    "access_rules": [
+      "sonata,dekumask"
+    ],
+    "sections":[
+      {
+        "name": "Hero's Bow",
+        "item_count": 1,
+        "capture_item": true
+      },
+      {
+        "name": "Map",
+        "item_count": 1,
+        "capture_item": true,
+        "access_rules": [
+          "bow"
+        ]
+      },
+      {
+        "name": "Compass",
+        "item_count": 1,
+        "capture_item": true,
+        "access_rules": [
+          "dekumask",
+          "hookshot"
+        ]
+      },
+      {
+        "name": "Boss Key",
+        "item_count": 1,
+        "capture_item": true,
+        "access_rules": [
+          "bow,dekumask"
+        ]
+      },
+      {
+        "name": "Key",
+        "item_count": 1,
+        "capture_item": true,
+        "access_rules": [
+          "deku",
+          "hookshot"
+        ]
+      },
+      {
+        "name": "Odolwa",
+        "item_count": 1,
+        "hosted_item": "odolwaremains",
+        "capture_item": true,
+        "chest_opened_img": "images/HC_grey.png",
+        "chest_unopened_img": "images/HC.png",
+        "access_rules": [
+          "bow,dekumask"
+        ]
+      }
+    ],
+    "map_locations": [
+      {
+        "map": "main",
+        "x": 940,
+        "y": 1445
+      }
+    ]
+  },
+  {
+    "name": "Snowhead Temple",
+    "parent": "Snowhead Peak",
+    "access_rules": [
+      "[lullaby],goronmask"
+    ],
+    "sections": [
+      {
+        "name": "Fire Arrow",
+        "item_count": 1,
+        "capture_item": true,
+        "access_rules": [
+          "bow,$explosives"
+        ]
+      },
+      {
+        "name": "Map",
+        "item_count": 1,
+        "capture_item": true,
+        "access_rules": [
+          "goronmask",
+          "zoramask,hookshot"
+        ]
+      },
+      {
+        "name": "Compass",
+        "item_count": 1,
+        "capture_item": true
+      },
+      {
+        "name": "Boss Key",
+        "item_count": 1,
+        "capture_item": true,
+        "access_rules": [
+          "goronmask"
+        ]
+      },
+      {
+        "name": "Block Room",
+        "item_count": 1,
+        "capture_item": true,
+        "access_rules": [
+          "goronmask",
+          "zoramask,hookshot"
+        ]
+      },
+      {
+        "name": "Icicle Room",
+        "item_count": 1,
+        "capture_item": true,
+        "access_rules": [
+          "$explosives"
+        ]
+      },
+      {
+        "name": "Bridge Room",
+        "item_count": 1,
+        "capture_item": true,
+        "access_rules": [
+          "bow,firearrow,goronmask",
+          "bow,firearrow,zoramask"
+        ]
+      },
+      {
+        "name": "Goht",
+        "item_count": 1,
+        "capture_item": true,
+        "hosted_item": "gohtremains",
+        "chest_opened_img": "images/HC_grey.png",
+        "chest_unopened_img": "images/HC.png",
+        "access_rules": [
+          "bow,firearrow,goronmask"
+        ]
+      }
+    ],
+    "map_locations": [
+      {
+        "map": "main",
+        "x": 590,
+        "y": 110
+      }
+    ]
+  },
+  {
+    "name": "Great Bay Temple",
+    "parent": "South Great Bay",
+    "access_rules": [
+      "@Pirate Fortress,newwave,hookshot"
+    ],
+    "sections": [
+      {
+        "name": "Ice Arrow",
+        "item_count": 1,
+        "capture_item": true,
+        "access_rules": [
+          "bow"
+        ]
+      },
+      {
+        "name": "Map",
+        "item_count": 1,
+        "capture_item": true
+      },
+      {
+        "name": "Compass",
+        "item_count": 1,
+        "capture_item": true
+      },
+      {
+        "name": "Boss Key",
+        "item_count": 1,
+        "capture_item": true,
+        "access_rules": [
+          "bow,icearrow"
+        ]
+      },
+      {
+        "name": "Key",
+        "item_count": 1,
+        "capture_item": true
+      },
+      {
+        "name": "Gyorg",
+        "item_count": 1,
+        "capture_item": true,
+        "hosted_item": "gyorgremains",
+        "chest_opened_img": "images/HC_grey.png",
+        "chest_unopened_img": "images/HC.png",
+        "access_rules": [
+          "bow,icearrow,firearrow,zoramask"
+        ]
+      }
+    ],
+    "map_locations": [
+      {
+        "map": "main",
+        "x": 25,
+        "y": 1070
+      }
+    ]
+  },
+  {
+    "name": "Inverted Stone Tower Temple",
+    "short_name": "ISTT",
+    "parent": "Stone Tower",
+    "access_rules": [
+      "$STT_access,bow,lightarrow,$explosives"
+    ]
+  },
+  {
+    "name": "Stone Tower Temple",
+    "short_name": "STT",
+    "parent": "Stone Tower",
+    "access_rules": [
+      "$STT_access"
+    ],
+    "sections": [
+      {
+        "name": "Light Arrow",
+        "item_count": 1,
+        "capture_item": true,
+        "access_rules": [
+          "bow,$explosives"
+        ]
+      },
+      {
+        "name": "Map",
+        "item_count": 1,
+        "capture_item": true,
+        "access_rules": [
+          "$explosives,bow"
+        ]
+      },
+      {
+        "name": "Compass",
+        "item_count": 1,
+        "capture_item": true,
+        "access_rules": [
+          "bow,lightarrow"
+        ]
+      },
+      {
+        "name": "Boss Key",
+        "item_count": 1,
+        "capture_item": true,
+        "access_rules": [
+          "$ISTT_access,$explosives"
+        ]
+      },
+      {
+        "name": "Armos Room",
+        "item_count": 1,
+        "capture_item": true,
+        "access_rules": [
+          "$explosives,bow"
+        ]
+      },
+      {
+        "name": "Eyegore Room",
+        "item_count": 1,
+        "capture_item": true,
+        "access_rules": [
+          "bow,lightarrow"
+        ]
+      },
+      {
+        "name": "Updraft Room",
+        "item_count": 1,
+        "capture_item": true,
+        "access_rules": [
+          "$ISTT_access"
+        ]
+      },
+      {
+        "name": "Death Armos Maze",
+        "item_count": 1,
+        "capture_item": true,
+        "access_rules": [
+          "$ISTT_access"
+        ]
+      },
+      {
+        "name": "Twinmold",
+        "item_count": 1,
+        "capture_item": true,
+        "hosted_item": "twinmoldremains",
+        "chest_opened_img": "images/HC_grey.png",
+        "chest_unopened_img": "images/HC.png",
+        "access_rules": [
+          "$ISTT_access"
+        ]
+      }
+    ],
+    "map_locations": [
+      {
+        "map": "main",
+        "x": 1570,
+        "y": 646
+      }
+    ]
+  },
+  {
+    "name": "Pirate Fortress",
+    "short_name": "PF",
+    "parent": "North Great Bay",
+    "access_rules": [
+      "zoramask"
+    ],
+    "children": [
+      {
+        "name": "PF Interior",
+        "children": [
+          {
+            "name": "Hookshot",
+            "access_rules": [
+              "goronmask,bow",
+              "hookshot,bow",
+              "hookshot,dekumask"
+            ],
+            "sections": [
+              {
+                "name": "Scare Guards",
+                "item_count": 1,
+                "capture_item": true
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "main",
+                "x": 330,
+                "y": 330
+              }
+            ]
+          },
+          {
+            "name": "Pirate Fortress Maze",
+            "access_rules": [
+              "goronmask"
+            ],
+            "sections": [
+              {
+                "name": "Fortress HP",
+                "item_count": 1,
+                "capture_item": true
+              },
+              {
+                "name": "Fortress Maze 20 Rupees",
+                "item_count": 1,
+                "capture_item": true,
+                "access_rules": [
+                  "everything_on"
+                ]
+              },
+              {
+                "name": "HP Room 20 Rupees",
+                "item_count": 1,
+                "capture_item": true,
+                "access_rules": [
+                  "everything_on"
+                ]
+              },
+              {
+                "name": "HP Room 5 Rupees",
+                "item_count": 1,
+                "capture_item": true,
+                "access_rules": [
+                  "everything_on"
+                ]
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "main",
+                "x": 300,
+                "y": 450
+              }
+            ]
+          },
+          {
+            "name": "Egg Tank 20 Rupees",
+            "access_rules": [
+              "hookshot,everything_on"
+            ],
+            "sections": [
+              {
+                "name": "Dive Down",
+                "item_count": 1,
+                "capture_item": true
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "main",
+                "x": 280,
+                "y": 350
+              }
+            ]
+          },
+          {
+            "name": "Guard Room 100 Rupees",
+            "access_rules": [
+              "everything_on"
+            ],
+            "sections": [
+              {
+                "name": "Open It",
+                "item_count": 1,
+                "capture_item": true
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "main",
+                "x": 300,
+                "y": 300
+              }
+            ]
+          },
+          {
+            "name": "Courtyard 20 Rupees",
+            "access_rules": [
+              "everything_on"
+            ],
+            "sections": [
+              {
+                "name": "Open It",
+                "item_count": 1,
+                "capture_item": true
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "main",
+                "x": 360,
+                "y": 360
+              }
+            ]
+          },
+          {
+            "name": "Upper 20 Rupees",
+            "access_rules": [
+              "hookshot,everything_on"
+            ],
+            "sections": [
+              {
+                "name": "Open It",
+                "item_count": 1,
+                "capture_item": true
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "main",
+                "x": 390,
+                "y": 400
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Underwater Chest 1",
+        "sections": [
+          {
+            "name": "Dive Down",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "main",
+            "x": 255,
+            "y": 470
+          }
+        ]
+      },
+      {
+        "name": "Underwater Chest 2",
+        "sections": [
+          {
+            "name": "Dive Down",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "main",
+            "x": 335,
+            "y": 460
+          }
+        ]
+      },
+      {
+        "name": "Underwater Chest 3",
+        "sections": [
+          {
+            "name": "Dive Down",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "main",
+            "x": 290,
+            "y": 510
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "The Moon",
+    "parent": "South Clock Town",
+    "access_rules": [
+      "odolwaremains,gohtremains,gyorgremains,twinmoldremains,oath"
+    ],
+    "sections": [
+      {
+        "name": "Deku HP",
+        "item_count": 1,
+        "capture_item": true
+      },
+      {
+        "name": "Goron HP",
+        "item_count": 1,
+        "capture_item": true
+      },
+      {
+        "name": "Zora HP",
+        "item_count": 1,
+        "capture_item": true
+      },
+      {
+        "name": "Hide and Seek HP",
+        "item_count": 1,
+        "capture_item": true
+      },
+      {
+        "name": "Fierce Deity Mask",
+        "item_count": 1,
+        "capture_item": true
+      }
+    ],
+    "map_locations": [
+      {
+        "map": "main",
+        "x": 1035,
+        "y": 1010
+      }
+    ]
+  }
+]

@@ -58,12 +58,6 @@
     ]
   },
   {
-    "name": "Double Defense",
-    "type": "toggle",
-    "img": "images/doubledefense.png",
-    "codes": "doubledefense,doubled,dd"
-  },
-  {
     "name": "Magic Meter",
     "type": "progressive",
     "allow_disabled": false,
@@ -80,23 +74,69 @@
   },
   {
     "name": "Heart Piece",
-    "type": "consumable",
-    "img": "images/HP.png",
-    "codes": "HP,PoH",
-    "max_quantity": 52
+    "type": "progressive",
+    "allow_disabled": false,
+    "stages": [
+      {
+          "img": "images/HP.png",
+          "codes": "HP,PoH"
+      }
+    ]
   },
   {
     "name": "Heart Container",
-    "type": "consumable",
-    "img": "images/HC.png",
-    "codes": "HC",
-    "max_quantity": 4
+    "type": "progressive",
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/HC.png",
+        "codes": "HC"
+      }
+    ]
+  },
+  {
+    "name": "Small Key",
+    "type": "progressive",
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/small_key.png",
+        "codes": "smallkey"
+      }
+    ]
+  },
+  {
+    "name": "Boss Key",
+    "type": "progressive",
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/boss_key.png",
+        "codes": "bosskey,bk"
+      }
+    ]
   },
   {
     "name": "Rupee",
-    "type": "toggle",
-    "img": "images/rupee.png",
-    "codes": "rupee"
+    "type": "progressive",
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/rupee.png",
+        "codes": "rupee"
+      }
+    ]
+  },
+  {
+    "item": "Map",
+    "type": "progressive",
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/map.png",
+        "codes": "map"
+      }
+    ]
   },
   {
     "name": "Song of Time",
@@ -392,6 +432,12 @@
         "codes": "code5-5"
       }
     ]
+  },
+  {
+    "name": "Seahorse Photo Shown",
+    "type": "toggle",
+    "img": "images/bottle_horse.png",
+    "codes": "seahorse_photo_shown"
   },
   {
     "name": "Odolwa's Remains",

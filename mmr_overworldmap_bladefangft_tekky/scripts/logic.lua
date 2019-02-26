@@ -1,3 +1,28 @@
+--[[ checkA = 1
+
+function tracker_on_accessibility_updated()
+  local checkA1 = Tracker:FindObjectForCode("@Pinnacle Rock/20 Rupee Chest")
+  local checkA2 = Tracker:FindObjectForCode("@Fisherman Game HP/Hop Hop")
+
+  if checkA1 and checkA2 then
+    if checkA == 0 then
+      if (checkA1.AvailableChestCount == 0) or (checkA2.AvailableChestCount == 0) then
+        checkA1.AvailableChestCount = 0
+        checkA2.AvailableChestCount = 0
+        checkA = 1
+      end
+    end
+    if checkA == 1 then
+      if (checkA1.AvailableChestCount > 0) or (checkA2.AvailableChestCount > 0) then
+        checkA1.AvailableChestCount = 1
+        checkA2.AvailableChestCount = 1
+        checkA = 0
+      end
+    end
+  end
+end
+]]
+
 function has(item, amount)
   local count = Tracker:ProviderCountForCode(item)
   amount = tonumber(amount)
@@ -78,6 +103,28 @@ function hotspring_access()
   and has("lensoftruth") then
     return has_bottle()
   else
-    return has_firearrows() and has_bottle()
+    return has("firearrow") and has("bow") and has_bottle()
+  end
+end
+
+function STT_access()
+  if has("dekumask")
+  and has("goronmask")
+  and has("zoramask")
+  and has("hookshot")
+  and has("elegy")
+  and has("shield2") then
+    return 1
+  else
+    return 0
+  end
+end
+
+function ISTT_access()
+  if has("bow")
+  and has("lightarrow") then
+    return explosives() and STT_access()
+  else
+    return 0
   end
 end
