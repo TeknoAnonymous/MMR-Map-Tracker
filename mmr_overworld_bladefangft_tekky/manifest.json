@@ -1,12 +1,7 @@
 {
-  "name": "MM Randomizer - Map and Item Tracker",
+  "name": "MM Randomizer Map Tracker",
   "game_name": "Majora's Mask Randomizer",
   "package_version": "1.0.0.0",
-  "package_uid": "mmr_overworldmap_bladefangft_tekky",
-  "author": "BladeFangFT & Tekky",
-  "variants": {
-    "standard": {
-      "display_name": "Regular Map Tracker"
-    }
-  }
+  "package_uid": "mmr_overworld_bladefangft_tekky",
+  "author": "BladefangFT & Tekky"
 }

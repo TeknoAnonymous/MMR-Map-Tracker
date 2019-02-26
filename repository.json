@@ -3,9 +3,9 @@
   "packages": [
     {
       "name": "MM Randomizer Map Tracker",
-      "author": "BladefangFT & Tekky",
       "game_name": "Majora's Mask Randomizer",
-      "version": "1.0.0",
+      "version": "1.0.0.0",
+      "author": "BladefangFT & Tekky",
       "flags": [
         "map",
         "pins",
