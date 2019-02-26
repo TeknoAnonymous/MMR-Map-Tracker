@@ -1,0 +1,420 @@
+[
+  {
+    "name": "Sword",
+    "type": "progressive",
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/sword1.png",
+        "codes": "sword1,kokirisword,ksword"
+      },
+      {
+        "img": "images/sword2.png",
+        "codes": "sword2,razorsword,rsword"
+      },
+      {
+        "img": "images/sword3.png",
+        "codes": "sword3,gildedsword,gsword"
+      }
+    ]
+  },
+  {
+    "name": "Shield",
+    "type": "progressive",
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/shield1.png",
+        "codes": "shield1,heroshield,hshield"
+      },
+      {
+        "img": "images/shield2.png",
+        "codes": "shield2,mirrorshield,mshield"
+      }
+    ]
+  },
+  {
+    "name": "Bomber's Notebook",
+    "type": "toggle",
+    "img": "images/notebook.png",
+    "codes": "notebook,bombersbook"
+  },
+  {
+    "name": "Wallet Upgrades",
+    "type": "progressive",
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/wallet.png"
+      },
+      {
+        "img": "images/wallet1.png",
+        "codes": "adultswallet,wallet1,wallet"
+      },
+      {
+        "img": "images/wallet2.png",
+        "codes": "giantswallet,wallet2"
+      }
+    ]
+  },
+  {
+    "name": "Double Defense",
+    "type": "toggle",
+    "img": "images/doubledefense.png",
+    "codes": "doubledefense,doubled,dd"
+  },
+  {
+    "name": "Magic Meter",
+    "type": "progressive",
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/magic1.png",
+        "codes": "magic,magic1"
+      },
+      {
+        "img": "images/magic2.png",
+        "codes": "magic2"
+      }
+    ]
+  },
+  {
+    "name": "Heart Piece",
+    "type": "consumable",
+    "img": "images/HP.png",
+    "codes": "HP,PoH",
+    "max_quantity": 52
+  },
+  {
+    "name": "Heart Container",
+    "type": "consumable",
+    "img": "images/HC.png",
+    "codes": "HC",
+    "max_quantity": 4
+  },
+  {
+    "name": "Rupee",
+    "type": "toggle",
+    "img": "images/rupee.png",
+    "codes": "rupee"
+  },
+  {
+    "name": "Song of Time",
+    "type": "static",
+    "img": "images/time_colored.png",
+    "codes": "time,sot"
+  },
+  {
+    "name": "Song of Time Check",
+    "type": "toggle_badged",
+    "base_item": "time",
+    "img": "images/check.png",
+    "codes": "timecheck,sotcheck"
+  },
+  {
+    "name": "Song of Healing",
+    "type": "static",
+    "img": "images/healing_colored.png",
+    "codes": "healing,soh"
+  },
+  {
+    "name": "Song of Healing Check",
+    "type": "toggle_badged",
+    "base_item": "healing",
+    "img": "images/check.png",
+    "codes": "healingcheck,sohcheck"    
+  },
+  {
+    "name": "Epona's Song",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/epona_colored.png",
+    "codes": "epona"
+  },
+  {
+    "name": "Epona's Song Check",
+    "type": "toggle_badged",
+    "base_item": "epona",
+    "img": "images/check.png",
+    "codes": "eponacheck"
+  },
+  {
+    "name": "Song of Soaring",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/soaring_colored.png",
+    "codes": "soaring"
+  },
+  {
+    "name": "Song of Soaring Check",
+    "type": "toggle_badged",
+    "base_item": "soaring",
+    "img": "images/check.png",
+    "codes": "soaringcheck"
+  },
+  {
+    "name": "Song of Storms",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/storms_colored.png",
+    "codes": "storm"
+  },
+  {
+    "name": "Song of Storms Check",
+    "type": "toggle_badged",
+    "base_item": "storm",
+    "img": "images/check.png",
+    "codes": "stormcheck"
+  },
+  {
+    "name": "Sonata of Awakening",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/sonata_colored.png",
+    "codes": "sonata,soa"
+  },
+  {
+    "name": "Sonata of Awakening Check",
+    "type": "toggle_badged",
+    "base_item": "sonata",
+    "img": "images/check.png",
+    "codes": "sonatacheck,soacheck"
+  },
+  {
+    "name": "Goron's Lullaby",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/lullaby_colored.png",
+    "codes": "goronlullaby,lullaby"
+  },
+  {
+    "name": "Goron's Lullaby Check",
+    "type": "toggle_badged",
+    "base_item": "goronlullaby",
+    "img": "images/check.png",
+    "codes": "lullabycheck"    
+  },
+  {
+    "name": "New Wave Bossa Nova",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/newwave_colored.png",
+    "codes": "newwave,bossanova,nwbn"
+  },
+  {
+    "name": "New Bossa Nova Check",
+    "type": "toggle_badged",
+    "base_item": "newwave",
+    "img": "images/check.png",
+    "codes": "newwavecheck,bossanovacheck,nwbn"
+  },
+  {
+    "name": "Elegy of Emptiness",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/elegy_colored.png",
+    "codes": "elegy,emptiness,eoe"
+  },
+  {
+    "name": "Elegy of Emptiness Check",
+    "type": "toggle_badged",
+    "base_item": "elegy",
+    "img": "images/check.png",
+    "codes": "elegycheck,eoecheck"
+  },
+  {
+    "name": "Oath to Order",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/oath_colored.png",
+    "codes": "oathtoorder,oath,oto"
+  },
+  {
+    "name": "Oath to Order Check",
+    "type": "toggle_badged",
+    "base_item": "oathtoorder",
+    "img": "images/check.png",
+    "codes": "oathcheck"
+  },
+  {
+    "name": "Notebook Code",
+    "type": "progressive",
+    "loop": false,
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/notebook.png",
+        "codes": "nobombercode",
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/notebook.png",
+        "codes": "bombercode"
+      }
+    ]
+  },
+  {
+    "name": "Code 1",
+    "type": "progressive",
+    "loop": true,
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/number_1.png",
+        "codes": "code1-1"
+      },
+      {
+        "img": "images/number_2.png",
+        "codes": "code1-2"
+      },
+      {
+        "img": "images/number_3.png",
+        "codes": "code1-3"
+      },
+      {
+        "img": "images/number_4.png",
+        "codes": "code1-4"
+      },
+      {
+        "img": "images/number_5.png",
+        "codes": "code1-5"
+      }
+    ]
+  },
+  {
+    "name": "Code 2",
+    "type": "progressive",
+    "loop": true,
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/number_1.png",
+        "codes": "code2-1"
+      },
+      {
+        "img": "images/number_2.png",
+        "codes": "code2-2"
+      },
+      {
+        "img": "images/number_3.png",
+        "codes": "code2-3"
+      },
+      {
+        "img": "images/number_4.png",
+        "codes": "code2-4"
+      },
+      {
+        "img": "images/number_5.png",
+        "codes": "code2-5"
+      }
+    ]
+  },
+  {
+    "name": "Code 3",
+    "type": "progressive",
+    "loop": true,
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/number_1.png",
+        "codes": "code3-1"
+      },
+      {
+        "img": "images/number_2.png",
+        "codes": "code3-2"
+      },
+      {
+        "img": "images/number_3.png",
+        "codes": "code3-3"
+      },
+      {
+        "img": "images/number_4.png",
+        "codes": "code3-4"
+      },
+      {
+        "img": "images/number_5.png",
+        "codes": "code3-5"
+      }
+    ]
+  },
+  {
+    "name": "Code 4",
+    "type": "progressive",
+    "loop": true,
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/number_1.png",
+        "codes": "code4-1"
+      },
+      {
+        "img": "images/number_2.png",
+        "codes": "code4-2"
+      },
+      {
+        "img": "images/number_3.png",
+        "codes": "code4-3"
+      },
+      {
+        "img": "images/number_4.png",
+        "codes": "code4-4"
+      },
+      {
+        "img": "images/number_5.png",
+        "codes": "code4-5"
+      }
+    ]
+  },
+  {
+    "name": "Code 5",
+    "type": "progressive",
+    "loop": true,
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/number_1.png",
+        "codes": "code5-1"
+      },
+      {
+        "img": "images/number_2.png",
+        "codes": "code5-2"
+      },
+      {
+        "img": "images/number_3.png",
+        "codes": "code5-3"
+      },
+      {
+        "img": "images/number_4.png",
+        "codes": "code5-4"
+      },
+      {
+        "img": "images/number_5.png",
+        "codes": "code5-5"
+      }
+    ]
+  },
+  {
+    "name": "Odolwa's Remains",
+    "type": "toggle",
+    "img": "images/odolwa.png",
+    "codes": "odolwaremains,odolwa"
+  },
+  {
+    "name": "Goht's Remains",
+    "type": "toggle",
+    "img": "images/goht.png",
+    "codes": "gohtremains,goht"
+  },
+  {
+    "name": "Gyorg's Remains",
+    "type": "toggle",
+    "img": "images/gyorg.png",
+    "codes": "gyorgremains,gyorg"
+  },
+  {
+    "name": "Twinmold's Remains",
+    "type": "toggle",
+    "img": "images/twinmold.png",
+    "codes": "twinmoldremains,twinmold"
+  }
+]

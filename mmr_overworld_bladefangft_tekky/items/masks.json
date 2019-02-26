@@ -1,0 +1,146 @@
+[
+  {
+    "name": "Postman's Hat",
+    "type": "toggle",
+    "img": "images/postman.png",
+    "codes": "postmanhat,postman"
+  },
+  {
+    "name": "All-Night Mask",
+    "type": "toggle",
+    "img": "images/all-night.png",
+    "codes": "allnightmask,anm"
+  },
+  {
+    "name": "Blast Mask",
+    "type": "toggle",
+    "img": "images/blast.png",
+    "codes": "blastmask,blast"
+  },
+  {
+    "name": "Stone Mask",
+    "type": "toggle",
+    "img": "images/stone.png",
+    "codes": "stonemask,stone"
+  },
+  {
+    "name": "Great Fairy's Mask",
+    "type": "toggle",
+    "img": "images/fairy_mask.png",
+    "codes": "fairymask,gfm"
+  },
+  {
+    "name": "Deku Mask",
+    "type": "toggle",
+    "img": "images/deku_mask.png",
+    "codes": "dekumask,deku"
+  },
+  {
+    "name": "Keaton Mask",
+    "type": "toggle",
+    "img": "images/keaton.png",
+    "codes": "keatonmask,keaton"
+  },
+  {
+    "name": "Bremen Mask",
+    "type": "toggle",
+    "img": "images/bremen.png",
+    "codes": "bremenmask,bremen"
+  },
+  {
+    "name": "Bunny Hood",
+    "type": "toggle",
+    "img": "images/bunny.png",
+    "codes": "bunnyhood,bunny"
+  },
+  {
+    "name": "Don Gero's Mask",
+    "type": "toggle",
+    "img": "images/don_gero.png",
+    "codes": "dongeromask,dongero"
+  },
+  {
+    "name": "Mask of Scents",
+    "type": "toggle",
+    "img": "images/scents.png",
+    "codes": "maskofscents,scents"
+  },
+  {
+    "name": "Goron Mask",
+    "type": "toggle",
+    "img": "images/goron.png",
+    "codes": "goronmask,goron"
+  },
+  {
+    "name": "Romani's Mask",
+    "type": "toggle",
+    "img": "images/romani.png",
+    "codes": "romanimask,romani"
+  },
+  {
+    "name": "Circus Leader's Mask",
+    "type": "toggle",
+    "img": "images/circus_leader.png",
+    "codes": "circusleadermask,circus"
+  },
+  {
+    "name": "Kafei's Mask",
+    "type": "toggle",
+    "img": "images/kafei_mask.png",
+    "codes": "kafeimask,kafei"
+  },
+  {
+    "name": "Couple's Mask",
+    "type": "toggle",
+    "img": "images/couples.png",
+    "codes": "couplesmask,couple"
+  },
+  {
+    "name": "Mask of Truth",
+    "type": "toggle",
+    "img": "images/truth.png",
+    "codes": "maskoftruth,truth"
+  },
+  {
+    "name": "Zora Mask",
+    "type": "toggle",
+    "img": "images/zora.png",
+    "codes": "zoramask,zora"
+  },
+  {
+    "name": "Kamaro's Mask",
+    "type": "toggle",
+    "img": "images/kamaro.png",
+    "codes": "kamaromask,kamaro"
+  },
+  {
+    "name": "Gibdo Mask",
+    "type": "toggle",
+    "img": "images/gibdo.png",
+    "codes": "gibdomask,gibdo"
+  },
+  {
+    "name": "Garo's Mask",
+    "type": "toggle",
+    "img": "images/garo_mask.png",
+    "codes": "garomask,garo"
+  },
+  {
+    "name": "Captain's Hat",
+    "type": "toggle",
+    "img": "images/captains.png",
+    "codes": "captainhat,captain"
+  },
+  {
+    "name": "Giant's Mask",
+    "type": "toggle",
+    "img": "images/giants_mask.png",
+    "codes": "giantmask,giant"
+  },
+  {
+    "name": "Fierce Deity Mask",
+    "type": "toggle",
+    "img": "images/fierce_deity.png",
+    "codes": "fiercedeitymask,fiercedeity,fd"
+  }
+]

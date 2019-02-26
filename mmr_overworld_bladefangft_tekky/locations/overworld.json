@@ -1,0 +1,1999 @@
+[
+  {
+    "name": "World",
+    "chest_unopened_img": "images/chest_brown_closed.png",
+    "chest_opened_img": "images/chest_brown_open.png",
+    "children": [
+      {
+        "name": "Clock Town",
+        "color": "#ffd360",
+        "children": [
+          {
+            "name": "South Clock Town",
+            "short_name": "S Clock Town",
+            "sections": [
+              {
+                "name": "Deku Mask",
+                "item_count": 1,
+                "capture_item": true
+              },
+              {
+                "name": "Land Title Deed",
+                "item_count": 1,
+                "capture_item": true,
+                "access_rules": [
+                  "moontear"
+                ]
+              },
+              {
+                "name": "Clock Tower Heart Piece",
+                "short_name": "Clock Tower",
+                "chest_unopened_img": "images/HP.png",
+                "chest_opened_img": "images/HP_grey.png",
+                "item_count": 1,
+                "capture_item": true
+              },
+              {
+                "name": "Postbox Heart Piece",
+                "short_name": "Postbox",
+                "chest_unopened_img": "images/HP.png",
+                "chest_opened_img": "images/HP_grey.png",
+                "access_rules": [
+                  "postmanhat"
+                ],
+                "item_count": 1,
+                "capture_item": true
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "main",
+                "x": 780,
+                "y": 860
+              }
+            ]
+          },
+          {
+            "name": "South Clock Town Everything",
+            "short_name": "S Clock Town All",
+            "access_rules": [
+              "everything_on"
+            ],
+            "sections": [
+              {
+                "name": "20 Rupees",
+                "item_count": 1,
+                "capture_item": true,
+                "access_rules": [
+                  "hookshot"
+                ]
+              },
+              {
+                "name": "50 Rupees",
+                "item_count": 1,
+                "capture_item": true,
+                "access_rules": [
+                  "hookshot",
+                  "moontear"
+                ]
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "main",
+                "x": 780,
+                "y": 895
+              }
+            ]
+          },
+          {
+            "name": "North Clock Town",
+            "short_name": "N Clock Town",
+            "sections": [
+              {
+                "name": "Bomber's Notebook",
+                "item_count": 1,
+                "hosted_item": "nobombercode",
+                "access_rules": [
+                  "$has_ranged"
+                ],
+                "capture_item": true
+              },
+              {
+                "name": "Tree HP",
+                "item_count": 1,
+                "capture_item": true,
+                "chest_unopened_img": "images/HP.png",
+                "chest_opened_img": "images/HP_grey.png"
+              },
+              {
+                "name": "Blast Mask Thief",
+                "item_count": 1,
+                "capture_item": true
+              },
+              {
+                "name": "Keaton HP",
+                "item_count": 1,
+                "capture_item": true,
+                "chest_unopened_img": "images/HP.png",
+                "chest_opened_img": "images/HP_grey.png",
+                "access_rules": [
+                  "keatonmask"
+                ]
+              },
+              {
+                "name": "Deku Playground HP",
+                "item_count": 1,
+                "capture_item": true,
+                "chest_unopened_img": "images/HP.png",
+                "chest_opened_img": "images/HP_grey.png",
+                "access_rules": [
+                  "dekumask"
+                ]
+              },
+              {
+                "name": "Great Fairy's Mask",
+                "item_count": 1,
+                "capture_item": true,
+                "access_rules": [
+                  "dekumask"
+                ]
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "main",
+                "x": 780,
+                "y": 825
+              }
+            ]
+          },
+          {
+            "name": "West Clock Town",
+            "children": [
+              {
+                "name": "West Clock Town",
+                "short_name": "W Clock Town",
+                "sections": [
+                  {
+                    "name": "Bomb Bag"
+                  },
+                  {
+                    "name": "Big Bomb Bag",
+                    "item_count": 1,
+                    "capture_item": true
+                  },
+                  {
+                    "name": "Adult's Wallet",
+                    "item_count": 1,
+                    "capture_item": true
+                  },
+                  {
+                    "name": "Bank HP",
+                    "item_count": 1,
+                    "capture_item": true,
+                    "chest_unopened_img": "images/HP.png",
+                    "chest_opened_img": "images/HP_grey.png"
+                  },
+                  {
+                    "name": "Postman's Hat",
+                    "item_count": 1,
+                    "capture_item": true
+                  },
+                  {
+                    "name": "Rosas Sisters' HP",
+                    "item_count": 1,
+                    "capture_item": true,
+                    "access_rules": [
+                      "kamaromask"
+                    ]
+                  },
+                  {
+                    "name": "Swordsman School",
+                    "item_count": 1,
+                    "capture_item": true,
+                    "chest_unopened_img": "images/HP.png",
+                    "chest_opened_img": "images/HP_grey.png"
+                  },
+                  {
+                    "name": "All-Night Mask",
+                    "item_count": 1,
+                    "capture_item": true,
+                    "access_rules": [
+                      "giantswallet"
+                    ]
+                  }
+                ],
+                "map_locations": [
+                  {
+                    "map": "main",
+                    "x": 745,
+                    "y": 850
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "East Clock Town",
+            "short_name": "E Clock Town",
+            "sections": [
+              {
+                "name": "Chateau Bottle",
+                "item_count": 1,
+                "capture_item": true,
+                "access_rules": [
+                  "romanimask,kafeimask,mamaletter"
+                ]
+              },
+              {
+                "name": "Town Archery Quiver",
+                "item_count": 1,
+                "capture_item": true,
+                "access_rules": [
+                  "bow"
+                ]
+              },
+              {
+                "name": "Town Archery HP",
+                "item_count": 1,
+                "capture_item": true,
+                "chest_unopened_img": "images/HP.png",
+                "chest_opened_img": "images/HP_grey.png",
+                "access_rules": [
+                  "bow"
+                ]
+              },
+              {
+                "name": "Mayor HP",
+                "item_count": 1,
+                "capture_item": true,
+                "chest_unopened_img": "images/HP.png",
+                "chest_opened_img": "images/HP_grey.png",
+                "access_rules": [
+                  "couplesmask"
+                ]
+              },
+              {
+                "name": "Treasure Game HP",
+                "item_count": 1,
+                "capture_item": true,
+                "chest_unopened_img": "images/HP.png",
+                "chest_opened_img": "images/HP_grey.png",
+                "access_rules": [
+                  "goronmask"
+                ]
+              },
+              {
+                "name": "Honey and Darling HP",
+                "item_count": 1,
+                "capture_item": true,
+                "chest_unopened_img": "images/HP.png",
+                "chest_opened_img": "images/HP_grey.png",
+                "access_rules": [
+                  "bow,bombs"
+                ]
+              },
+              {
+                "name": "Circus Leader Mask",
+                "item_count": 1,
+                "capture_item": true,
+                "access_rules": [
+                  "romanimask,dekumask,goronmask,zoramask"
+                ]
+              },
+              {
+                "name": "Kafei Mask",
+                "item_count": 1,
+                "capture_item": true
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "main",
+                "x": 815,
+                "y": 895
+              }
+            ]
+          },
+          {
+            "name": "Stock Pot Inn",
+            "sections": [
+              {
+                "name": "Room Key",
+                "item_count": 1,
+                "capture_item": true
+              },
+              {
+                "name": "Letter to Kafei",
+                "item_count": 1,
+                "capture_item": true,
+                "access_rules": [
+                  "[dekumask],kafeimask",
+                  "[roomkey],kafeimask"
+                ]
+              },
+              {
+                "name": "Grandmother HP 1",
+                "item_count": 1,
+                "capture_item": true,
+                "chest_unopened_img": "images/HP.png",
+                "chest_opened_img": "images/HP_grey.png",
+                "access_rules": [
+                  "allnightmask"
+                ]
+              },
+              {
+                "name": "Grandmother HP 2",
+                "item_count": 1,
+                "capture_item": true,
+                "chest_unopened_img": "images/HP.png",
+                "chest_opened_img": "images/HP_grey.png",
+                "access_rules": [
+                  "allnightmask"
+                ]
+              },
+              {
+                "name": "Toilet HP",
+                "item_count": 1,
+                "capture_item": true,
+                "chest_unopened_img": "images/HP.png",
+                "chest_opened_img": "images/HP_grey.png",
+                "access_rules": [
+                  "[dekumask],$has_paper",
+                  "[roomkey],$has_paper"
+                ]
+              },
+              {
+                "name": "Couple's Mask",
+                "item_count": 1,
+                "capture_item": true,
+                "access_rules": [
+                  "$has_ikana_access,[dekumask],pendant",
+                  "$has_ikana_access,[roomkey],pendant"
+                ]
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "main",
+                "x": 815,
+                "y": 860
+              }
+            ]
+          },
+          {
+            "name": "East Clock Town Everything",
+            "short_name": "E Clock Town All",
+            "access_rules": [
+              "everything_on"
+            ],
+            "sections": [
+              {
+                "name": "Bomber's 100 Rupees",
+                "item_count": 1,
+                "capture_item": true,
+                "access_rules": [
+                  "[bombercode],$explosives",
+                  "dekumask,$explosives"
+                ]
+              },
+              {
+                "name": "Staff Room 100 Rupees",
+                "item_count": 1,
+                "capture_item": true
+              },
+              {
+                "name": "Guest Room 100 Rupees",
+                "item_count": 1,
+                "capture_item": true,
+                "access_rules": [
+                  "roomkey"
+                ]
+              },
+              {
+                "name": "Clock Town 100 Rupees",
+                "item_count": 1,
+                "capture_item": true
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "main",
+                "x": 815,
+                "y": 825
+              }
+            ]
+          },
+          {
+            "name": "Laundry Pool",
+            "sections": [
+              {
+                "name": "Bremen Mask",
+                "item_count": 1,
+                "capture_item": true
+              },
+              {
+                "name": "Pendant of Memories",
+                "short_name": "Pendant",
+                "item_count": 1,
+                "access_rules": [
+                  "kafeiletter"
+                ],
+                "capture_item": true
+              },
+              {
+                "name": "Keaton Mask",
+                "short_name": "Keaton",
+                "item_count": 1,
+                "access_rules": [
+                  "kafeiletter"
+                ],
+                "capture_item": true
+              },
+              {
+                "name": "Letter to Mama",
+                "short_name": "Mama's Letter",
+                "item_count": 1,
+                "access_rules": [
+                  "kafeiletter"
+                ],
+                "capture_item": true
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "main",
+                "x": 745,
+                "y": 885
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Termina Field",
+        "color": "#6010ae",
+        "children": [
+          {
+            "name": "Moon Tear",
+            "sections": [
+              {
+                "name": "Peek at Skull Kid",
+                "item_count": 1,
+                "capture_item": true,
+                "access_rules": [
+                  "dekumask", "bombercode"
+                ]
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "main",
+                "x": 910,
+                "y": 905
+              }
+            ]
+          },
+          {
+            "name": "Kamaro's Mask",
+            "sections": [
+              {
+                "name": "Heal Him",
+                "item_count": 1,
+                "capture_item": true
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "main",
+                "x": 730,
+                "y": 790
+              }
+            ]
+          },
+          {
+            "name": "Gossip Stone HP",
+            "sections": [
+              {
+                "name": "Play Songs",
+                "item_count": 1,
+                "capture_item": true,
+                "access_rules": [
+                  "dekumask,sonata,goronmask,$explosives",
+                  "goronmask,lullaby",
+                  "zoramask,newwave,goronmask,$explosives"
+                ]
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "main",
+                "x": 800,
+                "y": 790
+              }
+            ]
+          },
+          {
+            "name": "Business Scrub HP",
+            "sections": [
+              {
+                "name": "Buy it",
+                "item_count": 1,
+                "capture_item": true,
+                "access_rules": [
+                  "wallet,[bombercode]",
+                  "wallet,dekumask"
+                ]
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "main",
+                "x": 875,
+                "y": 925
+              }
+            ]
+          },
+          {
+            "name": "Peahat Grotto HP",
+            "sections": [
+              {
+                "name": "KILL IT",
+                "item_count": 1,
+                "capture_item": true
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "main",
+                "x": 730,
+                "y": 950
+              }
+            ]
+          },
+          {
+            "name": "Dodongos Grotto HP",
+            "sections": [
+              {
+                "name": "KILL THEM",
+                "item_count": 1,
+                "capture_item": true
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "main",
+                "x": 730,
+                "y": 755
+              }
+            ]
+          },
+          {
+            "name": "Bombchu Grotto",
+            "sections": [
+              {
+                "name": "Climb the Pillar",
+                "item_count": 1,
+                "capture_item": true
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "main",
+                "x": 865,
+                "y": 855
+              }
+            ]
+          },
+          {
+            "name": "Bio Baba HP",
+            "sections": [
+              {
+                "name": "Collect",
+                "item_count": 1,
+                "capture_item": true,
+                "access_rules": [
+                  "$explosives,goronmask,$has_ranged,zoramask"
+                ]
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "main",
+                "x": 680,
+                "y": 830
+              }
+            ]
+          },
+          {
+            "name": "Termina Field Everything",
+            "short_name": "Termina Field All",
+            "access_rules": [
+              "everything_on"
+            ],
+            "children": [
+              {
+                "name": "20 Rupees Southeast",
+                "sections": [
+                  {
+                    "name": "Grotto",
+                    "item_count": 1,
+                    "capture_item": true
+                  },
+                  {
+                    "name": "Grass",
+                    "item_count": 1,
+                    "capture_item": true
+                  }
+                ],
+                "map_locations": [
+                  {
+                    "map": "main",
+                    "x": 830,
+                    "y": 965
+                  }
+                ]
+              },
+              {
+                "name": "Stump 20 Rupees",
+                "sections": [
+                  {
+                    "name": "On Stump",
+                    "item_count": 1,
+                    "capture_item": true,
+                    "access_rules": [
+                      "hookshot",
+                      "beans,[$has_bottle]",
+                      "beans,[storm]"
+                    ]
+                  }
+                ],
+                "map_locations": [
+                  {
+                    "map": "main",
+                    "x": 795,
+                    "y": 970
+                  }
+                ]
+              },
+              {
+                "name": "Underwater 20 Rupees",
+                "sections": [
+                  {
+                    "name": "Open it",
+                    "item_count": 1,
+                    "capture_item": true,
+                    "access_rules": [
+                      "zoramask"
+                    ]
+                  }
+                ],
+                "map_locations": [
+                  {
+                    "map": "main",
+                    "x": 675,
+                    "y": 900
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Milk Road",
+        "color": "#7ada40",
+        "children": [
+          {
+            "name": "Gormon Ranch",
+            "children": [
+              {
+                "name": "Garo Mask",
+                "sections": [
+                  {
+                    "name": "Race Brothers",
+                    "item_count": 1,
+                    "capture_item": true,
+                    "access_rules": [
+                      "epona"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Romani Ranch",
+            "access_rules": [
+              "powderkeg,goron"
+            ],
+            "sections": [
+              {
+                "name": "Epona's Song",
+                "item_count": 1,
+                "chest_opened_img": "images/grey_note_check.png",
+                "chest_unopened_img": "images/grey_note.png",
+                "capture_item": true
+              },
+              {
+                "name": "Horseback Archery",
+                "item_count": 1,
+                "capture_item": true,
+                "access_rules": [
+                  "bow,epona"
+                ]
+              },
+              {
+                "name": "Aliens!",
+                "item_count": 1,
+                "capture_item": true,
+                "access_rules": [
+                  "bow,epona"
+                ]
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "main",
+                "x": 430,
+                "y": 1035
+              }
+            ]
+          },
+          {
+            "name": "Dog Race & Chicken Coup",
+            "sections": [
+              {
+                "name": "Dog Race HP",
+                "item_count": 1,
+                "capture_item": true,
+                "access_rules": [
+                    "[maskoftruth]"
+                ]
+              },
+              {
+                "name": "Bunny Hood",
+                "item_count": 1,
+                "capture_item": true,
+                "access_rules": [
+                  "bremenmask"
+                ]
+              },
+              {
+                "name": "Shed 50 Rupees",
+                "item_count": 1,
+                "capture_item": true,
+                "access_rules": [
+                  "hookshot,everything_on",
+                  "beans,[$has_bottle],everything_on",
+                  "beans,[storm],everything_on",
+                  "zoramask,everything_on"
+                ]
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "main",
+                "x": 370,
+                "y": 1070
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Woodfall Swamp",
+        "color": "#0a5f10",
+        "children": [
+          {
+            "name": "Road to Southern Swamp",
+            "children": [
+              {
+                "name": "Tree HP",
+                "sections": [
+                  {
+                    "name": "Climb it",
+                    "item_count": 1,
+                    "chest_opened_img": "images/HP_grey.png",
+                    "chest_unopened_img": "images/HP.png",
+                    "capture_item": true,
+                    "access_rules": [
+                      "$has_ranged"
+                    ]
+                  }
+                ],
+                "map_locations": [
+                  {
+                    "map": "main",
+                    "x": 810,
+                    "y": 1130
+                  }
+                ]
+              },
+              {
+                "name": "Swamp Archery Minigame",
+                "short_name": "Swamp Archery",
+                "access_rules": [
+                  "bow"
+                ],
+                "sections": [
+                  {
+                    "name": "2120",
+                    "item_count": 1,
+                    "capture_item": true
+                  },
+                  {
+                    "name": "Perfect",
+                    "item_count": 1,
+                    "capture_item": true
+                  }
+                ],
+                "map_locations": [
+                  {
+                    "map": "main",
+                    "x": 950,
+                    "y": 1130
+                  }
+                ]
+              },
+              {
+                "name": "20 Rupees",
+                "access_rules": [
+                  "everything_on"
+                ],
+                "sections": [
+                  {
+                    "name": "Get it",
+                    "item_count": 1,
+                    "capture_item": true
+                  }
+                ],
+                "map_locations": [
+                  {
+                    "map": "main",
+                    "x": 775,
+                    "y": 1140
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "South Swamp",
+            "access_rules": [
+              "bow",
+              "zoramask",
+              "$has_bottle"
+            ],
+            "children": [
+              {
+                "name": "Swamp Skulltula House",
+                "access_rules": [
+                  "dekustick,odolwaremain,$has_reach,$has_bottle",
+                  "$has_firearrow,odolwaremain,$has_reach,$has_bottle"
+                ]
+              },
+              {
+                "name": "Swamp Grotto",
+                "access_rules": [
+                  "everything_on"
+                ],
+                "sections": [
+                  {
+                    "name": "Open it",
+                    "item_count": 1,
+                    "capture_item": true
+                  }
+                ],
+                "map_locations": [
+                  {
+                    "map": "main",
+                    "x": 800,
+                    "y": 1440
+                  }
+                ]
+              },
+              {
+                "name": "Song of Soaring",
+                "access_rules": [
+                  "dekumask"
+                ],
+                "sections": [
+                  {
+                    "name": "Read Statue",
+                    "item_count": 1,
+                    "capture_item": true,
+                    "chest_opened_img": "images/grey_note_check.png",
+                    "chest_unopened_img": "images/grey_note.png"
+                  }
+                ],
+                "map_locations": [
+                  {
+                    "map": "main",
+                    "x": 875,
+                    "y": 1480
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Deku Palace",
+            "access_rules": [
+              "@South Swamp"
+            ],
+            "children": [
+              {
+                "name": "Magic Bean",
+                "sections": [
+                  {
+                    "name": "Freebie",
+                    "item_count": 1,
+                    "capture_item": true
+                  },
+                  {
+                    "name": "20 Rupees",
+                    "item_count": 1,
+                    "capture_item": true,
+                    "access_rules": [
+                      "beans,$has_bottle,everything_on",
+                      "beans,storm,everything_on",
+                      "hookshot,everything_on"
+                    ]
+                  }
+                ],
+                "access_rules": [
+                  "dekumask"
+                ],
+                "map_locations": [
+                  {
+                    "map": "main",
+                    "x": 830,
+                    "y": 1620
+                  }
+                ]
+              },
+              {
+                "name": "Palace HP",
+                "sections": [
+                  {
+                    "name": "!",
+                    "item_count": 1,
+                    "capture_item": true
+                  }
+                ],
+                "access_rules": [
+                  "dekumask"
+                ],
+                "map_locations": [
+                  {
+                    "map": "main",
+                    "x": 880,
+                    "y": 1650
+                  }
+                ]
+              },
+              {
+                "name": "Sonata of Awakening",
+                "sections": [
+                  {
+                    "name": "WAKEY WAKEY",
+                    "item_count": 1,
+                    "capture_item": true,
+                    "chest_opened_img": "images/grey_note_check.png",
+                    "chest_unopened_img": "images/grey_note.png"
+                  }
+                ],
+                "access_rules": [
+                  "dekumask,beans,[$has_bottle]",
+                  "dekumask,beans,[storm]"
+                ],
+                "map_locations": [
+                  {
+                    "map": "main",
+                    "x": 840,
+                    "y": 1660
+                  }
+                ]
+              },
+              {
+                "name": "Mask of Scents",
+                "sections": [
+                  {
+                    "name": "Race Butler",
+                    "item_count": 1,
+                    "capture_item": true
+                  }
+                ],
+                "access_rules": [
+                  "dekuprincess,bow",
+                  "dekuprincess,zoramask",
+                  "dekuprincess,odolwaremain"
+                ],
+                "map_locations": [
+                  {
+                    "map": "main",
+                    "x": 915,
+                    "y": 1660
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "North Swamp",
+            "children": [
+              {
+                "name": "Swamp Tourist Center",
+                "sections": [
+                  {
+                    "name": "Pictobox",
+                    "item_count": 1,
+                    "capture_item": true,
+                    "access_rules": [
+                      "$has_bottle"
+                    ]
+                  },
+                  {
+                    "name": "Pictobox Contest",
+                    "item_count": 1,
+                    "capture_item": true,
+                    "access_rules": [
+                      "$has_ranged,$has_bottle,pictobox",
+                      "@Deku Palace,pictobox"
+                    ]
+                  },
+                  {
+                    "name": "Koume's Boat Cruise",
+                    "item_count": 1,
+                    "capture_item": true,
+                    "access_rules": [
+                      "odolwaremain"
+                    ]
+                  },
+                  {
+                    "name": "Tourist Center HP",
+                    "item_count": 1,
+                    "capture_item": true,
+                    "access_rules": [
+                      "dekumask,landdeed"
+                    ]
+                  }
+                ],
+                "map_locations": [
+                  {
+                    "map": "main",
+                    "x": 870,
+                    "y": 1360
+                  }
+                ]
+              },
+              {
+                "name": "Old Hag's Potion Shop",
+                "sections": [
+                  {
+                    "name": "Red Potion Bottle",
+                    "item_count": 1,
+                    "capture_item": true
+                  }
+                ],
+                "map_locations": [
+                  {
+                    "map": "main",
+                    "x": 1090,
+                    "y": 1210
+                  }
+                ]
+              },
+              {
+                "name": "Woods of Mystery",
+                "sections": [
+                  {
+                    "name": "Save Koume",
+                    "item_count": 1,
+                    "capture_item": true,
+                    "access_rules": [
+                      "$has_bottle"
+                    ]
+                  },
+                  {
+                    "name": "50 Rupee Grotto",
+                    "item_count": 1,
+                    "capture_item": true,
+                    "access_rules": [
+                      "everything_on"
+                    ]
+                  }
+                ],
+                "map_locations": [
+                  {
+                    "map": "main",
+                    "x": 1060,
+                    "y": 1130
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Woodfall",
+            "access_rules": [
+              "@South Swamp,dekumask"
+            ],
+            "children": [
+              {
+                "name": "Woodfall HP",
+                "sections": [
+                  {
+                    "name": "Fly there",
+                    "item_count": 1,
+                    "capture_item": true
+                  }
+                ],
+                "map_locations": [
+                  {
+                    "map": "main",
+                    "x": 885,
+                    "y": 1445
+                  }
+                ]
+              },
+              {
+                "name": "Woodfall 5 Rupees",
+                "access_rules": [
+                  "everything_on"
+                ],
+                "sections": [
+                  {
+                    "name": "Fly there",
+                    "item_count": 1,
+                    "capture_item": true
+                  }
+                ],
+                "map_locations": [
+                  {
+                    "map": "main",
+                    "x": 950,
+                    "y": 1410
+                  }
+                ]
+              },
+              {
+                "name": "Woodfall 20 Rupees",
+                "access_rules": [
+                  "everything_on"
+                ],
+                "sections": [
+                  {
+                    "name": "Hop there",
+                    "item_count": 1,
+                    "capture_item": true
+                  }
+                ],
+                "map_locations": [
+                  {
+                    "map": "main",
+                    "x": 910,
+                    "y": 1480
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Snowhead Mountain",
+        "color": "#f32a30",
+        "access_rules": [
+          "[bow],$explosives,hotspring",
+          "[bow],goronmask,hotspring",
+          "bow,$explosives",
+          "bow,goronmask"
+        ],
+        "children": [
+          {
+            "name": "Mountain Village",
+            "children": [
+              {
+                "name": "Mountain Village Smithy",
+                "sections": [
+                  {
+                    "name": "Razor Sword",
+                    "item_count": 1,
+                    "capture_item": true,
+                    "access_rules": [
+                      "bow,firearrows,wallet",
+                      "$hotspring_access,wallet"
+                    ]
+                  },
+                  {
+                    "name": "Gilded Sword",
+                    "item_count": 1,
+                    "capture_item": true,
+                    "access_rules": [
+                      "goronmask,gohtremains"
+                    ]
+                  }
+                ],
+                "map_locations": [
+                  {
+                    "map": "main",
+                    "x": 800,
+                    "y": 440
+                  }
+                ]
+              },
+              {
+                "name": "Goron Graveyard",
+                "access_rules": [
+                  "lensoftruth,goronmask"
+                ],
+                "sections": [
+                  {
+                    "name": "Goron Mask",
+                    "item_count": 1,
+                    "capture_item": true
+                  }
+                ],
+                "map_locations": [
+                  {
+                    "map": "main",
+                    "x": 800,
+                    "y": 320
+                  }
+                ]
+              },
+              {
+                "name": "Don Gero's Mask",
+                "sections": [
+                  {
+                    "name": "Feed him",
+                    "item_count": 1,
+                    "capture_item": true
+                  }
+                ],
+                "access_rules": [
+                  "goronmask,sticks"
+                ],
+                "map_locations": [
+                  {
+                    "map": "main",
+                    "x": 720,
+                    "y": 440
+                  }
+                ]
+              },
+              //TODO: Fix this logic.
+              {
+                "name": "Frog Choir HP",
+                "access_rules": [
+                  "gohtremains,@Woodfall Temple,newwave,hookshot,zoramask"
+                ],
+                "sections": [
+                  {
+                    "name": "Find the frogs",
+                    "item_count": 1,
+                    "capture_item": true
+                  }
+                ],
+                "map_locations": [
+                  {
+                    "map": "main",
+                    "x": 760,
+                    "y": 410
+                  }
+                ]
+              },
+              {
+                "name": "Waterfall 20 Rupees",
+                "sections": [
+                  {
+                    "name": "Behind it",
+                    "item_count": 1,
+                    "capture_item": true
+                  }
+                ],
+                "access_rules": [
+                  "gohtremains,[lensoftruth]"
+                ]
+              },
+              {
+                "name": "Tunnel Path Grotto",
+                "sections": [
+                  {
+                    "name": "Chest",
+                    "item_count": 1,
+                    "capture_item": true
+                  }
+                ],
+                "access_rules": [
+                  "gohtremains,goronmask,everything_on"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Road to Goron Village",
+            "children": [
+              {
+                "name": "Hot Spring 20 Rupees",
+                "access_rules": [
+                  "$hotspring_access,everything_on"
+                ],
+                "sections": [
+                  {
+                    "name": "Chest",
+                    "item_count": 1,
+                    "capture_item": true
+                  }
+                ],
+                "map_locations": [
+                  {
+                    "map": "main",
+                    "x": 980,
+                    "y": 430
+                  }
+                ]
+              },
+              {
+                "name": "Racetrack Grotto 20 Rupees",
+                "access_rules": [
+                  "goronmask,everything_on,$explosives"
+                ],
+                "sections": [
+                  {
+                    "name": "Chest",
+                    "item_count": 1,
+                    "capture_item": true
+                  }
+                ],
+                "map_locations": [
+                  {
+                    "map": "main",
+                    "x": 920,
+                    "y": 440
+                  }
+                ]
+              },
+              {
+                "name": "Goron Racetrack Bottle",
+                "access_rules": [
+                  "goronmask,gohtremains"
+                ],
+                "sections": [
+                  {
+                    "name": "Race!",
+                    "item_count": 1,
+                    "capture_item": true
+                  }
+                ],
+                "map_locations": [
+                  {
+                    "map": "main",
+                    "x": 920,
+                    "y": 400
+                  }
+                ]
+              },
+              {
+                "name": "Twin Islands 20 Rupees",
+                "access_rules": [
+                  "zoramask,everything_on,gohtremains"
+                ],
+                "sections": [
+                  {
+                    "name": "Dive Down",
+                    "item_count": 1,
+                    "capture_item": true
+                  }
+                ],
+                "map_locations": [
+                  {
+                    "map": "main",
+                    "x": 955,
+                    "y": 400
+                  }
+                ]
+              },
+              {
+                "name": "Twin Islands HP",
+                "access_rules": [
+                  "zoramask,gohtremains"
+                ],
+                "sections": [
+                  {
+                    "name": "Dive Down",
+                    "item_count": 1,
+                    "capture_item": true
+                  }
+                ],
+                "map_locations": [
+                  {
+                    "map": "main",
+                    "x": 955,
+                    "y": 480
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Goron Village",
+            "children": [
+              {
+                "name": "Goron Village",
+                "sections": [
+                  {
+                    "name": "Goron Lullaby",
+                    "item_count": 1,
+                    "capture_item": true,
+                    "chest_opened_img": "images/grey_note_check.png",
+                    "chest_unopened_img": "images/grey_note.png",
+                    "access_rules": [
+                      "goronmask"
+                    ]
+                  }
+                ],
+                "map_locations": [
+                  {
+                    "map": "main",
+                    "x": 1090,
+                    "y": 450
+                  }
+                ]
+              },
+              {
+                "name": "Deku Scrub",
+                "sections": [
+                  {
+                    "name": "Bomb Bag",
+                    "item_count": 1,
+                    "capture_item": true,
+                    "access_rules": [
+                      "goronmask,wallet"
+                    ]
+                  },
+                  {
+                    "name": "Mountain Title Deed",
+                    "item_count": 1,
+                    "capture_item": true,
+                    "access_rules": [
+                      "dekumask,swampdeed"
+                    ]
+                  }
+                ],
+                "map_locations": [
+                  {
+                    "map": "main",
+                    "x": 1120,
+                    "y": 480
+                  }
+                ]
+              },
+              {
+                "name": "Deku Scrub HP",
+                "sections": [
+                  {
+                    "name": "Fly to it",
+                    "item_count": 1,
+                    "capture_item": true,
+                    "access_rules": [
+                      "dekumask,swampdeed"
+                    ]
+                  }
+                ],
+                "map_locations": [
+                  {
+                    "map": "main",
+                    "x": 1110,
+                    "y": 515
+                  }
+                ]
+              },
+              {
+                "name": "Lens of Truth Cave",
+                "sections": [
+                  {
+                    "name": "Lens Chest",
+                    "item_count": 1,
+                    "capture_item": true
+                  },
+                  {
+                    "name": "Lens Cave 20 Rupees",
+                    "item_count": 1,
+                    "capture_item": true,
+                    "access_rules": [
+                      "everything_on"
+                    ]
+                  },
+                  {
+                    "name": "Lens Cave 50 Rupees",
+                    "item_count": 1,
+                    "capture_item": true,
+                    "access_rules": [
+                      "everything_on"
+                    ]
+                  }
+                ],
+                "map_locations": [
+                  {
+                    "map": "main",
+                    "x": 1240,
+                    "y": 510
+                  }
+                ]
+              },
+              {
+                "name": "Powder Keg",
+                "access_rules": [
+                  "goronmask,bow,firearrows"
+                ],
+                "sections": [
+                  {
+                    "name": "Medigoron",
+                    "item_count": 1,
+                    "capture_item": true
+                  }
+                ],
+                "map_locations": [
+                  {
+                    "map": "main",
+                    "x": 1180,
+                    "y": 360
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Road to the Peak",
+            "access_rules": [
+              "goronmask"
+            ],
+            "children": [
+              {
+                "name": "Scarecrow HP",
+                "sections": [
+                  {
+                    "name": "Play a song",
+                    "item_count": 1,
+                    "capture_item": true,
+                    "access_rules": [
+                      "hookshot,[lensoftruth]"
+                    ]
+                  }
+                ],
+                "map_locations": [
+                  {
+                    "map": "main",
+                    "x": 750,
+                    "y": 270
+                  }
+                ]
+              },
+              {
+                "name": "Peak Road Grotto",
+                "sections": [
+                  {
+                    "name": "Blow it up",
+                    "item_count": 1,
+                    "capture_item": true,
+                    "access_rules": [
+                      "$explosives,everything_on"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Snowhead Peak",
+            "children": [
+              {
+
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Great Bay",
+        "color": "#0fa3f0",
+        "access_rules": [
+          "epona"
+        ],
+        "children": [
+          {
+            "name": "Pirate Fortress",
+            "access_rules": [
+              "zoramask"
+            ]
+          },
+          {
+            "name": "North Great Bay",
+            "children": [
+              {
+                "name": "Zora Mask",
+                "sections": [
+                  {
+                    "name": "Heal him",
+                    "item_count":1,
+                    "capture_item": true
+                  }
+                ],
+                "map_locations": [
+                  {
+                    "map": "main",
+                    "x": 320,
+                    "y": 930
+                  }
+                ]
+              },
+              {
+                "name": "Seahorse HP",
+                "access_rules": [
+                  "@Pirate Fortress,pictobox,$has_bottle"
+                ],
+                "sections": [
+                  {
+                    "name": "Show Picture",
+                    "item_count": 1,
+                    "capture_item": true
+                  }
+                ],
+                "map_locations": [
+                  {
+                    "map": "main",
+                    "x": 450,
+                    "y": 910
+                  }
+                ]
+              },
+              {
+                "name": "Great Bay Lab",
+                "sections": [
+                  {
+                    "name": "New Wave Bossa Nova",
+                    "item_count": 1,
+                    "capture_item": true,
+                    "chest_opened_img": "images/grey_note_check.png",
+                    "chest_unopened_img": "images/grey_note.png",
+                    "access_rules": [
+                      "@Pirate Fortress,hookshot,$has_bottle"
+                    ]
+                  },
+                  {
+                    "name": "Lab Fish HP",
+                    "item_count": 1,
+                    "capture_item": true,
+                    "access_rules": [
+                      "$has_bottle"
+                    ]
+                  }
+                ],
+                "map_locations": [
+                  {
+                    "map": "main",
+                    "x": 220,
+                    "y": 880
+                  }
+                ]
+              },
+              {
+                "name": "Ocean Skulltula House",
+                "access_rules": [
+                  "hookshot,bow"
+                ],
+                "sections": [
+                  {
+                    "name": "Wallet",
+                    "item_count": 1,
+                    "capture_item": true,
+                    "access_rules": [
+                      "@Pirate Fortress,goronmask,firearrows"
+                    ]
+                  },
+                  {
+                    "name": "Heart Piece",
+                    "item_count": 1,
+                    "capture_item": true,
+                    "access_rules": [
+                      "captainhat"
+                    ]
+                  }
+                ],
+                "map_locations": [
+                  {
+                    "map": "main",
+                    "x": 470,
+                    "y": 870
+                  }
+                ]
+              },
+              {
+                "name": "North Ledge HP",
+                "access_rules": [
+                  "hookshot,beans,[$has_bottle]",
+                  "hookshot,beans,[storm]"
+                ],
+                "sections": [
+                  {
+                    "name": "Plant Bean",
+                    "item_count": 1,
+                    "capture_item": true
+                  }
+                ],
+                "map_locations": [
+                  {
+                    "map": "main",
+                    "x": 420,
+                    "y": 520
+                  }
+                ]
+              },
+              {
+                "name": "Fisherman Game HP",
+                "access_rules": [
+                  "gyorgremains"
+                ],
+                "sections": [
+                  {
+                    "name": "Hop Hop",
+                    "item_count": 1,
+                    "capture_item": true
+                  }
+                ],
+                "map_locations": [
+                  {
+                    "map": "main",
+                    "x": 310,
+                    "y": 610
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "South Great Bay",
+            "children": [
+              {
+                "name": "Zora's Domain",
+                "access_rules": [
+                  "@Pirate Fortress"
+                ],
+                "sections": [
+                  {
+                    "name": "Ocean Title Deed",
+                    "item_count": 1,
+                    "capture_item": true,
+                    "access_rules": [
+                      "goronmask,mountaindeed"
+                    ]
+                  },
+                  {
+                    "name": "Scrub HP",
+                    "item_count": 1,
+                    "capture_item": true,
+                    "access_rules": [
+                      "goronmask,mountaindeed"
+                    ]
+                  },
+                  {
+                    "name": "Evan HP",
+                    "item_count": 1,
+                    "capture_item": true
+                  }
+                ],
+                "map_locations": [
+                  {
+                    "map": "main",
+                    "x": 100,
+                    "y": 1080
+                  }
+                ]
+              },
+              {
+                "name": "Waterfall Like-Like HP",
+                "access_rules": [
+                  "@Pirate Fortress"
+                ],
+                "sections": [
+                  {
+                    "name": "Dive Down",
+                    "item_count": 1,
+                    "capture_item": true
+                  }
+                ],
+                "map_locations": [
+                  {
+                    "map": "main",
+                    "x": 405,
+                    "y": 1310
+                  }
+                ]
+              },
+              {
+                "name": "Waterfall Rapids",
+                "access_rules": [
+                  "@Pirate Fortress,hookshot"
+                ],
+                "sections": [
+                  {
+                    "name": "Beaver Race Bottle",
+                    "item_count": 1,
+                    "capture_item": true
+                  },
+                  {
+                    "name": "Beaver Race HP",
+                    "item_count": 1,
+                    "capture_item": true
+                  }
+                ],
+                "map_locations": [
+                  {
+                    "map": "main",
+                    "x": 370,
+                    "y": 1320
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Ikana Canyon",
+        "color": "#bf6031",
+        "access_rules": [
+          "epona"
+        ],
+        "children": [
+          {
+            "name": "Ikana Graveyard",
+            "children": [
+              {
+                "name": "Song of Storms",
+                "sections": [
+                  {
+                    "name": "Day 1 Grave",
+                    "item_count": 1,
+                    "capture_item": true,
+                    "chest_opened_img": "images/grey_note_check.png",
+                    "chest_unopened_img": "images/grey_note.png"
+                  }
+                ],
+                "access_rules": [
+                  "captainhat"
+                ],
+                "map_locations": [
+                  {
+                    "map": "main",
+                    "x": 1150,
+                    "y": 730
+                  }
+                ]
+              },
+              {
+                "name": "Iron Knuckle HP",
+                "sections": [
+                  {
+                    "name": "Day 2 Grave",
+                    "item_count": 1,
+                    "capture_item": true
+                  }
+                ],
+                "access_rules": [
+                  "captainhat"
+                ],
+                "map_locations": [
+                  {
+                    "map": "main",
+                    "x": 1185,
+                    "y": 730
+                  }
+                ]
+              },
+              {
+                "name": "Dampe Bottle",
+                "sections": [
+                  {
+                    "name": "Day 3 Grave",
+                    "item_count": 1,
+                    "capture_item": true
+                  }
+                ],
+                "access_rules": [
+                  "captainhat"
+                ],
+                "map_locations": [
+                  {
+                    "map": "main",
+                    "x": 1150,
+                    "y": 695
+                  }
+                ]
+              },
+              {
+                "name": "Bats HP",
+                "sections": [
+                  {
+                    "name": "Kill them",
+                    "item_count": 1,
+                    "capture_item": true
+                  }
+                ],
+                "access_rules": [
+                  "captainhat"
+                ],
+                "map_locations": [
+                  {
+                    "map": "main",
+                    "x": 1185,
+                    "y": 695
+                  }
+                ]
+              },
+              {
+                "name": "Graveyard Grotto",
+                "sections": [
+                  {
+                    "name": "Bomb It",
+                    "item_count": 1,
+                    "capture_item": true
+                  }
+                ],
+                "access_rules": [
+                  "$explosives"
+                ],
+                "map_locations": [
+                  {
+                    "map": "main",
+                    "x": 1220,
+                    "y": 675
+                  }
+                ]
+              },
+              {
+                "name": "Captain's Hat",
+                "sections": [
+                  {
+                    "name": "Chase him",
+                    "item_count": 1,
+                    "capture_item": true
+                  }
+                ],
+                "access_rules": [
+                  "sonata,bow"
+                ],
+                "map_locations": [
+                  {
+                    "map": "main",
+                    "x": 1190,
+                    "y": 640
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "East Ikana",
+            "access_rules": [
+              "garomask,hookshot",
+              "gibdomask,hookshot"
+            ],
+            "children": [
+              {
+                "name": "Stone Tower",
+                "children": [
+
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

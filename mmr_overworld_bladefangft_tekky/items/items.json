@@ -1,0 +1,348 @@
+[
+  {
+    "name": "Ocarina of Time",
+    "type": "static",
+    "img": "images/ocarina.png",
+    "codes": "ocarina"
+  },
+  {
+    "name": "Bow",
+    "type": "progressive",
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/bow.png",
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/bow.png",
+        "img_mods": "overlay|images/overlay_30.png",
+        "codes": "bow"
+      },
+      {
+        "img": "images/bow.png",
+        "img_mods": "overlay|images/overlay_40.png",
+        "codes": "bow"
+      },
+      {
+        "img": "images/bow.png",
+        "img_mods": "overlay|images/overlay_50_green.png",
+        "codes": "bow"
+      }
+    ]
+  },
+  {
+    "name": "Fire Arrows",
+    "type": "toggle",
+    "img": "images/fire_arrow.png",
+    "codes": "firearrow,fire,farrow,fa"
+  },
+  {
+    "name": "Ice Arrows",
+    "type": "toggle",
+    "img": "images/ice_arrow.png",
+    "codes": "icearrow,ice,iarrow,ia"
+  },
+  {
+    "name": "Light Arrows",
+    "type": "toggle",
+    "img": "images/light_arrow.png",
+    "codes": "lightarrow,light,larrow,la"
+  },
+  {
+    "name": "Deed Trading",
+    "type": "progressive",
+    "loop": true,
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/moon_tear.png",
+        "img_mods": "@disabled",
+        "codes": "nodeed"
+      },
+      {
+        "img": "images/moon_tear.png",
+        "codes": "moontear",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/land_deed.png",
+        "codes": "landdeed",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/swamp_deed.png",
+        "codes": "swampdeed",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/mountain_deed.png",
+        "codes": "mountaindeed",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/ocean_deed.png",
+        "codes": "oceandeed",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Bombs",
+    "type": "progressive",
+    "allow_disabled": false,
+    "stages":
+    [
+      {
+        "img": "images/bomb.png",
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/bomb.png",
+        "img_mods": "overlay|images/overlay_20.png",
+        "codes": "bombbag,bombs"
+      },
+      {
+        "img": "images/bomb.png",
+        "img_mods": "overlay|images/overlay_30.png"
+      },
+      {
+        "img": "images/bomb.png",
+        "img_mods": "overlay|images/overlay_40_green.png"
+      }
+    ]
+  },
+  {
+    "name": "Bombchu",
+    "type": "toggle",
+    "img": "images/bombchu.png",
+    "codes": "bombchu,bombchus,chus"
+  },
+  {
+    "name": "Deku Sticks",
+    "type": "toggle",
+    "img": "images/stick.png",
+    "codes": "dekusticks,sticks,ds"
+  },
+  {
+    "name": "Deku Nuts",
+    "type": "toggle",
+    "img": "images/nut.png",
+    "codes": "dekunuts,nuts,dn"
+  },
+  {
+    "name": "Magic Beans",
+    "type": "consumable",
+    "img": "images/bean.png",
+    "codes": "magicbeans,beans",
+    "max_quantity": 10
+  },
+  {
+    "name": "Misc. 1",
+    "type": "progressive",
+    "loop": true,
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/room_key.png",
+        "img_mods": "@disabled",
+        "codes": "nomisc1"
+      },
+      {
+        "img": "images/room_key.png",
+        "codes": "roomkey",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/express.png",
+        "codes": "express,mamaletter",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Powder Keg",
+    "type": "toggle",
+    "img": "images/keg.png",
+    "codes": "powderkeg,keg"
+  },
+  {
+    "name": "Pictobox",
+    "type": "toggle",
+    "img": "images/camera.png",
+    "codes": "pictobox,picto"
+  },
+  {
+    "name": "Lens of Truth",
+    "type": "toggle",
+    "img": "images/lens.png",
+    "codes": "lensoftruth,lens,lot"
+  },
+  {
+    "name": "Hookshot",
+    "type": "toggle",
+    "img": "images/hookshot.png",
+    "codes": "hookshot,hs"
+  },
+  {
+    "name": "Great Fairy Sword",
+    "type": "toggle",
+    "img": "images/fairy_sword.png",
+    "codes": "fairysword,gfs"
+  },
+  {
+    "name": "Misc. 2",
+    "type": "progressive",
+    "loop": true,
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/kafei_letter.png",
+        "img_mods": "@disabled",
+        "codes": "nomisc2"
+      },
+      {
+        "img": "images/kafei_letter.png",
+        "codes": "kafeiletter",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/pendant.png",
+        "codes": "memoriespendant,pendant",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Bottle 1",
+    "type": "progressive",
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/bottle.png",
+        "codes": "bottle,bottle1",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/bottle_princess.png",
+        "codes": "bottle,bottle1,dekuprincess,bottle1deku",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/bottle_hotspring.png",
+        "codes": "bottle,bottle1,hotspring,bottle1hotspring",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Bottle 2",
+    "type": "progressive",
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/bottle.png",
+        "codes": "bottle,bottle2",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/bottle_princess.png",
+        "codes": "bottle,bottle2,dekuprincess,bottle2deku",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/bottle_hotspring.png",
+        "codes": "bottle,bottle2,hotspring,bottle2hotspring",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Bottle 3",
+    "type": "progressive",
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/bottle.png",
+        "codes": "bottle,bottle3",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/bottle_princess.png",
+        "codes": "bottle,bottle3,dekuprincess,bottle3deku",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/bottle_hotspring.png",
+        "codes": "bottle,bottle3,hotspring,bottle3hotspring",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Bottle 4",
+    "type": "progressive",
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/bottle.png",
+        "codes": "bottle,bottle4",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/bottle_princess.png",
+        "codes": "bottle,bottle4,dekuprincess,bottle4deku",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/bottle_hotspring.png",
+        "codes": "bottle,bottle4,hotspring,bottle4hotspring",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Bottle 5",
+    "type": "progressive",
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/bottle.png",
+        "codes": "bottle,bottle5",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/bottle_princess.png",
+        "codes": "bottle,bottle5,dekuprincess,bottle5deku",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/bottle_hotspring.png",
+        "codes": "bottle,bottle5,hotspring,bottle5hotspring",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Bottle 6",
+    "type": "progressive",
+    "loop": true,
+    "stages": [
+      {
+      "img": "images/bottle.png",
+      "codes": "bottle,bottle6",
+      "inherit_codes": false
+      },
+      {
+        "img": "images/bottle_princess.png",
+        "codes": "bottle,bottle6,dekuprincess,bottle6deku",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/bottle_hotspring.png",
+        "codes": "bottle,bottle6,hotspring,bottle6hotspring",
+        "inherit_codes": false
+      }
+    ]
+  }
+]

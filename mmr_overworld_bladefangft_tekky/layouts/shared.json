@@ -1,0 +1,273 @@
+{
+  "item_grid": {
+    "type": "array",
+    "orientation": "vertical",
+    "content": [
+      {
+        "type": "itemgrid",
+        "h_alignment": "left",
+        "item_margin": "2,2",
+        "rows": [
+          [
+            "ocarina",
+            "bow",
+            "firearrow",
+            "icearrow",
+            "lightarrow",
+            "nodeed"
+          ],
+          [
+            "bombs",
+            "bombchus",
+            "sticks",
+            "nuts",
+            "beans",
+            "nomisc1"
+          ],
+          [
+            "powderkeg",
+            "pictobox",
+            "lensoftruth",
+            "hookshot",
+            "fairysword",
+            "nomisc2"
+          ],
+          [
+            "bottle1",
+            "bottle2",
+            "bottle3",
+            "bottle4",
+            "bottle5",
+            "bottle6"
+          ]
+        ]
+      }
+    ]
+  },
+  "mask_grid": {
+    "type": "array",
+    "orientation": "vertical",
+    "content": [
+      {
+        "type": "itemgrid",
+        "h_alignment": "left",
+        "item_margin": "2,2",
+        "rows": [
+          [
+            "postmanhat",
+            "allnightmask",
+            "blastmask",
+            "stonemask",
+            "fairymask",
+            "dekumask"
+          ],
+          [
+            "keatonmask",
+            "bremenmask",
+            "bunnyhood",
+            "dongeromask",
+            "maskofscents",
+            "goronmask"
+          ],
+          [
+            "romanimask",
+            "circusleadermask",
+            "kafeimask",
+            "couplesmask",
+            "maskoftruth",
+            "zoramask"
+          ],
+          [
+            "kamaromask",
+            "gibdomask",
+            "garomask",
+            "captainhat",
+            "giantmask",
+            "fiercedeitymask"
+          ]
+        ]
+      }
+    ]
+  },
+  "quest_grid": {
+    "type": "array",
+    "orientation": "vertical",
+    "content": [
+      {
+        "type": "itemgrid",
+        "h_alignment": "left",
+        "itemgrid": "2,1",
+        "rows": [
+          [
+            "sword1",
+            "shield1",
+            "notebook",
+            "magic",
+            "wallet"
+          ],
+          [
+            "timecheck",
+            "healingcheck",
+            "eponacheck",
+            "soaringcheck",
+            "stormcheck"
+          ],
+          [
+            "sonatacheck",
+            "lullabycheck",
+            "newwavecheck",
+            "elegycheck",
+            "oathcheck"
+          ]
+        ]
+      },
+      {
+        "type": "itemgrid",
+        "h_alignment": "center",
+        "item_margin": "-4,0,-4,0",
+        "margin": "0,0,0,0",
+        "rows": [
+          [
+            "nobombercode",
+            "code1-1",
+            "code2-1",
+            "code3-1",
+            "code4-1",
+            "code5-1"
+          ]
+        ]
+      },
+      {
+        "type": "itemgrid",
+        "h_alignment": "center",
+        "item_margin": "10,0,10,0",
+        "margin": "0,0,0,0",
+        "rows": [
+          ["", "odolwa", ""],
+          ["gyorg", "everything_off", "goht"],
+          ["","twinmold", ""]
+        ]
+      }
+    ]
+  },
+  "broadcast_grid": {
+    "type": "array",
+    "orientation": "vertical",
+    "content": [
+      {
+        "type": "itemgrid",
+        "h_alignment": "left",
+        "itemgrid": "1,1",
+        "item_margin": "2,2,2,2",
+        "rows": [
+          [
+            "ocarina",
+            "bow",
+            "firearrow",
+            "icearrow",
+            "lightarrow",
+            "nodeed",
+            "sword1",
+            "shield1"
+          ],
+          [
+            "bombs",
+            "bombchus",
+            "sticks",
+            "nuts",
+            "beans",
+            "nomisc1",
+            "magic",
+            "wallet"
+          ],
+          [
+            "powderkeg",
+            "pictobox",
+            "lensoftruth",
+            "hookshot",
+            "fairysword",
+            "nomisc2",
+            "timecheck",
+            "healingcheck"
+          ],
+          [
+            "bottle1",
+            "bottle2",
+            "bottle3",
+            "bottle4",
+            "bottle5",
+            "bottle6",
+            "eponacheck",
+            "soaringcheck"
+          ],
+          [
+            "postmanhat",
+            "allnightmask",
+            "blastmask",
+            "stonemask",
+            "fairymask",
+            "dekumask",
+            "stormcheck",
+            "sonatacheck"
+          ],
+          [
+            "keatonmask",
+            "bremenmask",
+            "bunnyhood",
+            "dongeromask",
+            "maskofscents",
+            "goronmask",
+            "lullabycheck",
+            "newwavecheck"
+          ],
+          [
+            "romanimask",
+            "circusleadermask",
+            "kafeimask",
+            "couplesmask",
+            "maskoftruth",
+            "zoramask",
+            "elegycheck",
+            "oathcheck"
+          ],
+          [
+            "kamaromask",
+            "gibdomask",
+            "garomask",
+            "captainhat",
+            "giantmask",
+            "fiercedeitymask",
+            "",
+            ""
+          ],
+          [
+            "odolwa",
+            "goht",
+            "gyorg",
+            "twinmold",
+            "",
+            "notebook",
+            "",
+            ""
+          ]
+        ]
+      },
+      {
+        "type": "itemgrid",
+        "h_alignment": "left",
+        "itemgrid": "1,1",
+        "margin": "110,0,0,0",
+        "item_margin": "-8,-40,-8,0",
+        "rows": [
+          [
+            "code1-1",
+            "code2-1",
+            "code3-1",
+            "code4-1",
+            "code5-1"
+          ]
+        ]
+      }
+    ]
+  }
+}
