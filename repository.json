@@ -1,0 +1,19 @@
+{
+  "name": "Tekky's Tracker Packs",
+  "packages": [
+    {
+      "name": "MM Randomizer Map Tracker",
+      "author": "BladefangFT & Tekky",
+      "game_name": "Majora's Mask Randomizer",
+      "version": "1.0.0",
+      "flags": [
+        "map",
+        "pins",
+        "chathud"
+      ],
+      "required_app_version": "2.3.0.0",
+      "uid": "mmr_overworld_bladefangft_tekky",
+      "link": "https://teknoanonymous.github.io/repository.json"
+    }
+  ]
+}
