@@ -202,6 +202,11 @@
         "img": "images/bottle_hotspring.png",
         "codes": "bottle,bottle1,hotspring,bottle1hotspring",
         "inherit_codes": false
+      },
+      {
+        "img": "images/bottle_golddust.png",
+        "codes": "bottle,bottle1,golddust,bottle1golddust",
+        "inherit_codes": false
       }
     ]
   },
@@ -223,6 +228,11 @@
       {
         "img": "images/bottle_hotspring.png",
         "codes": "bottle,bottle2,hotspring,bottle2hotspring",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/bottle_golddust.png",
+        "codes": "bottle,bottle2,golddust,bottle2golddust",
         "inherit_codes": false
       }
     ]
@@ -246,6 +256,11 @@
         "img": "images/bottle_hotspring.png",
         "codes": "bottle,bottle3,hotspring,bottle3hotspring",
         "inherit_codes": false
+      },
+      {
+        "img": "images/bottle_golddust.png",
+        "codes": "bottle,bottle3,golddust,bottle3golddust",
+        "inherit_codes": false
       }
     ]
   },
@@ -267,6 +282,11 @@
       {
         "img": "images/bottle_hotspring.png",
         "codes": "bottle,bottle4,hotspring,bottle4hotspring",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/bottle_golddust.png",
+        "codes": "bottle,bottle4,golddust,bottle4golddust",
         "inherit_codes": false
       }
     ]
@@ -290,6 +310,11 @@
         "img": "images/bottle_hotspring.png",
         "codes": "bottle,bottle5,hotspring,bottle5hotspring",
         "inherit_codes": false
+      },
+      {
+        "img": "images/bottle_golddust.png",
+        "codes": "bottle,bottle5,golddust,bottle5golddust",
+        "inherit_codes": false
       }
     ]
   },
@@ -311,6 +336,11 @@
       {
         "img": "images/bottle_hotspring.png",
         "codes": "bottle,bottle6,hotspring,bottle6hotspring",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/bottle_golddust.png",
+        "codes": "bottle,bottle6,golddust,bottle6golddust",
         "inherit_codes": false
       }
     ]

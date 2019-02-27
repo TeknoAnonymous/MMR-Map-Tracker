@@ -812,10 +812,10 @@
               {
                 "name": "Shed 50 Rupees",
                 "item_count": 1,
-                "capture_item": true
-              "access_rules": [
+                "capture_item": true,
+                "access_rules": [
                   "everything_on"
-               ],
+                ]
               }
             ],
             "map_locations": [
@@ -941,8 +941,8 @@
               {
                 "name": "Swamp Skulltula House",
                 "access_rules": [
-                  "dekustick,odolwaremains,$has_reach,$has_bottle",
-                  "bow,firearrow,odolwaremains,$has_reach,$has_bottle"
+                  "sticks,[odolwaremains],$has_reach,$has_bottle",
+                  "bow,firearrow,[odolwaremains],$has_reach,$has_bottle"
                 ],
                 "sections": [
                   {
@@ -1311,7 +1311,8 @@
                     "item_count": 1,
                     "capture_item": true,
                     "access_rules": [
-                      "goronmask,gohtremains"
+                      "golddust,$hotspring_access",
+                      "golddust,firearrow,bow"
                     ]
                   }
                 ],
