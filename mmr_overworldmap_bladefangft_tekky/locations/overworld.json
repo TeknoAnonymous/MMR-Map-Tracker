@@ -819,7 +819,7 @@
 //                "beans,[$has_bottle],everything_on",
 //                "beans,[storm],everything_on",
 //                "zoramask,everything_on"
-               ]
+               ],
               }
             ],
             "map_locations": [
@@ -2439,7 +2439,7 @@
                     "name": "Secret Shrine Grotto",
                     "access_rules": [
                        "everything_on"
-                    ]
+                    ],
                     "sections": [
                       {
                         "name": "Drop Down",
