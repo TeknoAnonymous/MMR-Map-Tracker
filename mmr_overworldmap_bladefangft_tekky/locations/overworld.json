@@ -815,10 +815,6 @@
                 "capture_item": true
               "access_rules": [
                   "everything_on"
-//                "hookshot,everything_on",
-//                "beans,[$has_bottle],everything_on",
-//                "beans,[storm],everything_on",
-//                "zoramask,everything_on"
                ],
               }
             ],
