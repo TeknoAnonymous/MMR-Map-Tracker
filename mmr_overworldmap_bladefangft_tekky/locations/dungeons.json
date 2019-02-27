@@ -469,7 +469,7 @@
         "name": "Underwater Chest 1",
         "access_rules": [
                   "everything_on"
-                ]
+                ],
         "sections": [
           {
             "name": "Dive Down",
@@ -488,7 +488,7 @@
         "name": "Underwater Chest 2",
         "access_rules": [
                   "everything_on"
-                ]
+                ],
         "sections": [
           {
             "name": "Dive Down",
@@ -507,7 +507,7 @@
         "name": "Underwater Chest 3",
         "access_rules": [
                   "everything_on"
-                ]
+                ],
         "sections": [
           {
             "name": "Dive Down",
