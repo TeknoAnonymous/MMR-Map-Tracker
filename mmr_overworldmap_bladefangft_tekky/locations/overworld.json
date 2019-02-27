@@ -589,6 +589,9 @@
           },
           {
             "name": "Bombchu Grotto",
+            "access_rules": [
+               "everything_on"
+            ],
             "sections": [
               {
                 "name": "Climb the Pillar",
@@ -810,12 +813,9 @@
                 "name": "Shed 50 Rupees",
                 "item_count": 1,
                 "capture_item": true
-//              "access_rules": [
-//                "hookshot,everything_on",
-//                "beans,[$has_bottle],everything_on",
-//                "beans,[storm],everything_on",
-//                "zoramask,everything_on"
-//              ]
+              "access_rules": [
+                  "everything_on"
+               ],
               }
             ],
             "map_locations": [
@@ -1394,7 +1394,7 @@
                   }
                 ],
                 "access_rules": [
-                  "gohtremains,[lensoftruth]"
+                  "gohtremains,[lensoftruth],everything_on"
                 ],
                 "map_locations": [
                   {
@@ -1894,6 +1894,9 @@
               },
               {
                 "name": "Fisherman Grotto",
+                "access_rules": [
+                  "everything_on"
+                ],
                 "sections": [
                   {
                     "name": "Go In",
@@ -2077,8 +2080,8 @@
               {
                 "name": "Zora Cape Grotto",
                 "access_rules": [
-                  "goronmask",
-                  "$explosives"
+                  "goronmask,everything_on",
+                  "$explosives,everything_on"
                 ],
                 "sections": [
                   {
@@ -2098,7 +2101,7 @@
               {
                 "name": "Zora Cape Underwater Chest",
                 "access_rules": [
-                  "zoramask"
+                  "zoramask,everything_on"
                 ],
                 "sections": [
                   {
@@ -2190,6 +2193,9 @@
           },
           {
             "name": "Ikana Graveyard",
+            "access_rules": [
+              "epona"
+            ],
             "children": [
               {
                 "name": "Song of Storms",
@@ -2263,7 +2269,7 @@
                   }
                 ],
                 "access_rules": [
-                  "captainhat"
+                  "captainhat,everything_on"
                 ],
                 "map_locations": [
                   {
@@ -2283,7 +2289,7 @@
                   }
                 ],
                 "access_rules": [
-                  "$explosives"
+                  "$explosives,everything_on"
                 ],
                 "map_locations": [
                   {
@@ -2385,7 +2391,7 @@
                   {
                     "name": "Secret Shrine",
                     "access_rules": [
-                      "bow,lightarrow"
+                      "bow,lightarrow,everything_on"
                     ],
                     "sections": [
                       {
@@ -2427,6 +2433,9 @@
                   },
                   {
                     "name": "Secret Shrine Grotto",
+                    "access_rules": [
+                       "everything_on"
+                    ],
                     "sections": [
                       {
                         "name": "Drop Down",
