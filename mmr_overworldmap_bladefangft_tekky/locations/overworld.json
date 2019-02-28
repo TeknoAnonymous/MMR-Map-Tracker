@@ -1303,7 +1303,7 @@
                     "capture_item": true,
                     "access_rules": [
                       "bow,firearrow,wallet",
-                      "$hotspring_access,wallet"
+                      "$has_bottle,$hotspring_access,wallet"
                     ]
                   },
                   {
@@ -1311,8 +1311,8 @@
                     "item_count": 1,
                     "capture_item": true,
                     "access_rules": [
-                      "golddust,$hotspring_access",
-                      "golddust,firearrow,bow"
+                      "[golddust],$hotspring_access",
+                      "[golddust],firearrow,bow"
                     ]
                   }
                 ],

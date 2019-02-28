@@ -42,19 +42,6 @@ function explosives()
   end
 end
 
-function has_bottle()
-  if has("bottle1")
-  or has("bottle2")
-  or has("bottle3")
-  or has("bottle4")
-  or has("bottle5")
-  or has("bottle6") then
-    return 1
-  else
-    return 0
-  end
-end
-
 function has_paper()
   if has("mamaletter")
   or has("kafeiletter")
@@ -99,11 +86,13 @@ function has_reach()
 end
 
 function hotspring_access()
-  if has("goron")
-  and has("lensoftruth") then
+  if (has("goronmask")
+  and has("lensoftruth")) or
+  ((has("firearrow") and has("bow")) and
+  (has("goronmask") or explosives())) then
     return has_bottle()
   else
-    return has("firearrow") and has("bow") and has_bottle()
+    return 0
   end
 end
 
@@ -122,9 +111,19 @@ end
 
 function ISTT_access()
   if has("bow")
-  and has("lightarrow") then
-    return explosives() and STT_access()
+  and has("lightarrow")
+  and explosives()
+  and STT_access() then
+    return 1
   else
     return 0
   end
+end
+
+function has_bottle()
+  local bottle = Tracker:ProviderCountForCode("bottle")
+  local golddust = Tracker:ProviderCountForCode("golddust")
+  local level =  AccessibilityLevel.Normal
+
+  return (bottle - golddust), level
 end

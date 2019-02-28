@@ -207,14 +207,6 @@
     ]
   },
   {
-    "name": "Inverted Stone Tower Temple",
-    "short_name": "ISTT",
-    "parent": "Stone Tower",
-    "access_rules": [
-      "$STT_access,bow,lightarrow,$explosives"
-    ]
-  },
-  {
     "name": "Stone Tower Temple",
     "short_name": "STT",
     "parent": "Stone Tower",
