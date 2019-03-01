@@ -1793,7 +1793,10 @@
                   {
                     "name": "Ikana Map",
                     "item_count": 1,
-                    "capture_item": true
+                    "capture_item": true,
+                    "access_rules": [
+                      "[garomask],[hookshot]"
+                    ]
                   }
                 ],
                 "map_locations": [
