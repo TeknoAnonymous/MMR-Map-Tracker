@@ -212,8 +212,8 @@
                     "capture_item": true,
                     "chest_unopened_img": "images/HP.png",
                     "chest_opened_img": "images/HP_grey.png"
-                  },/*
-                  {
+                  },
+                  /*{
                     "name": "All-Night Mask",
                     "item_count": 1,
                     "capture_item": true,
@@ -1147,7 +1147,7 @@
                     "item_count": 1,
                     "capture_item": true,
                     "access_rules": [
-                      "dekumask,landdeed,"
+                      "dekumask,landdeed",
                       "[goronmask]"
                     ]
                   }
@@ -1437,7 +1437,7 @@
               {
                 "name": "Hot Spring 20 Rupees",
                 "access_rules": [
-                  "bow,firearrow,$explosives,everything_on"
+                  "bow,firearrow,$explosives,everything_on",
                   "$explosives,§hotspring_access,everything_on"
                 ],
                 "sections": [
