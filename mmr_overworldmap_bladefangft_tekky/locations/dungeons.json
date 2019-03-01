@@ -16,17 +16,14 @@
         "item_count": 1,
         "capture_item": true,
         "access_rules": [
-          "bow"
+          "dekumask",
+          "hookshot"
         ]
       },
       {
         "name": "Compass",
         "item_count": 1,
         "capture_item": true,
-        "access_rules": [
-          "dekumask",
-          "hookshot"
-        ]
       },
       {
         "name": "Boss Key",
@@ -116,7 +113,9 @@
         "item_count": 1,
         "capture_item": true,
         "access_rules": [
-          "$explosives"
+          "$explosives",
+          "[goronmask]",
+          "[bow],[firearrow]"
         ]
       },
       {
@@ -227,7 +226,7 @@
         "item_count": 1,
         "capture_item": true,
         "access_rules": [
-          "$explosives,bow"
+          "$explosives"
         ]
       },
       {
@@ -259,7 +258,7 @@
         "item_count": 1,
         "capture_item": true,
         "access_rules": [
-          "bow,lightarrow"
+          "bow,lightarrow,zoramask"
         ]
       },
       {
@@ -277,6 +276,14 @@
         "access_rules": [
           "$ISTT_access"
         ]
+      },
+      {
+        "name": "Giant's Mask",
+        "item_count": 1,
+        "capture_item": true,
+        "access_rules": [
+          "$ISTT_access"
+          ]
       },
       {
         "name": "Twinmold",
@@ -313,6 +320,7 @@
             "name": "Hookshot",
             "access_rules": [
               "goronmask,bow",
+              "goronmask,dekumask",
               "hookshot,bow",
               "hookshot,dekumask"
             ],
@@ -398,7 +406,7 @@
           {
             "name": "Guard Room 100 Rupees",
             "access_rules": [
-              "everything_on"
+              "hookshot,everything_on"
             ],
             "sections": [
               {
