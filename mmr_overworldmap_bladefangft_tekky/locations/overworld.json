@@ -665,9 +665,6 @@
                     "item_count": 1,
                     "capture_item": true,
                     "access_rules": [
-                      "[hookshot]",
-                      "[beans],[$has_bottle]",
-                      "[beans],[storm]"
                       "[dekumask]"
                     ]
                   }
