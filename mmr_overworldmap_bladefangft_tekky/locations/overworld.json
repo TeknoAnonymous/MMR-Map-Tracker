@@ -665,10 +665,10 @@
                     "item_count": 1,
                     "capture_item": true,
                     "access_rules": [
-                      "dekumask",
                       "[hookshot]",
                       "[beans],[$has_bottle]",
                       "[beans],[storm]"
+                      "[dekumask]"
                     ]
                   }
                 ],
@@ -1028,8 +1028,8 @@
                     "item_count": 1,
                     "capture_item": true,
                     "access_rules": [
-                      "[beans],[$has_bottle],everything_on",
-                      "[beans,[storm],everything_on",
+                      "[hookshot],beans,$has_bottle,everything_on",
+                      "[hookshot],beans,storm,everything_on",
                       "hookshot,everything_on"
                     ]
                   }
@@ -1077,8 +1077,8 @@
                   }
                 ],
                 "access_rules": [
-                  "dekumask,beans,[$has_bottle]",
-                  "dekumask,beans,[storm]"
+                  "dekumask,beans,$has_bottle",
+                  "dekumask,beans,storm,[$has_bottle]"
                 ],
                 "map_locations": [
                   {
@@ -1100,7 +1100,7 @@
                 "access_rules": [
                   "[dekuprincess],[bow]",
                   "[dekuprincess],[zoramask]",
-                  "[dekuprincess],odolwaremain"
+                  "[dekuprincess],odolwaremains"
                 ],
                 "map_locations": [
                   {
@@ -1147,8 +1147,7 @@
                     "item_count": 1,
                     "capture_item": true,
                     "access_rules": [
-                      "dekumask,landdeed",
-                      "[goronmask]"
+                      "[dekumask],[landdeed],goronmask"
                     ]
                   }
                 ],
@@ -1291,7 +1290,8 @@
         "color": "#f32a30",
         "access_rules": [
           "bow,$explosives",
-          "bow,[goronmask]",
+          "bow,goronmask,[$explosives]",
+          "bow,goronmask,[firearrow]",
           "bow,firearrow"
         ],
         "children": [
@@ -1438,7 +1438,7 @@
                 "name": "Hot Spring 20 Rupees",
                 "access_rules": [
                   "bow,firearrow,$explosives,everything_on",
-                  "$explosives,§hotspring_access,everything_on"
+                  "$explosives,$hotspring_access,everything_on"
                 ],
                 "sections": [
                   {
@@ -1478,7 +1478,7 @@
               {
                 "name": "Goron Racetrack Bottle",
                 "access_rules": [
-                  "goronmask,gohtremains",
+                  "goronmask,gohtremains"
                 ],
                 "sections": [
                   {
@@ -2331,7 +2331,7 @@
             "name": "Ikana Canyon",
             "access_rules": [
               "garomask,hookshot",
-              "[gibdomask],hookshot"
+              "gibdomask,hookshot,[garomask]"
             ],
             "children": [
               {
@@ -2524,7 +2524,7 @@
                         "name": "Elegy of Emptiness",
                         "access_rules": [
                           "powderkeg,goronmask",
-                          "[lightarrow]"
+			                    "lightarrow,[powderkeg],[goronmask]"
                         ],
                         "chest_opened_img": "images/grey_note_check.png",
                         "chest_unopened_img": "images/grey_note.png",
@@ -2554,24 +2554,35 @@
               {
                 "name": "Stone Tower",
                 "access_rules": [
-                  "$STT_access,bow,lightarrow,beans,$has_bottle",
-                  "$STT_access,bow,lightarrow,beans,[storm]"
+                  "epona,$STT_access",
                 ],
                 "sections": [
                   {
                     "name": "100 Rupees",
                     "item_count": 1,
-                    "capture_item": true
+                    "capture_item": true,
+                    "access_rules": [
+                      "everything_on,bow,lightarrow,beans,$has_bottle",
+                      "everything_on,bow,lightarrow,beans,storm,[$has_bottle]"
+                    ],
                   },
                   {
                     "name": "Bombchus",
                     "item_count": 1,
-                    "capture_item": true
+                    "capture_item": true,
+                    "access_rules": [
+                      "everything_on,bow,lightarrow,beans,$has_bottle",
+                      "everything_on,bow,lightarrow,beans,storm,[$has_bottle]"
+                    ],
                   },
                   {
                     "name": "Magic Bean ",
                     "item_count": 1,
-                    "capture_item": true
+                    "capture_item": true,
+                    "access_rules": [
+                      "everything_on,bow,lightarrow,beans,$has_bottle",
+                      "everything_on,bow,lightarrow,beans,storm,[$has_bottle]"
+                    ],
                   }
                 ],
                 "map_locations": [
