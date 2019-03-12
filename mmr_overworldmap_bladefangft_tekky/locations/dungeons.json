@@ -356,6 +356,9 @@
                 "capture_item": true,
                 "access_rules": [
                   "everything_on"
+                ],
+                "visibility_rules": [
+                  "everything_on"
                 ]
               },
               {
@@ -364,6 +367,9 @@
                 "capture_item": true,
                 "access_rules": [
                   "everything_on"
+                ],
+                "visibility_rules": [
+                  "everything_on"
                 ]
               },
               {
@@ -371,6 +377,9 @@
                 "item_count": 1,
                 "capture_item": true,
                 "access_rules": [
+                  "everything_on"
+                ],
+                "visibility_rules": [
                   "everything_on"
                 ]
               }
@@ -387,6 +396,9 @@
             "name": "Egg Tank 20 Rupees",
             "access_rules": [
               "hookshot,everything_on"
+            ],
+            "visibility_rules": [
+              "everything_on"
             ],
             "sections": [
               {
@@ -408,6 +420,9 @@
             "access_rules": [
               "hookshot,everything_on"
             ],
+            "visibility_rules": [
+              "everything_on"
+            ],
             "sections": [
               {
                 "name": "Open It",
@@ -426,6 +441,9 @@
           {
             "name": "Courtyard 20 Rupees",
             "access_rules": [
+              "everything_on"
+            ],
+            "visibility_rules": [
               "everything_on"
             ],
             "sections": [
@@ -448,6 +466,9 @@
             "access_rules": [
               "hookshot,everything_on"
             ],
+            "visibility_rules": [
+              "everything_on"
+            ],
             "sections": [
               {
                 "name": "Open It",
@@ -469,7 +490,10 @@
         "name": "Underwater Chest 1",
         "access_rules": [
                   "everything_on"
-                ],
+        ],
+        "visibility_rules": [
+                  "everything_on"
+        ],
         "sections": [
           {
             "name": "Dive Down",
@@ -488,7 +512,10 @@
         "name": "Underwater Chest 2",
         "access_rules": [
                   "everything_on"
-                ],
+        ],
+        "visibility_rules": [
+            "everything_on"
+        ],
         "sections": [
           {
             "name": "Dive Down",
@@ -507,7 +534,10 @@
         "name": "Underwater Chest 3",
         "access_rules": [
                   "everything_on"
-                ],
+        ],
+        "visibility_rules": [
+                  "everything_on"
+        ],
         "sections": [
           {
             "name": "Dive Down",
