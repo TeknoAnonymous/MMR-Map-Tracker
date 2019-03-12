@@ -59,6 +59,9 @@
             "access_rules": [
               "everything_on"
             ],
+            "visibility_rules": [
+              "everything_on"
+            ],
             "sections": [
               {
                 "name": "20 Rupees",
@@ -66,7 +69,7 @@
                 "capture_item": true,
                 "access_rules": [
                   "hookshot"
-                ]
+                ],
               },
               {
                 "name": "50 Rupees",
@@ -145,6 +148,9 @@
                 "capture_item": true,
                 "access_rules": [
                   "$has_ranged,everything_on"
+                ],
+                "visibility_rules": [
+                  "everything_on"
                 ]
               }
             ],
@@ -386,6 +392,9 @@
             "access_rules": [
               "everything_on"
             ],
+            "visibility_rules": [
+              "everything_on"
+            ],
             "sections": [
               {
                 "name": "Bomber's 100 Rupees",
@@ -592,6 +601,9 @@
             "access_rules": [
                "everything_on"
             ],
+            "visibility_rules": [
+              "everything_on"
+            ],
             "sections": [
               {
                 "name": "Climb the Pillar",
@@ -632,6 +644,9 @@
             "name": "Termina Field Everything",
             "short_name": "Termina Field All",
             "access_rules": [
+              "everything_on"
+            ],
+            "visibility_rules": [
               "everything_on"
             ],
             "children": [
@@ -709,6 +724,9 @@
             "name": "Milk Road Tingle",
             "access_rules": [
               "everything_on,$has_ranged"
+            ],
+            "visibility_rules": [
+              "everything_on"
             ],
             "sections": [
               {
@@ -813,6 +831,9 @@
                 "capture_item": true,
                 "access_rules": [
                   "everything_on"
+                ],
+                "visibility_rules": [
+                  "everything_on"
                 ]
               }
             ],
@@ -886,6 +907,9 @@
                 "access_rules": [
                   "everything_on"
                 ],
+                "visibility_rules": [
+                  "everything_on"
+                ],
                 "sections": [
                   {
                     "name": "Get in the grotto",
@@ -905,6 +929,9 @@
                 "name": "Woodfall Tingle",
                 "access_rules": [
                   "everything_on,$has_ranged"
+                ],
+                "visibility_rules": [
+                  "everything_on"
                 ],
                 "sections": [
                   {
@@ -967,6 +994,9 @@
                 "access_rules": [
                   "everything_on",
                 ],
+                "visibility_rules": [
+                  "everything_on"
+                ],
                 "sections": [
                   {
                     "name": "Open it",
@@ -1028,6 +1058,9 @@
                       "[hookshot],beans,$has_bottle,everything_on",
                       "[hookshot],beans,storm,everything_on",
                       "hookshot,everything_on"
+                    ],
+                    "visibility_rules": [
+                      "everything_on"
                     ]
                   }
                 ],
@@ -1202,6 +1235,9 @@
                     "capture_item": true,
                     "access_rules": [
                       "everything_on"
+                    ],
+                    "visibility_rules": [
+                      "everything_on"
                     ]
                   }
                 ],
@@ -1243,6 +1279,9 @@
                 "access_rules": [
                   "everything_on"
                 ],
+                "visibility_rules": [
+                  "everything_on"
+                ],
                 "sections": [
                   {
                     "name": "Fly there",
@@ -1261,6 +1300,9 @@
               {
                 "name": "Woodfall 20 Rupees",
                 "access_rules": [
+                  "everything_on"
+                ],
+                "visibility_rules": [
                   "everything_on"
                 ],
                 "sections": [
@@ -1398,6 +1440,9 @@
                 "access_rules": [
                   "gohtremains,[lensoftruth],everything_on"
                 ],
+                "visibility_rules": [
+                  "everything_on"
+                ],
                 "map_locations": [
                   {
                     "map": "main",
@@ -1418,6 +1463,9 @@
                 "access_rules": [
                   "gohtremains,goronmask,everything_on"
                 ],
+                "visibility_rules": [
+                  "everything_on"
+                ],
                 "map_locations": [
                   {
                     "map": "main",
@@ -1436,6 +1484,9 @@
                 "access_rules": [
                   "bow,firearrow,$explosives,everything_on",
                   "$explosives,$hotspring_access,everything_on"
+                ],
+                "visibility_rules": [
+                  "everything_on"
                 ],
                 "sections": [
                   {
@@ -1456,6 +1507,9 @@
                 "name": "Racetrack Grotto 20 Rupees",
                 "access_rules": [
                   "goronmask,everything_on,$explosives"
+                ],
+                "visibility_rules": [
+                  "everything_on"
                 ],
                 "sections": [
                   {
@@ -1496,6 +1550,9 @@
                 "name": "Twin Islands 20 Rupees",
                 "access_rules": [
                   "zoramask,everything_on,gohtremains"
+                ],
+                "visibility_rules": [
+                  "everything_on"
                 ],
                 "sections": [
                   {
@@ -1621,6 +1678,9 @@
                     "capture_item": true,
                     "access_rules": [
                       "everything_on"
+                    ],
+                    "visibility_rules": [
+                      "everything_on"
                     ]
                   },
                   {
@@ -1629,7 +1689,10 @@
                     "capture_item": true,
                     "access_rules": [
                       "$explosives,everything_on"
-                    ]
+                    ],
+                    "visibility_rules": [
+                      "everything_on"
+                    ],
                   }
                 ],
                 "map_locations": [
@@ -1697,6 +1760,9 @@
                     "capture_item": true,
                     "access_rules": [
                       "$explosives,everything_on"
+                    ],
+                    "visibility_rules": [
+                      "everything_on"
                     ]
                   }
                 ],
@@ -1788,6 +1854,9 @@
                 "name": "Great Bay Tingle",
                 "access_rules": [
                   "everything_on,$has_ranged"
+                ],
+                "visibility_rules": [
+                  "everything_on"
                 ],
                 "sections": [
                   {
@@ -1903,6 +1972,9 @@
                 "access_rules": [
                   "everything_on"
                 ],
+                "visibility_rules": [
+                  "everything_on"
+                ],
                 "sections": [
                   {
                     "name": "Go In",
@@ -1938,7 +2010,10 @@
                     "capture_item": true,
                     "access_rules": [
                       "everything_on"
-                    ]
+                    ],
+                    "visibility_rules": [
+                      "everything_on"
+                    ],
                   },
                   {
                     "name": "20 Rupee Chest",
@@ -1946,7 +2021,10 @@
                     "capture_item": true,
                     "access_rules": [
                       "everything_on"
-                    ]
+                    ],
+                    "visibility_rules": [
+                      "everything_on"
+                    ],
                   }
                 ],
                 "map_locations": [
@@ -2023,6 +2101,9 @@
                 "access_rules": [
                   "hookshot,everything_on"
                 ],
+                "visibility_rules": [
+                  "everything_on"
+                ],
                 "sections": [
                   {
                     "name": "Open It",
@@ -2042,6 +2123,9 @@
                 "name": "Great Bay Ledge Chest 2",
                 "access_rules": [
                   "[dekumask],hookshot,everything_on"
+                ],
+                "visibility_rules": [
+                  "everything_on"
                 ],
                 "sections": [
                   {
@@ -2089,6 +2173,9 @@
                   "goronmask,everything_on",
                   "$explosives,everything_on"
                 ],
+                "visibility_rules": [
+                  "everything_on"
+                ],
                 "sections": [
                   {
                     "name": "Blow Up",
@@ -2108,6 +2195,9 @@
                 "name": "Zora Cape Underwater Chest",
                 "access_rules": [
                   "zoramask,everything_on"
+                ],
+                "visibility_rules": [
+                  "everything_on"
                 ],
                 "sections": [
                   {
@@ -2160,6 +2250,9 @@
                 "access_rules": [
                   "goronmask,everything_on"
                 ],
+                "visibility_rules": [
+                  "everything_on"
+                ],
                 "sections": [
                   {
                     "name": "Punch It",
@@ -2179,6 +2272,9 @@
                 "name": "Path to Ikana Chest",
                 "access_rules": [
                   "hookshot,everything_on"
+                ],
+                "visibility_rules": [
+                  "everything_on"
                 ],
                 "sections": [
                   {
@@ -2277,6 +2373,9 @@
                 "access_rules": [
                   "captainhat,everything_on"
                 ],
+                "visibility_rules": [
+                  "everything_on"
+                ],
                 "map_locations": [
                   {
                     "map": "main",
@@ -2296,6 +2395,9 @@
                 ],
                 "access_rules": [
                   "$explosives,everything_on"
+                ],
+                "visibility_rules": [
+                  "everything_on"
                 ],
                 "map_locations": [
                   {
@@ -2399,6 +2501,9 @@
                     "access_rules": [
                       "bow,lightarrow,everything_on"
                     ],
+                    "visibility_rules": [
+                      "everything_on"
+                    ],
                     "sections": [
                       {
                         "name": "Secret Shrine HP",
@@ -2441,6 +2546,9 @@
                     "name": "Secret Shrine Grotto",
                     "access_rules": [
                        "everything_on"
+                    ],
+                    "visibility_rules": [
+                      "everything_on"
                     ],
                     "sections": [
                       {
@@ -2494,6 +2602,9 @@
                         "access_rules": [
                           "everything_on,$has_bottle,gibdomask"
                         ],
+                        "visibility_rules": [
+                          "everything_on"
+                        ],
                         "item_count": 1,
                         "capture_item": true
                       },
@@ -2501,6 +2612,9 @@
                         "name": "Left Path 50 Rupees",
                         "access_rules": [
                           "everything_on,$has_bottle,beans,gibdomask"
+                        ],
+                        "visibility_rules": [
+                          "everything_on"
                         ],
                         "item_count": 1,
                         "capture_item": true
@@ -2565,6 +2679,9 @@
                       "everything_on,bow,lightarrow,beans,$has_bottle",
                       "everything_on,bow,lightarrow,beans,storm,[$has_bottle]"
                     ],
+                    "visibility_rules": [
+                      "everything_on"
+                    ]
                   },
                   {
                     "name": "Bombchus",
@@ -2574,6 +2691,9 @@
                       "everything_on,bow,lightarrow,beans,$has_bottle",
                       "everything_on,bow,lightarrow,beans,storm,[$has_bottle]"
                     ],
+                    "visibility_rules": [
+                      "everything_on"
+                    ]
                   },
                   {
                     "name": "Magic Bean ",
@@ -2583,6 +2703,9 @@
                       "everything_on,bow,lightarrow,beans,$has_bottle",
                       "everything_on,bow,lightarrow,beans,storm,[$has_bottle]"
                     ],
+                    "visibility_rules": [
+                      "everything_on"
+                    ]
                   }
                 ],
                 "map_locations": [
