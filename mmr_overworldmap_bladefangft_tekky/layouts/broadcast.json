@@ -5,7 +5,7 @@
     "content": [
       {
         "type": "layout",
-        "key": "broadcast_grid"
+        "key": "item_grid_mini"
       }
     ]
   }

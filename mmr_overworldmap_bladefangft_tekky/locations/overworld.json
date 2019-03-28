@@ -1331,6 +1331,30 @@
                     "name": "Red Potion Bottle",
                     "item_count": 1,
                     "capture_item": true
+                  },
+                  {
+                    "name": "Potion Shop Red Potion",
+                    "item_count": 1,
+                    "capture_item": true,
+                    "visibility_rules": [
+                      "shopsanity_on"
+                    ]
+                  },
+                  {
+                    "name": "Potion Shop Green Potion",
+                    "item_count": 1,
+                    "capture_item": true,
+                    "visibility_rules": [
+                      "shopsanity_on"
+                    ]
+                  },
+                  {
+                    "name": "Potion Shop Blue Potion",
+                    "item_count": 1,
+                    "capture_item": true,
+                    "visibility_rules": [
+                      "shopsanity_on"
+                    ]
                   }
                 ],
                 "map_locations": [

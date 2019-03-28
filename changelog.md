@@ -1,3 +1,10 @@
+# 1.1.0.1
+```
++ Added an Items Only variant.
++ Added the forgotten and missing Old Hag's Potion Shop checks for Shopsanity.
+* Fixed issues with broadcast view on the new layout.
+```
+
 # 1.1.0.0
 ```
 + Added a smaller version of the item layout for those with smaller screens.
