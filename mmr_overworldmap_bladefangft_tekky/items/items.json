@@ -344,5 +344,24 @@
         "inherit_codes": false
       }
     ]
+  },
+  {
+    "name": "Deku Princess",
+    "type": "toggle",
+    "img": "images/bottle_princess.png",
+    "codes": "princess_toggle,dekuprincess,bottle"
+  },
+  {
+    "name": "Gold Dust",
+    "type": "toggle",
+    "img": "images/bottle_golddust.png",
+    "codes": "dust_toggle,golddust,bottle"
+  },
+  {
+    "name": "Bottles",
+    "type": "consumable",
+    "img": "images/bottle.png",
+    "codes": "bottle_count,bottle",
+    "max_quantity": 4
   }
 ]

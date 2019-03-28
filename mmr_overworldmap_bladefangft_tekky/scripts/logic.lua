@@ -123,7 +123,8 @@ end
 function has_bottle()
   local bottle = Tracker:ProviderCountForCode("bottle")
   local golddust = Tracker:ProviderCountForCode("golddust")
+  local dekuprincess = Tracker:ProviderCountForCode("dekuprincess")
   local level =  AccessibilityLevel.Normal
 
-  return (bottle - golddust), level
+  return (bottle - golddust - dekuprincess), level
 end

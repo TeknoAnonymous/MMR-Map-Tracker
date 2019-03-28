@@ -6,12 +6,28 @@
     "loop": true,
     "stages": [
       {
-        "img": "images/everything_off.png",
+        "img": "images/settings_everything_off.png",
         "codes": "everything_off"
       },
       {
-        "img": "images/everything_on.png",
+        "img": "images/settings_everything_on.png",
         "codes": "everything_on"
+      }
+    ]
+  },
+  {
+    "name": "Shopsanity",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/settings_shopsanity_off.png",
+        "codes": "shopsanity_off"
+      },
+      {
+        "img": "images/settings_shopsanity_on.png",
+        "codes": "shopsanity_on"
       }
     ]
   }

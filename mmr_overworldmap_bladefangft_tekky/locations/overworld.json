@@ -69,7 +69,7 @@
                 "capture_item": true,
                 "access_rules": [
                   "hookshot"
-                ],
+                ]
               },
               {
                 "name": "50 Rupees",
@@ -169,16 +169,6 @@
                 "name": "West Clock Town",
                 "short_name": "W Clock Town",
                 "sections": [
-                  /*{
-                    "name": "Bomb Bag",
-                    "item_count": 1,
-                    "capture_item": true
-                  },
-                  {
-                    "name": "Big Bomb Bag",
-                    "item_count": 1,
-                    "capture_item": true
-                  },*/
                   {
                     "name": "Adult's Wallet",
                     "item_count": 1,
@@ -218,23 +208,148 @@
                     "capture_item": true,
                     "chest_unopened_img": "images/HP.png",
                     "chest_opened_img": "images/HP_grey.png"
-                  },
-                  /*{
-                    "name": "All-Night Mask",
-                    "item_count": 1,
-                    "capture_item": true,
-                    "access_rules": [
-                      "giantswallet"
-                    ]
-                  }*/
+                  }
                 ],
                 "map_locations": [
                   {
                     "map": "main",
                     "x": 745,
-                    "y": 850
+                    "y": 825
                   }
                 ]
+              }
+            ]
+          },
+          {
+            "name": "West Clock Town Shops",
+            "short_name": "W Clock Town Shops",
+            "sections": [
+              {
+                "name": "Bomb Shop Bomb Bag",
+                "item_count": 1,
+                "capture_item": true,
+                "visibility_rules": [
+                  "shopsanity_on"
+                ]
+              },
+              {
+                "name": "Bomb Shop Big Bomb Bag",
+                "item_count": 1,
+                "capture_item": true,
+                "visibility_rules": [
+                  "shopsanity_on"
+                ]
+              },
+              {
+                "name": "Bomb Shop Bombs",
+                "item_count": 1,
+                "capture_item": true,
+                "visibility_rules": [
+                  "shopsanity_on"
+                ]
+              },
+              {
+                "name": "Bomb Shop Bombchus",
+                "item_count": 1,
+                "capture_item": true,
+                "visibility_rules": [
+                  "shopsanity_on"
+                ]
+              },
+              {
+                "name": "All-Night Mask",
+                "item_count": 1,
+                "capture_item": true,
+                "access_rules": [
+                  "giantswallet"
+                ],
+                "visibility_rules": [
+                  "shopsanity_on"
+                ]
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "main",
+                "x": 745,
+                "y": 860
+              }
+            ]
+          },
+          {
+            "name": "Clock Town Trading Post",
+            "short_name": "Trading Post",
+            "sections": [
+              {
+                "name": "Red Potion",
+                "item_count": 1,
+                "capture_item": true,
+                "visibility_rules": [
+                  "shopsanity_on"
+                ]
+              },
+              {
+                "name": "Green Potion",
+                "item_count": 1,
+                "capture_item": true,
+                "visibility_rules": [
+                  "shopsanity_on"
+                ]
+              },
+              {
+                "name": "Hero's Shield",
+                "item_count": 1,
+                "capture_item": true,
+                "visibility_rules": [
+                  "shopsanity_on"
+                ]
+              },
+              {
+                "name": "Fairy",
+                "item_count": 1,
+                "capture_item": true,
+                "visibility_rules": [
+                  "shopsanity_on"
+                ]
+              },
+              {
+                "name": "Sticks",
+                "item_count": 1,
+                "capture_item": true,
+                "visibility_rules": [
+                  "shopsanity_on"
+                ]
+              },
+              {
+                "name": "20 Arrows",
+                "item_count": 1,
+                "capture_item": true,
+                "visibility_rules": [
+                  "shopsanity_on"
+                ]
+              },
+              {
+                "name": "Deku Nuts",
+                "item_count": 1,
+                "capture_item": true,
+                "visibility_rules": [
+                  "shopsanity_on"
+                ]
+              },
+              {
+                "name": "30 Arrows",
+                "item_count": 1,
+                "capture_item": true,
+                "visibility_rules": [
+                  "shopsanity_on"
+                ]
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "main",
+                "x": 710,
+                "y": 860
               }
             ]
           },
@@ -471,7 +586,7 @@
               {
                 "map": "main",
                 "x": 745,
-                "y": 885
+                "y": 895
               }
             ]
           }
@@ -992,7 +1107,7 @@
               {
                 "name": "Swamp Grotto",
                 "access_rules": [
-                  "everything_on",
+                  "everything_on"
                 ],
                 "visibility_rules": [
                   "everything_on"
@@ -1596,15 +1711,39 @@
             "children": [
               {
                 "name": "Goron Village",
+                "access_rules": [
+                  "goronmask"
+                ],
                 "sections": [
                   {
                     "name": "Goron Lullaby",
                     "item_count": 1,
                     "capture_item": true,
                     "chest_opened_img": "images/grey_note_check.png",
-                    "chest_unopened_img": "images/grey_note.png",
-                    "access_rules": [
-                      "goronmask"
+                    "chest_unopened_img": "images/grey_note.png"
+                  },
+                  {
+                    "name": "Goron Shop Bombs",
+                    "item_count": 1,
+                    "capture_item": true,
+                    "visibility_rules": [
+                      "shopsanity_on"
+                    ]
+                  },
+                  {
+                    "name": "Goron Shop Arrows",
+                    "item_count": 1,
+                    "capture_item": true,
+                    "visibility_rules": [
+                      "shopsanity_on"
+                    ]
+                  },
+                  {
+                    "name": "Goron Shop Red Potion",
+                    "item_count": 1,
+                    "capture_item": true,
+                    "visibility_rules": [
+                      "shopsanity_on"
                     ]
                   }
                 ],
@@ -1692,7 +1831,7 @@
                     ],
                     "visibility_rules": [
                       "everything_on"
-                    ],
+                    ]
                   }
                 ],
                 "map_locations": [
@@ -2013,7 +2152,7 @@
                     ],
                     "visibility_rules": [
                       "everything_on"
-                    ],
+                    ]
                   },
                   {
                     "name": "20 Rupee Chest",
@@ -2024,7 +2163,7 @@
                     ],
                     "visibility_rules": [
                       "everything_on"
-                    ],
+                    ]
                   }
                 ],
                 "map_locations": [
@@ -2073,6 +2212,45 @@
                     "map": "main",
                     "x": 100,
                     "y": 1080
+                  }
+                ]
+              },
+              {
+                "name": "Zora's Domain Shop",
+                "access_rules": [
+                  "@Pirate Fortress"
+                ],
+                "sections": [
+                  {
+                    "name": "Zora Shop Shield",
+                    "item_count": 1,
+                    "capture_item": true,
+                    "visibility_rules": [
+                      "shopsanity_on"
+                    ]
+                  },
+                  {
+                    "name": "Zora Shop Arrows",
+                    "item_count": 1,
+                    "capture_item": true,
+                    "visibility_rules": [
+                      "shopsanity_on"
+                    ]
+                  },
+                  {
+                    "name": "Zora Shop Red Potion",
+                    "item_count": 1,
+                    "capture_item": true,
+                    "visibility_rules": [
+                      "shopsanity_on"
+                    ]
+                  }
+                ],
+                "map_locations": [
+                  {
+                    "map": "main",
+                    "x": 65,
+                    "y": 1070
                   }
                 ]
               },
@@ -2668,7 +2846,7 @@
               {
                 "name": "Stone Tower",
                 "access_rules": [
-                  "epona,$STT_access",
+                  "epona,$STT_access"
                 ],
                 "sections": [
                   {
