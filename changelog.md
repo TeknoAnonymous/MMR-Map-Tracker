@@ -1,3 +1,11 @@
+# 1.1.2.0
+```
+* Reordered dungeon layouts to match the intended vanilla path through the dungeons.
+* Bottle counter max increased to 6.
+* Fixed Ikana Canyon Upper Region logic.
+* Fixed Goron Village shop access rules.
+```
+
 # 1.1.0.1
 ```
 + Added an Items Only variant.

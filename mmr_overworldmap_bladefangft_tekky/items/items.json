@@ -362,6 +362,6 @@
     "type": "consumable",
     "img": "images/bottle.png",
     "codes": "bottle_count,bottle",
-    "max_quantity": 4
+    "max_quantity": 6
   }
 ]

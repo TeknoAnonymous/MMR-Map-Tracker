@@ -1735,14 +1735,14 @@
             "children": [
               {
                 "name": "Goron Village",
-                "access_rules": [
-                  "goronmask"
-                ],
                 "sections": [
                   {
                     "name": "Goron Lullaby",
                     "item_count": 1,
                     "capture_item": true,
+                    "access_rules": [
+                      "goronmask"
+                    ],
                     "chest_opened_img": "images/grey_note_check.png",
                     "chest_unopened_img": "images/grey_note.png"
                   },
@@ -2634,8 +2634,8 @@
           {
             "name": "Ikana Canyon",
             "access_rules": [
-              "garomask,hookshot",
-              "gibdomask,hookshot,[garomask]"
+              "garomask,hookshot,epona",
+              "gibdomask,hookshot,[garomask],epona"
             ],
             "children": [
               {

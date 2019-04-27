@@ -7,9 +7,13 @@
     ],
     "sections":[
       {
-        "name": "Hero's Bow",
+        "name": "Key",
         "item_count": 1,
-        "capture_item": true
+        "capture_item": true,
+        "access_rules": [
+          "deku",
+          "hookshot"
+        ]
       },
       {
         "name": "Map",
@@ -23,7 +27,12 @@
       {
         "name": "Compass",
         "item_count": 1,
-        "capture_item": true,
+        "capture_item": true
+      },
+      {
+        "name": "Hero's Bow",
+        "item_count": 1,
+        "capture_item": true
       },
       {
         "name": "Boss Key",
@@ -31,15 +40,6 @@
         "capture_item": true,
         "access_rules": [
           "bow,dekumask"
-        ]
-      },
-      {
-        "name": "Key",
-        "item_count": 1,
-        "capture_item": true,
-        "access_rules": [
-          "deku",
-          "hookshot"
         ]
       },
       {
@@ -70,15 +70,16 @@
     ],
     "sections": [
       {
-        "name": "Fire Arrow",
+        "name": "Map",
         "item_count": 1,
         "capture_item": true,
         "access_rules": [
-          "bow,$explosives"
+          "goronmask",
+          "zoramask,hookshot"
         ]
       },
       {
-        "name": "Map",
+        "name": "Block Room",
         "item_count": 1,
         "capture_item": true,
         "access_rules": [
@@ -92,23 +93,6 @@
         "capture_item": true
       },
       {
-        "name": "Boss Key",
-        "item_count": 1,
-        "capture_item": true,
-        "access_rules": [
-          "goronmask"
-        ]
-      },
-      {
-        "name": "Block Room",
-        "item_count": 1,
-        "capture_item": true,
-        "access_rules": [
-          "goronmask",
-          "zoramask,hookshot"
-        ]
-      },
-      {
         "name": "Icicle Room",
         "item_count": 1,
         "capture_item": true,
@@ -119,12 +103,28 @@
         ]
       },
       {
+        "name": "Fire Arrows",
+        "item_count": 1,
+        "capture_item": true,
+        "access_rules": [
+          "bow,$explosives"
+        ]
+      },
+      {
         "name": "Bridge Room",
         "item_count": 1,
         "capture_item": true,
         "access_rules": [
           "bow,firearrow,goronmask",
           "bow,firearrow,zoramask"
+        ]
+      },
+      {
+        "name": "Boss Key",
+        "item_count": 1,
+        "capture_item": true,
+        "access_rules": [
+          "goronmask"
         ]
       },
       {
@@ -155,14 +155,6 @@
     ],
     "sections": [
       {
-        "name": "Ice Arrow",
-        "item_count": 1,
-        "capture_item": true,
-        "access_rules": [
-          "bow"
-        ]
-      },
-      {
         "name": "Map",
         "item_count": 1,
         "capture_item": true
@@ -173,17 +165,25 @@
         "capture_item": true
       },
       {
+        "name": "Key",
+        "item_count": 1,
+        "capture_item": true
+      },
+      {
+        "name": "Ice Arrows",
+        "item_count": 1,
+        "capture_item": true,
+        "access_rules": [
+          "bow"
+        ]
+      },
+      {
         "name": "Boss Key",
         "item_count": 1,
         "capture_item": true,
         "access_rules": [
           "bow,icearrow"
         ]
-      },
-      {
-        "name": "Key",
-        "item_count": 1,
-        "capture_item": true
       },
       {
         "name": "Gyorg",
@@ -214,35 +214,11 @@
     ],
     "sections": [
       {
-        "name": "Light Arrow",
-        "item_count": 1,
-        "capture_item": true,
-        "access_rules": [
-          "bow,$explosives"
-        ]
-      },
-      {
         "name": "Map",
         "item_count": 1,
         "capture_item": true,
         "access_rules": [
           "$explosives"
-        ]
-      },
-      {
-        "name": "Compass",
-        "item_count": 1,
-        "capture_item": true,
-        "access_rules": [
-          "bow,lightarrow"
-        ]
-      },
-      {
-        "name": "Boss Key",
-        "item_count": 1,
-        "capture_item": true,
-        "access_rules": [
-          "$ISTT_access,$explosives"
         ]
       },
       {
@@ -262,6 +238,22 @@
         ]
       },
       {
+        "name": "Compass",
+        "item_count": 1,
+        "capture_item": true,
+        "access_rules": [
+          "bow,lightarrow"
+        ]
+      },
+      {
+        "name": "Light Arrows",
+        "item_count": 1,
+        "capture_item": true,
+        "access_rules": [
+          "bow,$explosives"
+        ]
+      },
+      {
         "name": "Updraft Room",
         "item_count": 1,
         "capture_item": true,
@@ -275,6 +267,14 @@
         "capture_item": true,
         "access_rules": [
           "$ISTT_access"
+        ]
+      },
+      {
+        "name": "Boss Key",
+        "item_count": 1,
+        "capture_item": true,
+        "access_rules": [
+          "$ISTT_access,$explosives"
         ]
       },
       {
