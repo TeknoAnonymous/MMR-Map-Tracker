@@ -21,7 +21,7 @@
         "capture_item": true,
         "access_rules": [
           "dekumask",
-          "hookshot,$explosives"
+          "hookshot,$explosives",
           "hookshot,goronmask"
         ]
       },
@@ -31,7 +31,7 @@
         "capture_item": true,
         "access_rules":  [
           "hookshot",
-          "dekumask,bow"
+          "dekumask,bow",
           "dekumask"
         ]
       },
@@ -135,7 +135,7 @@
         "capture_item": true,
         "access_rules": [
           "bow,firearrow,goronmask",
-          "hookshot,goronmask"
+          "hookshot,goronmask",
           "zoramask"
         ]
       },
@@ -215,7 +215,7 @@
         "chest_unopened_img": "images/HC.png",
         "access_rules": [
           "bow,icearrow,zoramask,dekumask,soaring",
-          "bow,icearrow,zoramask,dekumask,goronmask"
+          "bow,icearrow,zoramask,dekumask,goronmask",
           "bow,icearrow,zoramask,firearrow"
         ]
       }
@@ -241,7 +241,7 @@
         "item_count": 1,
         "capture_item": true,
         "access_rules": [
-          "mirrorshield,goronmask,elegy,$explosives"
+          "mirrorshield,goronmask,elegy,$explosives",
           "bow,lightarrow,goronmask,elegy,$explosives",
           "bow,lightarrow,zoramask"
         ]
@@ -261,8 +261,8 @@
         "item_count": 1,
         "capture_item": true,
         "access_rules": [
-          "bow,lightarrow,zoramask"
-          "goronmask,zoramask,elegy,$explosives"
+          "bow,lightarrow,zoramask",
+          "goronmask,zoramask,elegy,$explosives",
           "goronmask,soaring,elegy,$explosives"
         ]
       },
@@ -271,7 +271,7 @@
         "item_count": 1,
         "capture_item": true,
         "access_rules": [
-          "bow,lightarrow"
+          "bow,lightarrow",
           "mirrorshield,goronmask,zoramask,elegy"
         ]
       },
@@ -472,7 +472,7 @@
           {
             "name": "Courtyard 20 Rupees",
             "access_rules": [
-              "hookshot,everything_on"
+              "hookshot,everything_on",
               "goronmask,everything_on"
             ],
             "visibility_rules": [

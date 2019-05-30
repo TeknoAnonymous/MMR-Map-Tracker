@@ -2575,7 +2575,7 @@
                   }
                 ],
                 "access_rules": [
-                  "captainhat,zoramask"
+                  "captainhat,zoramask",
                   "captainhat,bow"
                 ],
                 "map_locations": [
