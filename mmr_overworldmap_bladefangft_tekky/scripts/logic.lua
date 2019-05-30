@@ -97,12 +97,11 @@ function hotspring_access()
 end
 
 function STT_access()
-  if has("dekumask")
-  and has("goronmask")
+  if has("goronmask")
   and has("zoramask")
   and has("hookshot")
   and has("elegy")
-  and has("shield2") then
+  and has("icearrow") then
     return 1
   else
     return 0
@@ -112,7 +111,6 @@ end
 function ISTT_access()
   if has("bow")
   and has("lightarrow")
-  and explosives()
   and STT_access() then
     return 1
   else

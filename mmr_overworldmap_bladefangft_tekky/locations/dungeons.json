@@ -21,13 +21,19 @@
         "capture_item": true,
         "access_rules": [
           "dekumask",
-          "hookshot"
+          "hookshot,$explosives"
+          "hookshot,goronmask"
         ]
       },
       {
         "name": "Compass",
         "item_count": 1,
-        "capture_item": true
+        "capture_item": true,
+        "access_rules":  [
+          "hookshot",
+          "dekumask,bow"
+          "dekumask"
+        ]
       },
       {
         "name": "Hero's Bow",
@@ -50,6 +56,7 @@
         "chest_opened_img": "images/HC_grey.png",
         "chest_unopened_img": "images/HC.png",
         "access_rules": [
+          "bow,hookshot",
           "bow,dekumask"
         ]
       }
@@ -66,7 +73,7 @@
     "name": "Snowhead Temple",
     "parent": "Snowhead Peak",
     "access_rules": [
-      "[lullaby],goronmask"
+      "lullaby,goronmask"
     ],
     "sections": [
       {
@@ -75,7 +82,7 @@
         "capture_item": true,
         "access_rules": [
           "goronmask",
-          "zoramask,hookshot"
+          "zoramask"
         ]
       },
       {
@@ -84,22 +91,30 @@
         "capture_item": true,
         "access_rules": [
           "goronmask",
-          "zoramask,hookshot"
+          "zoramask"
         ]
       },
       {
         "name": "Compass",
         "item_count": 1,
-        "capture_item": true
+        "capture_item": true,
+        "access_rules": [
+          "goronmask",
+          "zoramask,hookshot",
+          "goronmask,hookshot"
+        ]
       },
       {
         "name": "Icicle Room",
         "item_count": 1,
         "capture_item": true,
         "access_rules": [
-          "$explosives",
-          "[goronmask]",
-          "[bow],[firearrow]"
+          "hookshot,goronmask,$explosives",
+          "hookshot,goronmask",
+          "goronmask,$explosives"
+          "bow,firearrow,goronmask",
+          "zoramask,$explosives",
+          "bow,firearrow,zoramask"
         ]
       },
       {
@@ -107,7 +122,11 @@
         "item_count": 1,
         "capture_item": true,
         "access_rules": [
-          "bow,$explosives"
+          "goronmask,$explosives",
+          "firearrow,goronmask,bow",
+          "firearrow,zoramask,bow",
+          "hookshot,zoramask",
+          "hookshot,goronmask"
         ]
       },
       {
@@ -116,7 +135,8 @@
         "capture_item": true,
         "access_rules": [
           "bow,firearrow,goronmask",
-          "bow,firearrow,zoramask"
+          "hookshot,goronmask"
+          "zoramask"
         ]
       },
       {
@@ -124,7 +144,8 @@
         "item_count": 1,
         "capture_item": true,
         "access_rules": [
-          "goronmask"
+          "goronmask,bow,firearrow",
+          "bow,firearrow,zoramask"
         ]
       },
       {
@@ -193,7 +214,9 @@
         "chest_opened_img": "images/HC_grey.png",
         "chest_unopened_img": "images/HC.png",
         "access_rules": [
-          "bow,icearrow,firearrow,zoramask"
+          "bow,icearrow,zoramask,dekumask,soaring",
+          "bow,icearrow,zoramask,dekumask,goronmask"
+          "bow,icearrow,zoramask,firearrow"
         ]
       }
     ],
@@ -218,7 +241,9 @@
         "item_count": 1,
         "capture_item": true,
         "access_rules": [
-          "$explosives"
+          "mirrorshield,goronmask,elegy,$explosives"
+          "bow,lightarrow,goronmask,elegy,$explosives",
+          "bow,lightarrow,zoramask"
         ]
       },
       {
@@ -226,7 +251,9 @@
         "item_count": 1,
         "capture_item": true,
         "access_rules": [
-          "$explosives,bow"
+          "mirrorshield,goronmask,elegy,$explosives",
+          "bow,lightarrow,goronmask,elegy,$explosives",
+          "bow,lightarrow,zoramask"
         ]
       },
       {
@@ -235,6 +262,8 @@
         "capture_item": true,
         "access_rules": [
           "bow,lightarrow,zoramask"
+          "goronmask,zoramask,elegy,$explosives"
+          "goronmask,soaring,elegy,$explosives"
         ]
       },
       {
@@ -243,6 +272,7 @@
         "capture_item": true,
         "access_rules": [
           "bow,lightarrow"
+          "mirrorshield,goronmask,zoramask,elegy"
         ]
       },
       {
@@ -250,7 +280,8 @@
         "item_count": 1,
         "capture_item": true,
         "access_rules": [
-          "bow,$explosives"
+          "lightarrow",
+          "mirrorshield,goronmask,zoramask,$explosives"
         ]
       },
       {
@@ -258,7 +289,7 @@
         "item_count": 1,
         "capture_item": true,
         "access_rules": [
-          "$ISTT_access"
+          "$ISTT_access,bow,lightarrow"
         ]
       },
       {
@@ -266,7 +297,7 @@
         "item_count": 1,
         "capture_item": true,
         "access_rules": [
-          "$ISTT_access"
+          "$ISTT_access,dekumask,bow,lightarrow,hookshot"
         ]
       },
       {
@@ -274,7 +305,7 @@
         "item_count": 1,
         "capture_item": true,
         "access_rules": [
-          "$ISTT_access,$explosives"
+          "$ISTT_access,dekumask,hookshot,bow,lightarrow"
         ]
       },
       {
@@ -282,7 +313,7 @@
         "item_count": 1,
         "capture_item": true,
         "access_rules": [
-          "$ISTT_access"
+          "$ISTT_access,hookshot,dekumask,lightarrow,bow"
           ]
       },
       {
@@ -293,7 +324,7 @@
         "chest_opened_img": "images/HC_grey.png",
         "chest_unopened_img": "images/HC.png",
         "access_rules": [
-          "$ISTT_access"
+          "$ISTT_access,hookshot,dekumask,bow,lightarrow"
         ]
       }
     ],
@@ -441,7 +472,8 @@
           {
             "name": "Courtyard 20 Rupees",
             "access_rules": [
-              "everything_on"
+              "hookshot,everything_on"
+              "goronmask,everything_on"
             ],
             "visibility_rules": [
               "everything_on"
@@ -562,27 +594,27 @@
     ],
     "sections": [
       {
-        "name": "Deku HP",
+        "name": "Deku HP // 1 Mask",
         "item_count": 1,
         "capture_item": true
       },
       {
-        "name": "Goron HP",
+        "name": "Goron HP // 2 Masks",
         "item_count": 1,
         "capture_item": true
       },
       {
-        "name": "Zora HP",
+        "name": "Zora HP // 3 Masks",
         "item_count": 1,
         "capture_item": true
       },
       {
-        "name": "Hide and Seek HP",
+        "name": "Hide and Seek HP // 4 Masks",
         "item_count": 1,
         "capture_item": true
       },
       {
-        "name": "Fierce Deity Mask",
+        "name": "Fierce Deity Mask // All Masks",
         "item_count": 1,
         "capture_item": true
       }

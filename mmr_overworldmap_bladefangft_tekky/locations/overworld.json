@@ -179,20 +179,26 @@
                     "item_count": 1,
                     "capture_item": true,
                     "chest_unopened_img": "images/HP.png",
-                    "chest_opened_img": "images/HP_grey.png"
+                    "chest_opened_img": "images/HP_grey.png",
+                    "access_rules": [
+                      "wallet"
+                    ]
                   },
                   {
                     "name": "Postman's Hat",
                     "item_count": 1,
                     "capture_item": true,
                     "access_rules": [
-                      "express"
+                      "mamaletter"
                     ]
                   },
                   {
                     "name": "Postman HP",
                     "item_count": 1,
-                    "capture_item": true
+                    "capture_item": true,
+                    "access_rules": [
+                      "[bunnyhood]"
+                    ]
                   },
                   {
                     "name": "Rosas Sisters' HP",
@@ -604,7 +610,7 @@
                 "item_count": 1,
                 "capture_item": true,
                 "access_rules": [
-                  "$has_ranged"
+                  "[$has_ranged]"
                 ]
               }
             ],
@@ -665,7 +671,7 @@
                 "item_count": 1,
                 "capture_item": true,
                 "access_rules": [
-                  "wallet,$has_ranged"
+                  "wallet,[$has_ranged]"
                 ]
               }
             ],
@@ -795,7 +801,10 @@
                     "item_count": 1,
                     "capture_item": true,
                     "access_rules": [
-                      "[dekumask]"
+                      "dekumask",
+                      "hookshot",
+                      "beans,storm",
+                      "beans,$has_bottle"
                     ]
                   }
                 ],
@@ -852,10 +861,7 @@
               {
                 "name": "Great Bay Map",
                 "item_count": 1,
-                "capture_item": true,
-                "access_rules":[
-                  "[epona]"
-                ]
+                "capture_item": true
               }
             ],
             "map_locations": [
@@ -904,7 +910,7 @@
                 "item_count": 1,
                 "capture_item": true,
                 "access_rules": [
-                  "bow,epona"
+                  "bow"
                 ]
               },
               {
@@ -930,7 +936,10 @@
               {
                 "name": "Dog Race HP",
                 "item_count": 1,
-                "capture_item": true
+                "capture_item": true,
+                "access_rules": [
+                  "[maskoftruth]"
+                ]
               },
               {
                 "name": "Bunny Hood",
@@ -945,7 +954,10 @@
                 "item_count": 1,
                 "capture_item": true,
                 "access_rules": [
-                  "everything_on"
+                  "zoramask,everything_on",
+                  "beans,storm",
+                  "hookshot",
+                  "beans,$has_bottle"
                 ],
                 "visibility_rules": [
                   "everything_on"
@@ -979,7 +991,8 @@
                     "chest_unopened_img": "images/HP.png",
                     "capture_item": true,
                     "access_rules": [
-                      "$has_ranged"
+                      "bow",
+                      "[$has_ranged]"
                     ]
                   }
                 ],
@@ -1057,12 +1070,7 @@
                   {
                     "name": "Snowhead Map",
                     "item_count": 1,
-                    "capture_item": true,
-                    "access_rules":[
-                      "[bow],[goronmask]",
-                      "[bow],[$explosives]",
-                      "[bow],[firearrow]"
-                    ]
+                    "capture_item": true
                   }
                 ],
                 "map_locations": [
@@ -1079,6 +1087,7 @@
             "name": "South Swamp",
             "access_rules": [
               "bow,dekumask",
+              "hookshot,dekumask",
               "zoramask",
               "$has_bottle"
             ],
@@ -1086,8 +1095,12 @@
               {
                 "name": "Swamp Skulltula House",
                 "access_rules": [
-                  "sticks,[odolwaremains],$has_reach,$has_bottle",
-                  "bow,firearrow,[odolwaremains],$has_reach,$has_bottle"
+                  "dekumask,hookshot,$has_bottle",
+                  "hookshot,goronmask,$has_bottle",
+                  "zoramask,$has_bottle",
+                  "dekumask,beans,$explosives,$has_bottle",
+                  "dekumask,beans,goronmask,$has_bottle",
+                  "bow,firearrow,$has_reach,$has_bottle"
                 ],
                 "sections": [
                   {
@@ -1107,7 +1120,8 @@
               {
                 "name": "Swamp Grotto",
                 "access_rules": [
-                  "everything_on"
+                  "zoramask,everything_on",
+                  "dekumask,everything_on"
                 ],
                 "visibility_rules": [
                   "everything_on"
@@ -1163,15 +1177,18 @@
                   {
                     "name": "Freebie",
                     "item_count": 1,
-                    "capture_item": true
+                    "capture_item": true,
+                    "access_rules": [
+                      "dekumask"
+                    ]
                   },
                   {
                     "name": "20 Rupees",
                     "item_count": 1,
                     "capture_item": true,
                     "access_rules": [
-                      "[hookshot],beans,$has_bottle,everything_on",
-                      "[hookshot],beans,storm,everything_on",
+                      "hookshot,beans,$has_bottle,everything_on",
+                      "hookshot,beans,storm,everything_on",
                       "hookshot,everything_on"
                     ],
                     "visibility_rules": [
@@ -1223,7 +1240,7 @@
                 ],
                 "access_rules": [
                   "dekumask,beans,$has_bottle",
-                  "dekumask,beans,storm,[$has_bottle]"
+                  "dekumask,beans,storm"
                 ],
                 "map_locations": [
                   {
@@ -1243,9 +1260,9 @@
                   }
                 ],
                 "access_rules": [
-                  "[dekuprincess],[bow]",
-                  "[dekuprincess],[zoramask]",
-                  "[dekuprincess],odolwaremains"
+                  "dekumask,[dekuprincess],[bow]",
+                  "dekummask,[dekuprincess],[zoramask]",
+                  "dekumask,[dekuprincess],odolwaremains"
                 ],
                 "map_locations": [
                   {
@@ -1292,7 +1309,8 @@
                     "item_count": 1,
                     "capture_item": true,
                     "access_rules": [
-                      "[dekumask],[landdeed],goronmask"
+                      "dekumask,landdeed",
+                      "goronmask"
                     ]
                   }
                 ],
@@ -1468,9 +1486,10 @@
         "color": "#f32a30",
         "access_rules": [
           "bow,$explosives",
-          "bow,goronmask,[$explosives]",
-          "bow,goronmask,[firearrow]",
-          "bow,firearrow"
+          "bow,goronmask",
+          "bow,firearrow",
+          "soaring,goronmask,hotspring",
+          "soaring,$explosives,hotspring"
         ],
         "children": [
           {
@@ -1536,7 +1555,7 @@
                   }
                 ],
                 "access_rules": [
-                  "goronmask,[sticks]"
+                  "goronmask"
                 ],
                 "map_locations": [
                   {
@@ -1550,7 +1569,7 @@
               {
                 "name": "Frog Choir HP",
                 "access_rules": [
-                  "dongero,gohtremains,odolwaremains,gyorgremains,[twinmoldremains]"
+                  "dongero,gohtremains,sonata,dekumask,newwave,zoramask,hookshot,icearrow"
                 ],
                 "sections": [
                   {
@@ -1577,7 +1596,7 @@
                   }
                 ],
                 "access_rules": [
-                  "gohtremains,[lensoftruth],everything_on"
+                  "gohtremains,everything_on"
                 ],
                 "visibility_rules": [
                   "everything_on"
@@ -1600,7 +1619,7 @@
                   }
                 ],
                 "access_rules": [
-                  "gohtremains,goronmask,everything_on"
+                  "gohtremains,everything_on"
                 ],
                 "visibility_rules": [
                   "everything_on"
@@ -1668,7 +1687,7 @@
               {
                 "name": "Goron Racetrack Bottle",
                 "access_rules": [
-                  "goronmask,gohtremains"
+                  "gohtremains"
                 ],
                 "sections": [
                   {
@@ -1833,14 +1852,19 @@
                   {
                     "name": "Lens Chest",
                     "item_count": 1,
-                    "capture_item": true
+                    "capture_item": true,
+                    "access_rules": [
+                      "[lensoftruth]",
+                      "[soaring]"
+                    ]
                   },
                   {
                     "name": "Lens Cave 20 Rupees",
                     "item_count": 1,
                     "capture_item": true,
                     "access_rules": [
-                      "everything_on"
+                      "everything_on,[lensoftruth]",
+                      "everything_on,[soaring]"
                     ],
                     "visibility_rules": [
                       "everything_on"
@@ -1851,7 +1875,8 @@
                     "item_count": 1,
                     "capture_item": true,
                     "access_rules": [
-                      "$explosives,everything_on"
+                      "$explosives,everything_on,[lensoftruth]",
+                      "$explosives,everything_on,[soaring]"
                     ],
                     "visibility_rules": [
                       "everything_on"
@@ -1902,7 +1927,7 @@
                     "item_count": 1,
                     "capture_item": true,
                     "access_rules": [
-                      "hookshot"
+                      "hookshot,lensoftruth"
                     ]
                   }
                 ],
@@ -2025,10 +2050,7 @@
                   {
                     "name": "Ikana Map",
                     "item_count": 1,
-                    "capture_item": true,
-                    "access_rules": [
-                      "[garomask],[hookshot]"
-                    ]
+                    "capture_item": true
                   }
                 ],
                 "map_locations": [
@@ -2050,7 +2072,7 @@
                     "item_count": 1,
                     "capture_item": true,
                     "access_rules": [
-                      "@Pirate Fortress,goronmask,firearrow"
+                      "@Pirate Fortress,goronmask,firearrow,$explosives"
                     ]
                   },
                   {
@@ -2058,7 +2080,7 @@
                     "item_count": 1,
                     "capture_item": true,
                     "access_rules": [
-                      "captainhat"
+                      "captainhat,$explosives"
                     ]
                   }
                 ],
@@ -2074,7 +2096,7 @@
                 "name": "North Ledge HP",
                 "access_rules": [
                   "hookshot,beans,$has_bottle",
-                  "hookshot,beans,[storm]"
+                  "hookshot,beans,storm"
                 ],
                 "sections": [
                   {
@@ -2226,7 +2248,7 @@
                     ]
                   },
                   {
-                    "name": "Evan HP",
+                    "name": ">>vAAv>A<<>vv><v",
                     "item_count": 1,
                     "capture_item": true
                   }
@@ -2324,7 +2346,7 @@
               {
                 "name": "Great Bay Ledge Chest 2",
                 "access_rules": [
-                  "[dekumask],hookshot,everything_on"
+                  "hookshot,everything_on"
                 ],
                 "visibility_rules": [
                   "everything_on"
@@ -2533,7 +2555,7 @@
                   }
                 ],
                 "access_rules": [
-                  "captainhat"
+                  "captainhat,$explosives"
                 ],
                 "map_locations": [
                   {
@@ -2553,7 +2575,8 @@
                   }
                 ],
                 "access_rules": [
-                  "captainhat"
+                  "captainhat,zoramask"
+                  "captainhat,bow"
                 ],
                 "map_locations": [
                   {
@@ -2564,7 +2587,7 @@
                 ]
               },
               {
-                "name": "Graveyard Bats",
+                "name": "Grave 1 Bats",
                 "sections": [
                   {
                     "name": "Kill them",
@@ -2619,7 +2642,7 @@
                   }
                 ],
                 "access_rules": [
-                  "sonata,[bow]"
+                  "sonata,bow"
                 ],
                 "map_locations": [
                   {
@@ -2635,7 +2658,7 @@
             "name": "Ikana Canyon",
             "access_rules": [
               "garomask,hookshot,epona",
-              "gibdomask,hookshot,[garomask],epona"
+              "gibdomask,hookshot,epona"
             ],
             "children": [
               {
@@ -2644,7 +2667,7 @@
                   {
                     "name": "Gibdo's Mask",
                     "access_rules": [
-                      "storm"
+                      "bow,icearrow,storm"
                     ],
                     "sections": [
                       {
@@ -2667,7 +2690,10 @@
                       {
                         "name": "Kill Them",
                         "item_count": 1,
-                        "capture_item": true
+                        "capture_item": true,
+                        "access_rules": [
+                          "bow,icearrow"
+                        ]
                       }
                     ],
                     "map_locations": [
@@ -2770,7 +2796,7 @@
                   {
                     "name": "Great Fairy Sword",
                     "access_rules": [
-                      "twinmoldremains,fairymask"
+                      "bow,icearrow,$ISTT_access,$STT_access,dekumask,firearrow,lightarrow,$explosives"
                     ],
                     "sections": [
                       {
@@ -2793,8 +2819,8 @@
                       {
                         "name": "Mirror Shield",
                         "access_rules": [
-                          "$explosives,$has_bottle,gibdomask,beans",
-                          "bow,firearrow,lightarrow"
+                          "bow,icearrow,$explosives,$has_bottle,gibdomask,beans",
+                          "bow,icearrow,firearrow,lightarrow"
                         ],
                         "item_count": 1,
                         "capture_item": true
@@ -2802,7 +2828,7 @@
                       {
                         "name": "Right Path 50 Rupees",
                         "access_rules": [
-                          "everything_on,$has_bottle,gibdomask"
+                          "bow,icearrow,everything_on,$has_bottle,gibdomask"
                         ],
                         "visibility_rules": [
                           "everything_on"
@@ -2813,7 +2839,7 @@
                       {
                         "name": "Left Path 50 Rupees",
                         "access_rules": [
-                          "everything_on,$has_bottle,beans,gibdomask"
+                          "bow,icearrow,everything_on,$has_bottle,beans,gibdomask"
                         ],
                         "visibility_rules": [
                           "everything_on"
@@ -2833,14 +2859,14 @@
                   {
                     "name": "Ikana Castle",
                     "access_rules": [
-                      "bow,shield2,firearrow"
+                      "icearrow,bow,firearrow"
                     ],
                     "sections": [
                       {
                         "name": "Elegy of Emptiness",
                         "access_rules": [
-                          "powderkeg,goronmask",
-			                    "lightarrow,[powderkeg],[goronmask]"
+                          "shield2,powderkeg,goronmask,dekumask",
+			                    "lightarrow,shield2"
                         ],
                         "chest_opened_img": "images/grey_note_check.png",
                         "chest_unopened_img": "images/grey_note.png",
@@ -2850,8 +2876,8 @@
                       {
                         "name": "Heart Piece",
                         "access_rules": [
-                          "dekumask,goronmask",
-                          "dekumask,zoramask"
+                          "dekumask,lightarrow",
+                          "dekumask,shield2"
                         ],
                         "item_count": 1,
                         "capture_item": true
@@ -2870,7 +2896,7 @@
               {
                 "name": "Stone Tower",
                 "access_rules": [
-                  "epona,$STT_access"
+                  "bow,icearrow,$STT_access"
                 ],
                 "sections": [
                   {
@@ -2878,8 +2904,8 @@
                     "item_count": 1,
                     "capture_item": true,
                     "access_rules": [
-                      "everything_on,bow,lightarrow,beans,$has_bottle",
-                      "everything_on,bow,lightarrow,beans,storm,[$has_bottle]"
+                      "everything_on,lightarrow,beans,$has_bottle",
+                      "everything_on,lightarrow,beans,storm"
                     ],
                     "visibility_rules": [
                       "everything_on"
@@ -2890,8 +2916,8 @@
                     "item_count": 1,
                     "capture_item": true,
                     "access_rules": [
-                      "everything_on,bow,lightarrow,beans,$has_bottle",
-                      "everything_on,bow,lightarrow,beans,storm,[$has_bottle]"
+                      "everything_on,lightarrow,beans,$has_bottle",
+                      "everything_on,lightarrow,beans,storm"
                     ],
                     "visibility_rules": [
                       "everything_on"
@@ -2902,8 +2928,8 @@
                     "item_count": 1,
                     "capture_item": true,
                     "access_rules": [
-                      "everything_on,bow,lightarrow,beans,$has_bottle",
-                      "everything_on,bow,lightarrow,beans,storm,[$has_bottle]"
+                      "everything_on,lightarrow,beans,$has_bottle",
+                      "everything_on,lightarrow,beans,storm"
                     ],
                     "visibility_rules": [
                       "everything_on"
