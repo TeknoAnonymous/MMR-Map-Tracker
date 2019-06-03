@@ -1,3 +1,8 @@
+# 1.2.0.0
+```
+* Redid logic to coincide with ZoeyZolotova's MMR builds.
+```
+
 # 1.1.2.0
 ```
 * Reordered dungeon layouts to match the intended vanilla path through the dungeons.
