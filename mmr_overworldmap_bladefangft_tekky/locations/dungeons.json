@@ -3,7 +3,7 @@
     "name": "Woodfall Temple",
     "parent": "South Swamp",
     "access_rules": [
-      "sonata,dekumask"
+      "$WFT_shuffle"
     ],
     "sections":[
       {
@@ -111,7 +111,7 @@
         "access_rules": [
           "hookshot,goronmask,$explosives",
           "hookshot,goronmask",
-          "goronmask,$explosives"
+          "goronmask,$explosives",
           "bow,firearrow,goronmask",
           "zoramask,$explosives",
           "bow,firearrow,zoramask"

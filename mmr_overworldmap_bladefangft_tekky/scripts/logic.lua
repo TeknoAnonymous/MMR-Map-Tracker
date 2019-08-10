@@ -101,6 +101,7 @@ function STT_access()
   and has("zoramask")
   and has("hookshot")
   and has("elegy")
+  and has("bow")
   and has("icearrow") then
     return 1
   else
@@ -112,6 +113,56 @@ function ISTT_access()
   if has("bow")
   and has("lightarrow")
   and STT_access() then
+    return 1
+  else
+    return 0
+  end
+end
+
+function enter_wft()
+  if has("dekumask")
+  and has("sonata") then
+    return 1
+  else
+    return 0
+  end
+end
+
+function enter_sht()
+  if has("bow")
+  and has("goronmask")
+  and has("lullaby") then
+    return 1
+  else
+    return 0
+  end
+end
+
+function enter_gbt()
+  if has("epona")
+  and has("zoramask")
+  and has("newwave")
+  and has("hookshot") then
+    return 1
+  else
+    return 0
+  end
+end
+
+function enter_istt()
+  if has("has_ikana_access")
+  and ISTT_access() then
+    return 1
+  else
+    return 0
+  end
+end
+
+function WFT_shuffle()
+ if (has("wftwoodfall") and enter_wft()) or
+ (has("wftsnowhead") and enter_sht()) or
+ (has("wftgreatbay") and enter_gbt()) or
+ (has("wftstonetower") and enter_istt()) then
     return 1
   else
     return 0
