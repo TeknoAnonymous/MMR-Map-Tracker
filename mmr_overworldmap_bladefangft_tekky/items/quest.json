@@ -2,7 +2,7 @@
   {
     "name": "Sword",
     "type": "progressive",
-    "allow_disabled": false,
+    "allow_disabled": true,
     "stages": [
       {
         "img": "images/sword1.png",
@@ -21,7 +21,7 @@
   {
     "name": "Shield",
     "type": "progressive",
-    "allow_disabled": false,
+    "allow_disabled": true,
     "stages": [
       {
         "img": "images/shield1.png",
@@ -60,7 +60,7 @@
   {
     "name": "Magic Meter",
     "type": "progressive",
-    "allow_disabled": false,
+    "allow_disabled": true,
     "stages": [
       {
         "img": "images/magic1.png",
@@ -153,7 +153,8 @@
   },
   {
     "name": "Song of Healing",
-    "type": "static",
+    "type": "toggle",
+    "loop": true,
     "img": "images/healing_colored.png",
     "codes": "healing,soh"
   },
@@ -162,7 +163,7 @@
     "type": "toggle_badged",
     "base_item": "healing",
     "img": "images/check.png",
-    "codes": "healingcheck,sohcheck"    
+    "codes": "healingcheck,sohcheck"
   },
   {
     "name": "Epona's Song",
@@ -232,7 +233,7 @@
     "type": "toggle_badged",
     "base_item": "goronlullaby",
     "img": "images/check.png",
-    "codes": "lullabycheck"    
+    "codes": "lullabycheck"
   },
   {
     "name": "New Wave Bossa Nova",
@@ -446,10 +447,74 @@
     "codes": "odolwaremains,odolwa"
   },
   {
+    "name": "Woodfall Access",
+    "type": "progressive",
+    "loop": true,
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/unknown.png",
+        "codes": "wftaccess"
+      },
+      {
+        "img": "images/woodfallaccess.png",
+        "codes": "wftwoodfall",
+      	"inherit_codes": false,
+      },
+      {
+        "img": "images/snowheadaccess.png",
+        "codes": "wftsnowhead",
+	      "inherit_codes": false,
+      },
+      {
+        "img": "images/greatbayaccess.png",
+        "codes": "wftgreatbay",
+	      "inherit_codes": false,
+      },
+      {
+        "img": "images/stonetoweraccess.png",
+        "codes": "wftstonetower",
+	      "inherit_codes": false,
+      }
+    ]
+  },
+  {
     "name": "Goht's Remains",
     "type": "toggle",
     "img": "images/goht.png",
     "codes": "gohtremains,goht"
+  },
+  {
+    "name": "Snowhead Access",
+    "type": "progressive",
+    "loop": true,
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/unknown.png",
+        "codes": "shtaccess"
+      },
+      {
+        "img": "images/woodfallaccess.png",
+        "codes": "shtwoodfall",
+	      "inherit_codes": false,
+      },
+      {
+        "img": "images/snowheadaccess.png",
+        "codes": "shtsnowhead",
+	      "inherit_codes": false,
+      },
+      {
+        "img": "images/greatbayaccess.png",
+        "codes": "shtgreatbay",
+	      "inherit_codes": false,
+      },
+      {
+        "img": "images/stonetoweraccess.png",
+        "codes": "shtstonetower",
+	      "inherit_codes": false,
+      }
+    ]
   },
   {
     "name": "Gyorg's Remains",
@@ -458,9 +523,73 @@
     "codes": "gyorgremains,gyorg"
   },
   {
+    "name": "Great Bay Access",
+    "type": "progressive",
+    "loop": true,
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/unknown.png",
+        "codes": "gbtaccess"
+      },
+      {
+        "img": "images/woodfallaccess.png",
+        "codes": "gbtwoodfall",
+	      "inherit_codes": false,
+      },
+      {
+        "img": "images/snowheadaccess.png",
+        "codes": "gbtsnowhead",
+	      "inherit_codes": false,
+      },
+      {
+        "img": "images/greatbayaccess.png",
+        "codes": "gbtgreatbay",
+	      "inherit_codes": false,
+      },
+      {
+        "img": "images/stonetoweraccess.png",
+        "codes": "gbtstonetower",
+	      "inherit_codes": false,
+      }
+    ]
+  },
+  {
     "name": "Twinmold's Remains",
     "type": "toggle",
     "img": "images/twinmold.png",
     "codes": "twinmoldremains,twinmold"
+  },
+  {
+    "name": "Stonetower Access",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/unknown.png",
+        "codes": "sttaccess"
+      },
+      {
+        "img": "images/woodfallaccess.png",
+        "codes": "sttwoodfall",
+	      "inherit_codes": false,
+      },
+      {
+        "img": "images/snowheadaccess.png",
+        "codes": "sttsnowhead",
+	      "inherit_codes": false,
+      },
+      {
+        "img": "images/greatbayaccess.png",
+        "codes": "sttgreatbay",
+	      "inherit_codes": false,
+      },
+      {
+        "img": "images/stonetoweraccess.png",
+        "codes": "sttstonetower",
+	      "inherit_codes": false,
+      }
+    ]
   }
 ]

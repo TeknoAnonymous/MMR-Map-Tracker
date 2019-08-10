@@ -49,20 +49,17 @@
             "oceandeed"
           ],
           [
+            "healingcheck",
             "eponacheck",
             "soaringcheck",
-            "stormcheck",
-            "sonatacheck",
-            "odolwaremains",
-            "gohtremains"
+            "stormcheck"
           ],
           [
-            "lullabycheck",
+            "sonatacheck",
+            "lullabychekc",
             "newwavecheck",
-            "elegycheck",
-            "oathcheck",
-            "gyorgremains",
-            "twinmoldremains"
+            "elegychekc",
+            "oathcheck"
           ],
           [
             "postmanhat",
@@ -95,6 +92,18 @@
             "captainhat",
             "giantmask",
             "fiercedeitymask"
+          ],
+          [
+            "odolwaremains",
+            "wftaccess",
+            "gohtremains",
+            "shtaccess"
+          ],
+          [
+            "gyorgremains",
+            "gbtaccess",
+            "twinmoldremains",
+            "sttaccess",
           ]
         ]
       }
