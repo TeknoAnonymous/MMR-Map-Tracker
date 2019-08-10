@@ -73,7 +73,7 @@
     "name": "Snowhead Temple",
     "parent": "Snowhead Peak",
     "access_rules": [
-      "lullaby,goronmask"
+      "$SHT_shuffle"
     ],
     "sections": [
       {
@@ -172,7 +172,7 @@
     "name": "Great Bay Temple",
     "parent": "South Great Bay",
     "access_rules": [
-      "@Pirate Fortress,newwave,hookshot"
+      "$GBT_shuffle"
     ],
     "sections": [
       {
@@ -289,7 +289,7 @@
         "item_count": 1,
         "capture_item": true,
         "access_rules": [
-          "$ISTT_access,bow,lightarrow"
+          "$ISTT_shuffle,bow,lightarrow"
         ]
       },
       {
@@ -297,7 +297,7 @@
         "item_count": 1,
         "capture_item": true,
         "access_rules": [
-          "$ISTT_access,dekumask,bow,lightarrow,hookshot"
+          "$ISTT_shuffle,dekumask,bow,lightarrow,hookshot"
         ]
       },
       {
@@ -305,7 +305,7 @@
         "item_count": 1,
         "capture_item": true,
         "access_rules": [
-          "$ISTT_access,dekumask,hookshot,bow,lightarrow"
+          "$ISTT_shuffle,dekumask,hookshot,bow,lightarrow"
         ]
       },
       {
@@ -313,7 +313,7 @@
         "item_count": 1,
         "capture_item": true,
         "access_rules": [
-          "$ISTT_access,hookshot,dekumask,lightarrow,bow"
+          "$ISTT_shuffle,hookshot,dekumask,lightarrow,bow"
           ]
       },
       {
@@ -324,7 +324,7 @@
         "chest_opened_img": "images/HC_grey.png",
         "chest_unopened_img": "images/HC.png",
         "access_rules": [
-          "$ISTT_access,hookshot,dekumask,bow,lightarrow"
+          "$ISTT_shuffle,hookshot,dekumask,bow,lightarrow"
         ]
       }
     ],

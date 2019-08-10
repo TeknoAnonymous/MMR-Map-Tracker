@@ -36,9 +36,9 @@ end
 function explosives()
   if has("bombs")
   or has("blastmask") then
-    return 1
+    return true
   else
-    return 0
+    return false
   end
 end
 
@@ -49,9 +49,9 @@ function has_paper()
   or has("swampdeed")
   or has("mountaindeed")
   or has("oceandeed") then
-    return 1
+    return true
   else
-    return 0
+    return false
   end
 end
 
@@ -59,9 +59,9 @@ function has_ikana_access()
   if has("gibdomask")
   or has("garomask")
   and (has("epona") and has("hookshot")) then
-    return 1
+    return true
   else
-    return 0
+    return false
   end
 end
 
@@ -70,18 +70,18 @@ function has_ranged()
   or has("zoramask")
   or has("bow")
   or has("hookshot") then
-    return 1
+    return true
   else
-    return 0
+    return false
   end
 end
 
 function has_reach()
   if has("zoramask")
   or has("hookshot") then
-    return 1
+    return true
   else
-    return 0
+    return false
   end
 end
 
@@ -92,7 +92,7 @@ function hotspring_access()
   (has("goronmask") or explosives())) then
     return has_bottle()
   else
-    return 0
+    return false
   end
 end
 
@@ -103,9 +103,9 @@ function STT_access()
   and has("elegy")
   and has("bow")
   and has("icearrow") then
-    return 1
+    return true
   else
-    return 0
+    return false
   end
 end
 
@@ -113,18 +113,18 @@ function ISTT_access()
   if has("bow")
   and has("lightarrow")
   and STT_access() then
-    return 1
+    return true
   else
-    return 0
+    return false
   end
 end
 
 function enter_wft()
   if has("dekumask")
   and has("sonata") then
-    return 1
+    return true
   else
-    return 0
+    return false
   end
 end
 
@@ -132,9 +132,9 @@ function enter_sht()
   if has("bow")
   and has("goronmask")
   and has("lullaby") then
-    return 1
+    return true
   else
-    return 0
+    return false
   end
 end
 
@@ -143,18 +143,18 @@ function enter_gbt()
   and has("zoramask")
   and has("newwave")
   and has("hookshot") then
-    return 1
+    return true
   else
-    return 0
+    return false
   end
 end
 
 function enter_istt()
-  if has("has_ikana_access")
+  if has_ikana_access()
   and ISTT_access() then
-    return 1
+    return true
   else
-    return 0
+    return false
   end
 end
 
@@ -163,9 +163,42 @@ function WFT_shuffle()
  (has("wftsnowhead") and enter_sht()) or
  (has("wftgreatbay") and enter_gbt()) or
  (has("wftstonetower") and enter_istt()) then
-    return 1
+    return true
   else
-    return 0
+    return false
+  end
+end
+
+function SHT_shuffle()
+ if (has("shtwoodfall") and enter_wft()) or
+ (has("shtsnowhead") and enter_sht()) or
+ (has("shtgreatbay") and enter_gbt()) or
+ (has("shtstonetower") and enter_istt()) then
+    return true
+  else
+    return false
+  end
+end
+
+function GBT_shuffle()
+ if (has("gbtwoodfall") and enter_wft()) or
+ (has("gbtsnowhead") and enter_sht()) or
+ (has("gbtgreatbay") and enter_gbt()) or
+ (has("gbtstonetower") and enter_istt()) then
+    return true
+  else
+    return false
+  end
+end
+
+function ISTT_shuffle()
+ if (has("sttwoodfall") and enter_wft()) or
+ (has("sttsnowhead") and enter_sht()) or
+ (has("sttgreatbay") and enter_gbt()) or
+ (has("sttstonetower") and enter_istt()) then
+    return true
+  else
+    return false
   end
 end
 
