@@ -209,7 +209,7 @@ function ISTT_shuffle()
   end
 end
 
-function woodfall_clear
+function woodfall_clear()
  if (has("wftwoodfall") and has("odolwaremains")) or
  (has("shtwoodfall") and has("gohtremains")) or
  (has("gbtwoodfall") and has("gyorgremains")) or
@@ -220,7 +220,7 @@ function woodfall_clear
   end
 end
 
-function snowhead_clear
+function snowhead_clear()
  if (has("wftsnowhead") and has("odolwaremains")) or
  (has("shtsnowhead") and has("gohtremains")) or
  (has("gbtsnowhead") and has("gyorgremains")) or
@@ -231,7 +231,7 @@ function snowhead_clear
   end
 end
 
-function greatbay_clear
+function greatbay_clear()
  if (has("wftgreatbay") and has("odolwaremains")) or
  (has("shtgreatbay") and has("gohtremains")) or
  (has("gbtgreatbay") and has("gyorgremains")) or

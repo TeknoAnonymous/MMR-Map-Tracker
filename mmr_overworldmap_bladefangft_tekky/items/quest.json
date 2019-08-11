@@ -6,7 +6,7 @@
     "stages": [
       {
         "img": "images/sword1.png",
-        "codes": "sword1,kokirisword,ksword"
+        "codes": "sword,kokirisword,ksword"
       },
       {
         "img": "images/sword2.png",
