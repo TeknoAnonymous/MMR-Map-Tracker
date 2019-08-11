@@ -66,7 +66,7 @@ function has_ikana_access()
 end
 
 function has_ranged()
-  if has("dekumask")
+  if has("dekumask") and has("magic")
   or has("zoramask")
   or has("bow")
   or has("hookshot") then
@@ -102,7 +102,8 @@ function STT_access()
   and has("hookshot")
   and has("elegy")
   and has("bow")
-  and has("icearrow") then
+  and has("icearrow")
+  and has("sword") then
     return true
   else
     return false
@@ -112,6 +113,8 @@ end
 function ISTT_access()
   if has("bow")
   and has("lightarrow")
+  and has("magic")
+  and has("sword")
   and STT_access() then
     return true
   else
@@ -121,7 +124,8 @@ end
 
 function enter_wft()
   if has("dekumask")
-  and has("sonata") then
+  and has("sonata")
+  and has("sword") then
     return true
   else
     return false
@@ -131,7 +135,9 @@ end
 function enter_sht()
   if has("bow")
   and has("goronmask")
-  and has("lullaby") then
+  and has("lullaby")
+  and has("magic")
+  and has("sword") then
     return true
   else
     return false
@@ -142,7 +148,8 @@ function enter_gbt()
   if has("epona")
   and has("zoramask")
   and has("newwave")
-  and has("hookshot") then
+  and has("hookshot")
+  and has("sword") then
     return true
   else
     return false
@@ -199,6 +206,39 @@ function ISTT_shuffle()
     return true
   else
     return false
+  end
+end
+
+function woodfall_clear
+ if (has("wftwoodfall") and has("odolwaremains")) or
+ (has("shtwoodfall") and has("gohtremains")) or
+ (has("gbtwoodfall") and has("gyorgremains")) or
+ (has("sttwoodfall") and has("twinmoldremains")) then
+   return true
+  else
+   return false
+  end
+end
+
+function snowhead_clear
+ if (has("wftsnowhead") and has("odolwaremains")) or
+ (has("shtsnowhead") and has("gohtremains")) or
+ (has("gbtsnowhead") and has("gyorgremains")) or
+ (has("sttsnowhead") and has("twinmoldremains")) then
+   return true
+  else
+   return false
+  end
+end
+
+function greatbay_clear
+ if (has("wftgreatbay") and has("odolwaremains")) or
+ (has("shtgreatbay") and has("gohtremains")) or
+ (has("gbtgreatbay") and has("gyorgremains")) or
+ (has("sttgreatbay") and has("twinmoldremains")) then
+   return true
+  else
+   return false
   end
 end
 

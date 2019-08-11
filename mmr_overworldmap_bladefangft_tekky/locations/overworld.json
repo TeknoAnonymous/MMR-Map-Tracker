@@ -112,7 +112,10 @@
               {
                 "name": "Blast Mask Thief",
                 "item_count": 1,
-                "capture_item": true
+                "capture_item": true,
+                "access_rules": [
+                  "sword"
+                ]
               },
               {
                 "name": "Keaton HP",
@@ -135,12 +138,17 @@
                 ]
               },
               {
-                "name": "Great Fairy's Mask",
+                "name": "Great Fairy Magic Meter",
                 "item_count": 1,
                 "capture_item": true,
                 "access_rules": [
-                  "dekumask"
+                  "dekumask,goronmask,zoramask"
                 ]
+              },
+              {
+                "name": "Great Fairy's Mask",
+                "item_count": 1,
+                "capture_item": true
               },
               {
                 "name": "Clock Town Map",
@@ -213,7 +221,10 @@
                     "item_count": 1,
                     "capture_item": true,
                     "chest_unopened_img": "images/HP.png",
-                    "chest_opened_img": "images/HP_grey.png"
+                    "chest_opened_img": "images/HP_grey.png",
+                    "access_rules": [
+                      "sword"
+                    ],
                   }
                 ],
                 "map_locations": [
@@ -624,11 +635,17 @@
           },
           {
             "name": "Kamaro's Mask",
+            "access_rules": [
+              "healing"
+            ],
             "sections": [
               {
                 "name": "Heal Him",
                 "item_count": 1,
                 "capture_item": true
+                "access_rules": [
+                  "healing"
+                ]
               }
             ],
             "map_locations": [
@@ -671,7 +688,8 @@
                 "item_count": 1,
                 "capture_item": true,
                 "access_rules": [
-                  "wallet,[$has_ranged]"
+                  "wallet,[$has_ranged]",
+                  "wallet,dekumask"
                 ]
               }
             ],
@@ -688,6 +706,9 @@
             "sections": [
               {
                 "name": "KILL IT",
+                "access_rules": [
+                  "sword"
+                ],
                 "item_count": 1,
                 "capture_item": true
               }
@@ -705,6 +726,9 @@
             "sections": [
               {
                 "name": "KILL THEM",
+                "access_rules": [
+                  "sword"
+                ],
                 "item_count": 1,
                 "capture_item": true
               }
@@ -954,7 +978,7 @@
                 "item_count": 1,
                 "capture_item": true,
                 "access_rules": [
-                  "zoramask,everything_on",
+                  "zoramask",
                   "beans,storm",
                   "hookshot",
                   "beans,$has_bottle"
@@ -991,8 +1015,7 @@
                     "chest_unopened_img": "images/HP.png",
                     "capture_item": true,
                     "access_rules": [
-                      "bow",
-                      "[$has_ranged]"
+                      "$has_ranged"
                     ]
                   }
                 ],
@@ -1089,18 +1112,19 @@
               "bow,dekumask",
               "hookshot,dekumask",
               "zoramask",
-              "$has_bottle"
+              "$has_bottle",
+              "pictobox"
             ],
             "children": [
               {
                 "name": "Swamp Skulltula House",
                 "access_rules": [
-                  "dekumask,hookshot,$has_bottle",
-                  "hookshot,goronmask,$has_bottle",
-                  "zoramask,$has_bottle",
-                  "dekumask,beans,$explosives,$has_bottle",
-                  "dekumask,beans,goronmask,$has_bottle",
-                  "bow,firearrow,$has_reach,$has_bottle"
+                  "dekumask,hookshot,$has_bottle,sword",
+                  "hookshot,goronmask,$has_bottle,sword",
+                  "zoramask,$has_bottle,sword",
+                  "dekumask,beans,$explosives,$has_bottle,sword",
+                  "dekumask,beans,goronmask,$has_bottle,sword",
+                  "bow,firearrow,$has_reach,$has_bottle,sword"
                 ],
                 "sections": [
                   {
@@ -1260,9 +1284,7 @@
                   }
                 ],
                 "access_rules": [
-                  "dekumask,[dekuprincess],[bow]",
-                  "dekummask,[dekuprincess],[zoramask]",
-                  "dekumask,[dekuprincess],odolwaremains"
+                  "$woodfall_clear,dekuprincess"
                 ],
                 "map_locations": [
                   {
@@ -1301,7 +1323,7 @@
                     "item_count": 1,
                     "capture_item": true,
                     "access_rules": [
-                      "odolwaremains"
+                      "$woodfall_clear"
                     ]
                   },
                   {
@@ -1309,8 +1331,7 @@
                     "item_count": 1,
                     "capture_item": true,
                     "access_rules": [
-                      "dekumask,landdeed",
-                      "goronmask"
+                      "dekumask,landdeed"
                     ]
                   }
                 ],
@@ -1372,6 +1393,9 @@
                     "capture_item": true,
                     "visibility_rules": [
                       "shopsanity_on"
+                    ],
+                    "access_rules": [
+                      "[scents]"
                     ]
                   }
                 ],
@@ -1414,6 +1438,26 @@
               "@South Swamp,dekumask"
             ],
             "children": [
+              {
+                "name": "Great Fairy Spin Attack",
+                "access_rules": [
+                  "$WFT_shuffle,dekumask,fairymask,bow"
+                ],
+                "sections": [
+                  {
+                    "name": "Turn in Stray Fairies",
+                    "item_count": 1,
+                    "capture_item": true,
+                  }
+                ],
+                "map_locations": [
+                  {
+                    "map": "main",
+                    "x": 935,
+                    "y": 1410
+                  }
+                ]
+              },
               {
                 "name": "Woodfall HP",
                 "sections": [
@@ -1487,7 +1531,7 @@
         "access_rules": [
           "bow,$explosives",
           "bow,goronmask",
-          "bow,firearrow",
+          "bow,firearrow,magic",
           "soaring,goronmask,hotspring",
           "soaring,$explosives,hotspring"
         ],
@@ -1503,7 +1547,7 @@
                     "item_count": 1,
                     "capture_item": true,
                     "access_rules": [
-                      "bow,firearrow,wallet",
+                      "bow,firearrow,wallet,magic",
                       "$has_bottle,$hotspring_access,wallet"
                     ]
                   },
@@ -1512,8 +1556,8 @@
                     "item_count": 1,
                     "capture_item": true,
                     "access_rules": [
-                      "[golddust],$hotspring_access",
-                      "[golddust],firearrow,bow"
+                      "[golddust],$hotspring_access,$has_bottle",
+                      "[golddust],firearrow,bow,magic"
                     ]
                   }
                 ],
@@ -1527,14 +1571,14 @@
               },
               {
                 "name": "Goron Graveyard",
-                "access_rules": [
-                  "lensoftruth"
-                ],
                 "sections": [
                   {
                     "name": "Goron Mask",
                     "item_count": 1,
-                    "capture_item": true
+                    "capture_item": true,
+                    "access_rules": [
+                      "healing,lensoftruth,magic"
+                    ]
                   }
                 ],
                 "map_locations": [
@@ -1569,7 +1613,7 @@
               {
                 "name": "Frog Choir HP",
                 "access_rules": [
-                  "dongero,gohtremains,sonata,dekumask,newwave,zoramask,hookshot,icearrow"
+                  "dongero,$snowhead_clear,$WFT_shuffle,$GBT_shuffle,dekumask,zoramask,hookshot,icearrow,bow,magic"
                 ],
                 "sections": [
                   {
@@ -1596,7 +1640,7 @@
                   }
                 ],
                 "access_rules": [
-                  "gohtremains,everything_on"
+                  "$snowhead_clear,everything_on"
                 ],
                 "visibility_rules": [
                   "everything_on"
@@ -1619,7 +1663,7 @@
                   }
                 ],
                 "access_rules": [
-                  "gohtremains,everything_on"
+                  "$snowhead_clear,everything_on"
                 ],
                 "visibility_rules": [
                   "everything_on"
@@ -1640,7 +1684,7 @@
               {
                 "name": "Hot Spring 20 Rupees",
                 "access_rules": [
-                  "bow,firearrow,$explosives,everything_on",
+                  "bow,firearrow,magic,$explosives,everything_on",
                   "$explosives,$hotspring_access,everything_on"
                 ],
                 "visibility_rules": [
@@ -1664,7 +1708,8 @@
               {
                 "name": "Racetrack Grotto 20 Rupees",
                 "access_rules": [
-                  "goronmask,everything_on,$explosives"
+                  "goronmask,$explosives",
+                  "hookshot,$explosives"
                 ],
                 "visibility_rules": [
                   "everything_on"
@@ -1687,7 +1732,7 @@
               {
                 "name": "Goron Racetrack Bottle",
                 "access_rules": [
-                  "gohtremains"
+                  "$snowhead_clear"
                 ],
                 "sections": [
                   {
@@ -1707,7 +1752,7 @@
               {
                 "name": "Twin Islands 20 Rupees",
                 "access_rules": [
-                  "zoramask,everything_on,gohtremains"
+                  "zoramask,everything_on,$snowhead_clear"
                 ],
                 "visibility_rules": [
                   "everything_on"
@@ -1730,7 +1775,7 @@
               {
                 "name": "Twin Islands HP",
                 "access_rules": [
-                  "zoramask,gohtremains"
+                  "zoramask,$snowhead_clear"
                 ],
                 "sections": [
                   {
@@ -1854,7 +1899,7 @@
                     "item_count": 1,
                     "capture_item": true,
                     "access_rules": [
-                      "[lensoftruth]",
+                      "[lensoftruth],[magic]",
                       "[soaring]"
                     ]
                   },
@@ -1863,7 +1908,7 @@
                     "item_count": 1,
                     "capture_item": true,
                     "access_rules": [
-                      "everything_on,[lensoftruth]",
+                      "everything_on,[lensoftruth],[magic]",
                       "everything_on,[soaring]"
                     ],
                     "visibility_rules": [
@@ -1875,7 +1920,7 @@
                     "item_count": 1,
                     "capture_item": true,
                     "access_rules": [
-                      "$explosives,everything_on,[lensoftruth]",
+                      "$explosives,everything_on,[lensoftruth],[magic]",
                       "$explosives,everything_on,[soaring]"
                     ],
                     "visibility_rules": [
@@ -1894,7 +1939,7 @@
               {
                 "name": "Powder Keg",
                 "access_rules": [
-                  "goronmask,bow,firearrow"
+                  "goronmask,bow,firearrow,magic"
                 ],
                 "sections": [
                   {
@@ -1916,7 +1961,7 @@
           {
             "name": "Road to the Peak",
             "access_rules": [
-              "goronmask"
+              "goronmask,magic"
             ],
             "children": [
               {
@@ -1927,7 +1972,7 @@
                     "item_count": 1,
                     "capture_item": true,
                     "access_rules": [
-                      "hookshot,lensoftruth"
+                      "hookshot,lensoftruth,magic"
                     ]
                   }
                 ],
@@ -1968,7 +2013,24 @@
             "name": "Snowhead Peak",
             "children": [
               {
-
+                "name": "Great Fairy Extended Magic",
+                "access_rules": [
+                  "$SHT_shuffle,goronmask,fairymask,bow,firearrow,lensoftruth,magic,$explosives,lullaby"
+                ]
+                "sections": [
+                  {
+                    "name": "Turn in Stray Fairies",
+                    "item_count": 1,
+                    "capture_item": true
+                  }
+                ],
+                "map_locations": [
+                  {
+                    "map": "main",
+                    "x": 590,
+                    "y": 130
+                  }
+                ]
               }
             ]
           }
@@ -1993,6 +2055,9 @@
             "children": [
               {
                 "name": "Zora Mask",
+                "access_rules": [
+                  "healing"
+                ],
                 "sections": [
                   {
                     "name": "Heal him",
@@ -2041,7 +2106,8 @@
               {
                 "name": "Great Bay Tingle",
                 "access_rules": [
-                  "everything_on,$has_ranged"
+                  "hookshot",
+                  "bow"
                 ],
                 "visibility_rules": [
                   "everything_on"
@@ -2072,7 +2138,7 @@
                     "item_count": 1,
                     "capture_item": true,
                     "access_rules": [
-                      "@Pirate Fortress,goronmask,firearrow,$explosives"
+                      "@Pirate Fortress,hookshot,bow,magic,sword,goronmask,firearrow,$explosives"
                     ]
                   },
                   {
@@ -2080,7 +2146,7 @@
                     "item_count": 1,
                     "capture_item": true,
                     "access_rules": [
-                      "captainhat,$explosives"
+                      "captainhat,$explosives,sword"
                     ]
                   }
                 ],
@@ -2116,7 +2182,7 @@
               {
                 "name": "Fisherman Game HP",
                 "access_rules": [
-                  "gyorgremains"
+                  "$greatbay_clear"
                 ],
                 "sections": [
                   {
@@ -2437,6 +2503,24 @@
                     "y": 1240
                   }
                 ]
+              },
+              {
+                "name": "Great Fairy Double Defense",
+                "access_rules": "$GBT_shuffle,zoramask,fairymask,bow,firearrow,icearrow,magic,hookshot,$explosives",
+                "sections": [
+                  {
+                    "name": "Turn in Stray Fairies",
+                    "item_count": 1,
+                    "capture_item": true
+                  }
+                ],
+                "map_locations": [
+                  {
+                    "map": "main",
+                    "x": 190,
+                    "y": 1240
+                  }
+                ]
               }
             ]
           }
@@ -2452,7 +2536,7 @@
               {
                 "name": "Shiro",
                 "access_rules": [
-                  "epona,$has_bottle,lensoftruth"
+                  "epona,$has_bottle,lensoftruth,magic"
                 ],
                 "sections": [
                   {
@@ -2555,7 +2639,7 @@
                   }
                 ],
                 "access_rules": [
-                  "captainhat,$explosives"
+                  "captainhat,$explosives,sword"
                 ],
                 "map_locations": [
                   {
@@ -2596,7 +2680,7 @@
                   }
                 ],
                 "access_rules": [
-                  "captainhat,everything_on"
+                  "captainhat,sword,everything_on"
                 ],
                 "visibility_rules": [
                   "everything_on"
@@ -2642,7 +2726,7 @@
                   }
                 ],
                 "access_rules": [
-                  "sonata,bow"
+                  "sonata,bow,sword"
                 ],
                 "map_locations": [
                   {
@@ -2667,7 +2751,7 @@
                   {
                     "name": "Gibdo's Mask",
                     "access_rules": [
-                      "bow,icearrow,storm"
+                      "bow,icearrow,magic,storm,healing"
                     ],
                     "sections": [
                       {
@@ -2692,7 +2776,7 @@
                         "item_count": 1,
                         "capture_item": true,
                         "access_rules": [
-                          "bow,icearrow"
+                          "bow,icearrow,magic,[sword]"
                         ]
                       }
                     ],
@@ -2707,11 +2791,19 @@
                   {
                     "name": "Ikana Scrub HP",
                     "access_rules": [
-                      "dekumask,zoramask,oceandeed"
+                      "zoramask,oceandeed"
                     ],
                     "sections": [
                       {
                         "name": "Fly Over",
+                        "item_count": 1,
+                        "capture_item": true,
+                        "access_rules": [
+                          "dekumask"
+                        ]
+                      }
+                      {
+                        "name": "200 rupees"
                         "item_count": 1,
                         "capture_item": true
                       }
@@ -2727,7 +2819,7 @@
                   {
                     "name": "Secret Shrine",
                     "access_rules": [
-                      "bow,lightarrow,everything_on"
+                      "bow,lightarrow,magic,sword"
                     ],
                     "visibility_rules": [
                       "everything_on"
@@ -2796,7 +2888,7 @@
                   {
                     "name": "Great Fairy Sword",
                     "access_rules": [
-                      "bow,icearrow,$ISTT_access,$STT_access,dekumask,firearrow,lightarrow,$explosives"
+                      "bow,icearrow,$ISTT_shuffle,$STT_access,dekumask,firearrow,lightarrow,$explosives,sword,magic"
                     ],
                     "sections": [
                       {
@@ -2819,8 +2911,8 @@
                       {
                         "name": "Mirror Shield",
                         "access_rules": [
-                          "bow,icearrow,$explosives,$has_bottle,gibdomask,beans",
-                          "bow,icearrow,firearrow,lightarrow"
+                          "bow,icearrow,magic,$explosives,$has_bottle,gibdomask,beans",
+                          "bow,icearrow,firearrow,lightarrow,magic"
                         ],
                         "item_count": 1,
                         "capture_item": true
@@ -2828,7 +2920,7 @@
                       {
                         "name": "Right Path 50 Rupees",
                         "access_rules": [
-                          "bow,icearrow,everything_on,$has_bottle,gibdomask"
+                          "bow,icearrow,magic,$has_bottle,beans,gibdomask"
                         ],
                         "visibility_rules": [
                           "everything_on"
@@ -2839,7 +2931,8 @@
                       {
                         "name": "Left Path 50 Rupees",
                         "access_rules": [
-                          "bow,icearrow,everything_on,$has_bottle,beans,gibdomask"
+                          "bow,icearrow,magic,$has_bottle,gibdomask,wallet"
+                          "bow,icearrow,magic,$has_bottle,gibdomask,scents"
                         ],
                         "visibility_rules": [
                           "everything_on"
@@ -2859,7 +2952,7 @@
                   {
                     "name": "Ikana Castle",
                     "access_rules": [
-                      "icearrow,bow,firearrow"
+                      "icearrow,bow,firearrow,magic,sword"
                     ],
                     "sections": [
                       {
@@ -2896,7 +2989,7 @@
               {
                 "name": "Stone Tower",
                 "access_rules": [
-                  "bow,icearrow,$STT_access"
+                  "bow,icearrow,magic,$STT_access"
                 ],
                 "sections": [
                   {

@@ -11,7 +11,7 @@
         "item_count": 1,
         "capture_item": true,
         "access_rules": [
-          "deku",
+          "dekumask",
           "hookshot"
         ]
       },
@@ -38,7 +38,11 @@
       {
         "name": "Hero's Bow",
         "item_count": 1,
-        "capture_item": true
+        "capture_item": true,
+        "access_rules": [
+          "hookshot",
+          "dekumask,bow"
+        ]
       },
       {
         "name": "Boss Key",
@@ -81,7 +85,7 @@
         "item_count": 1,
         "capture_item": true,
         "access_rules": [
-          "goronmask",
+          "goronmask,magic",
           "zoramask"
         ]
       },
@@ -90,7 +94,7 @@
         "item_count": 1,
         "capture_item": true,
         "access_rules": [
-          "goronmask",
+          "goronmask,magic",
           "zoramask"
         ]
       },
@@ -99,9 +103,9 @@
         "item_count": 1,
         "capture_item": true,
         "access_rules": [
-          "goronmask",
+          "goronmask,magic",
           "zoramask,hookshot",
-          "goronmask,hookshot"
+          "goronmask,hookshot,magic"
         ]
       },
       {
@@ -109,12 +113,12 @@
         "item_count": 1,
         "capture_item": true,
         "access_rules": [
-          "hookshot,goronmask,$explosives",
-          "hookshot,goronmask",
-          "goronmask,$explosives",
-          "bow,firearrow,goronmask",
+          "hookshot,goronmask,$explosives,magic",
+          "hookshot,goronmask,magic",
+          "goronmask,$explosives,magic",
+          "bow,firearrow,goronmask,magic",
           "zoramask,$explosives",
-          "bow,firearrow,zoramask"
+          "bow,firearrow,zoramask,magic"
         ]
       },
       {
@@ -122,11 +126,11 @@
         "item_count": 1,
         "capture_item": true,
         "access_rules": [
-          "goronmask,$explosives",
-          "firearrow,goronmask,bow",
-          "firearrow,zoramask,bow",
+          "goronmask,$explosives,magic",
+          "firearrow,goronmask,bow,magic",
+          "firearrow,zoramask,bow,magic",
           "hookshot,zoramask",
-          "hookshot,goronmask"
+          "hookshot,goronmask,magic"
         ]
       },
       {
@@ -134,8 +138,8 @@
         "item_count": 1,
         "capture_item": true,
         "access_rules": [
-          "bow,firearrow,goronmask",
-          "hookshot,goronmask",
+          "bow,firearrow,goronmask,magic",
+          "hookshot,goronmask,magic",
           "zoramask"
         ]
       },
@@ -144,8 +148,8 @@
         "item_count": 1,
         "capture_item": true,
         "access_rules": [
-          "goronmask,bow,firearrow",
-          "bow,firearrow,zoramask"
+          "goronmask,bow,firearrow,magic",
+          "bow,firearrow,zoramask,magic"
         ]
       },
       {
@@ -156,7 +160,7 @@
         "chest_opened_img": "images/HC_grey.png",
         "chest_unopened_img": "images/HC.png",
         "access_rules": [
-          "bow,firearrow,goronmask"
+          "bow,firearrow,goronmask,magic"
         ]
       }
     ],
@@ -178,24 +182,33 @@
       {
         "name": "Map",
         "item_count": 1,
-        "capture_item": true
+        "capture_item": true,
+        "access_rules": [
+          "zoramask,hookshot"
+        ]
       },
       {
         "name": "Compass",
         "item_count": 1,
-        "capture_item": true
+        "capture_item": true,
+        "access_rules": [
+          "zoramask,hookshot"
+        ]
       },
       {
         "name": "Key",
         "item_count": 1,
-        "capture_item": true
+        "capture_item": true,
+        "access_rules": [
+          "zoramask,hookshot"
+        ]
       },
       {
         "name": "Ice Arrows",
         "item_count": 1,
         "capture_item": true,
         "access_rules": [
-          "bow"
+          "hookshot,zoramask"
         ]
       },
       {
@@ -203,7 +216,7 @@
         "item_count": 1,
         "capture_item": true,
         "access_rules": [
-          "bow,icearrow"
+          "bow,icearrow,zoramask,hookshot,magic"
         ]
       },
       {
@@ -214,9 +227,7 @@
         "chest_opened_img": "images/HC_grey.png",
         "chest_unopened_img": "images/HC.png",
         "access_rules": [
-          "bow,icearrow,zoramask,dekumask,soaring",
-          "bow,icearrow,zoramask,dekumask,goronmask",
-          "bow,icearrow,zoramask,firearrow"
+          "bow,icearrow,zoramask,dekumask,hookshot,firearrow,magic"
         ]
       }
     ],
@@ -242,8 +253,8 @@
         "capture_item": true,
         "access_rules": [
           "mirrorshield,goronmask,elegy,$explosives",
-          "bow,lightarrow,goronmask,elegy,$explosives",
-          "bow,lightarrow,zoramask"
+          "bow,lightarrow,goronmask,elegy,$explosives,magic",
+          "bow,lightarrow,zoramask,magic"
         ]
       },
       {
@@ -252,8 +263,8 @@
         "capture_item": true,
         "access_rules": [
           "mirrorshield,goronmask,elegy,$explosives",
-          "bow,lightarrow,goronmask,elegy,$explosives",
-          "bow,lightarrow,zoramask"
+          "bow,lightarrow,goronmask,elegy,$explosives,magic",
+          "bow,lightarrow,zoramask,magic"
         ]
       },
       {
@@ -261,7 +272,7 @@
         "item_count": 1,
         "capture_item": true,
         "access_rules": [
-          "bow,lightarrow,zoramask",
+          "bow,lightarrow,zoramask,magic",
           "goronmask,zoramask,elegy,$explosives",
           "goronmask,soaring,elegy,$explosives"
         ]
@@ -271,7 +282,7 @@
         "item_count": 1,
         "capture_item": true,
         "access_rules": [
-          "bow,lightarrow",
+          "bow,lightarrow,magic",
           "mirrorshield,goronmask,zoramask,elegy"
         ]
       },
@@ -280,7 +291,7 @@
         "item_count": 1,
         "capture_item": true,
         "access_rules": [
-          "lightarrow",
+          "lightarrow,bow,magic",
           "mirrorshield,goronmask,zoramask,$explosives"
         ]
       }
@@ -306,7 +317,7 @@
         "item_count": 1,
         "capture_item": true,
         "access_rules": [
-            "$ISTT_shuffle,bow,lightarrow"
+            "$ISTT_shuffle,bow,lightarrow,magic"
         ]
       },
       {
@@ -314,7 +325,7 @@
         "item_count": 1,
         "capture_item": true,
         "access_rules": [
-          "$ISTT_shuffle,dekumask,bow,lightarrow,hookshot"
+          "$ISTT_shuffle,dekumask,bow,lightarrow,hookshot,magic"
         ]
       },
       {
@@ -322,7 +333,7 @@
         "item_count": 1,
         "capture_item": true,
         "access_rules": [
-          "$ISTT_shuffle,dekumask,hookshot,bow,lightarrow"
+          "$ISTT_shuffle,dekumask,hookshot,bow,lightarrow,magic"
         ]
       },
       {
@@ -330,7 +341,7 @@
         "item_count": 1,
         "capture_item": true,
         "access_rules": [
-          "$ISTT_shuffle,hookshot,dekumask,lightarrow,bow"
+          "$ISTT_shuffle,hookshot,dekumask,lightarrow,bow,magic"
           ]
       },
       {
@@ -341,7 +352,7 @@
         "chest_opened_img": "images/HC_grey.png",
         "chest_unopened_img": "images/HC.png",
         "access_rules": [
-          "$ISTT_shuffle,hookshot,dekumask,bow,lightarrow"
+          "$ISTT_shuffle,hookshot,dekumask,bow,lightarrow,magic"
         ]
       }
     ],
@@ -358,7 +369,7 @@
     "short_name": "PF",
     "parent": "North Great Bay",
     "access_rules": [
-      "zoramask"
+      "zoramask,sword"
     ],
     "children": [
       {
@@ -627,6 +638,16 @@
       },
       {
         "name": "Hide and Seek HP // 4 Masks",
+        "item_count": 1,
+        "capture_item": true
+      },
+      {
+        "name": "Link Trial 30 Arrows",
+        "item_count": 1,
+        "capture_item": true
+      },
+      {
+        "name": "Link Trial 10 Bombchu",
         "item_count": 1,
         "capture_item": true
       },
