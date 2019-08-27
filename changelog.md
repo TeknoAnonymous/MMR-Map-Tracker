@@ -1,3 +1,13 @@
+# 1.3.0.0
+```
++ Added Dungeon ER support to the tracker
++ Added Song of Healing onto the tracker layouts
++ Added Magic tracking
++ Added Kokiri Sword tracking
+* Updated logic to account for the additional tracking options
+* Various other logic updates
+```
+
 # 1.2.0.0
 ```
 * Redid logic to coincide with ZoeyZolotova's MMR builds.
