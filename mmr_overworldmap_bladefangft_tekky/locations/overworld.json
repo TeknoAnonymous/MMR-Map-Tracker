@@ -142,7 +142,9 @@
                 "item_count": 1,
                 "capture_item": true,
                 "access_rules": [
-                  "dekumask,goronmask,zoramask"
+                  "dekumask",
+                  "goronmask",
+                  "zoramask"
                 ]
               },
               {
@@ -825,7 +827,6 @@
                     "item_count": 1,
                     "capture_item": true,
                     "access_rules": [
-                      "dekumask",
                       "hookshot",
                       "beans,storm",
                       "beans,$has_bottle"
@@ -1122,8 +1123,8 @@
                   "dekumask,hookshot,$has_bottle,sword",
                   "hookshot,goronmask,$has_bottle,sword",
                   "zoramask,$has_bottle,sword",
-                  "dekumask,beans,$explosives,$has_bottle,sword",
-                  "dekumask,beans,goronmask,$has_bottle,sword",
+                  "dekumask,[beans],$explosives,$has_bottle,sword",
+                  "dekumask,[beans],goronmask,$has_bottle,sword",
                   "bow,firearrow,$has_reach,$has_bottle,sword"
                 ],
                 "sections": [
@@ -1211,8 +1212,8 @@
                     "item_count": 1,
                     "capture_item": true,
                     "access_rules": [
-                      "hookshot,beans,$has_bottle,everything_on",
-                      "hookshot,beans,storm,everything_on",
+                      "[beans],$has_bottle,everything_on",
+                      "[beans],storm,everything_on",
                       "hookshot,everything_on"
                     ],
                     "visibility_rules": [
@@ -1263,8 +1264,8 @@
                   }
                 ],
                 "access_rules": [
-                  "dekumask,beans,$has_bottle",
-                  "dekumask,beans,storm"
+                  "dekumask,[beans],$has_bottle",
+                  "dekumask,[beans],storm"
                 ],
                 "map_locations": [
                   {
@@ -1599,7 +1600,7 @@
                   }
                 ],
                 "access_rules": [
-                  "goronmask"
+                  "goronmask,magic"
                 ],
                 "map_locations": [
                   {
@@ -2138,7 +2139,7 @@
                     "item_count": 1,
                     "capture_item": true,
                     "access_rules": [
-                      "@Pirate Fortress,hookshot,bow,magic,sword,goronmask,firearrow,$explosives"
+                      "hookshot,bow,magic,sword,goronmask,firearrow,$explosives"
                     ]
                   },
                   {
@@ -2506,7 +2507,9 @@
               },
               {
                 "name": "Great Fairy Double Defense",
-                "access_rules": "$GBT_shuffle,zoramask,fairymask,bow,firearrow,icearrow,magic,hookshot,$explosives",
+                "access_rules": [
+                  "$GBT_shuffle,zoramask,fairymask,bow,firearrow,icearrow,magic,hookshot,$explosives"
+                ],
                 "sections": [
                   {
                     "name": "Turn in Stray Fairies",
