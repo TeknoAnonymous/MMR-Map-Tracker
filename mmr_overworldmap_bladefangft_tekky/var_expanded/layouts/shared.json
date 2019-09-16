@@ -107,7 +107,7 @@
         "itemgrid": "2,1",
         "rows": [
           [
-            "sword1",
+            "sword",
             "shield1",
             "notebook",
             "magic",
@@ -148,12 +148,11 @@
       {
         "type": "itemgrid",
         "h_alignment": "center",
-        "item_margin": "10,0,10,0",
+        "item_margin": "6,5,6,5",
         "margin": "0,0,0,0",
         "rows": [
-          ["", "odolwa", ""],
-          ["gyorg", "", "goht"],
-          ["","twinmold", ""]
+          ["odolwa", "wftaccess", "goht", "shtaccess"],
+          ["gyorg", "gbtaccess", "twinmold", "sttaccess"]
         ]
       }
     ]
@@ -175,7 +174,7 @@
             "icearrow",
             "lightarrow",
             "moontear",
-            "sword1",
+            "sword",
             "odolwaremains"
           ],
           [

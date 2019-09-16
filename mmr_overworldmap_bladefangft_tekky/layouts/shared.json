@@ -49,6 +49,7 @@
             "oceandeed"
           ],
           [
+            "timecheck",
             "healingcheck",
             "eponacheck",
             "soaringcheck",
@@ -96,14 +97,16 @@
           [
             "odolwaremains",
             "wftaccess",
+            "",
             "gohtremains",
             "shtaccess"
           ],
           [
             "gyorgremains",
             "gbtaccess",
+            "",
             "twinmoldremains",
-            "sttaccess",
+            "sttaccess"
           ]
         ]
       }
