@@ -1,3 +1,14 @@
+# 1.3.1.0
+```
++ Logic Updates
+  Great Fairy Magic now checks for any transformation mask instead of all of them
+  Fixed GBT Fairy Access rules
+  Don Gero Mask check now requires magic
+  Fixed Beans Grotto 20 Rupee check
+  Fixed Termina Field stump check
+  Removed Zora Mask as a requirement from Ocean Spider House
+```
+
 # 1.3.0.0
 ```
 + Added Dungeon ER support to the tracker
