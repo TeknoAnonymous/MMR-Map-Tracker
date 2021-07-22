@@ -14,17 +14,17 @@
             "moontear",
             "sword",
             "shield1",
-            "map"
+            "fairy_wf"
           ],
           [
             "bombs",
             "bombchus",
             "beans",
-            "bottle6",
+            "bottle",
             "roomkey",
             "magic",
             "wallet",
-            "rupee"
+            "skull_ss"
           ],
           [
             "powderkeg",
@@ -34,7 +34,7 @@
             "fairysword",
             "kafeiletter",
             "smallkey",
-            "HP"
+            "skull_gb"
           ],
           [
             "landdeed",
@@ -43,7 +43,7 @@
             "oceandeed",
             "express",
             "pendant",
-            "bosskey",
+            "bosskey_sh",
             "sonata"
           ],
           [
@@ -72,7 +72,7 @@
             "kafeimask",
             "couplesmask",
             "maskoftruth",
-            "zoramask",
+	          "zora",
             "soaring",
             "elegy"
           ],
@@ -89,4 +89,96 @@
         ]
     }
   }
-}
+},
+{
+  "tracker_capture_bottles": {
+    "type": "container",
+    "content": {
+      "type": "itemgrid",
+      "h_alignment": "center",
+      "item_margin": "1,2",
+      "rows": [
+          [
+            "bow",
+            "firearrow",
+            "icearrow",
+            "lightarrow",
+            "moontear",
+            "sword",
+            "shield1",
+            "fairy_wf"
+          ],
+          [
+            "bombs",
+            "bombchus",
+            "beans",
+            "bottle",
+            "roomkey",
+            "magic",
+            "wallet",
+            "skull_ss"
+          ],
+          [
+            "powderkeg",
+            "pictobox",
+            "lensoftruth",
+            "hookshot",
+            "fairysword",
+            "kafeiletter",
+            "smallkey",
+            "skull_gb"
+          ],
+          [
+            "landdeed",
+            "swampdeed",
+            "mountaindeed",
+            "oceandeed",
+            "express",
+            "pendant",
+            "bosskey_sh",
+            "sonata"
+          ],
+          [
+            "postmanhat",
+            "allnightmask",
+            "blastmask",
+            "stonemask",
+            "fairymask",
+            "dekumask",
+            "healing",
+            "lullaby"
+          ],
+          [
+            "keatonmask",
+            "bremenmask",
+            "bunnyhood",
+            "dongeromask",
+            "maskofscents",
+            "goronmask",
+            "epona",
+            "newwave"
+          ],
+          [
+            "romanimask",
+            "circusleadermask",
+            "kafeimask",
+            "couplesmask",
+            "maskoftruth",
+	          "zora",
+            "soaring",
+            "elegy"
+          ],
+          [
+            "kamaromask",
+            "gibdomask",
+            "garomask",
+            "captainhat",
+            "giantmask",
+            "fiercedeitymask",
+            "storm",
+            "oath"
+          ]
+        ]
+    }
+  }
+},

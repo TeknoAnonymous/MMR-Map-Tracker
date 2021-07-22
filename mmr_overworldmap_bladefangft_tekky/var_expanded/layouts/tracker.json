@@ -10,11 +10,17 @@
           "type": "dock",
           "dock": "left",
           "v_alignment": "stretch",
-          "margin": "0,0,3,0",
+          "margin": "0,0,0,0",
           "content": [
             {
               "type": "group",
               "header": "Items",
+	      "header_content": {
+                "type": "button_popup",
+                "style": "settings",
+                "popup_background": "#212121",
+                "layout": "settings_grid"
+              },
               "dock": "top",
               "content": {
                 "type": "layout",
@@ -39,26 +45,6 @@
                 "key": "quest_grid"
               }
             },
-            {
-              "type": "group",
-              "header": "Options",
-              "dock": "top",
-              "content": {
-                "type": "itemgrid",
-                "h_alignment": "left",
-                "item_margin": "2,2",
-                "rows": [
-                  [
-                    "everything_on",
-                    "shopsanity_off",
-                    "",
-                    "",
-                    "",
-                    ""
-                  ]
-                ]
-              }
-            }
           ]
         },
         {

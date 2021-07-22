@@ -4,19 +4,19 @@
     {
       "name": "MM Randomizer Map Tracker",
       "game_name": "Majora's Mask Randomizer",
-      "version": "1.3.1.0",
+      "version": "2.0.0.0",
       "author": "BladefangFT & Tekky",
       "flags": [
         "map",
         "pins",
         "chathud"
       ],
-      "required_app_version": "2.3.6.7",
+      "required_app_version": "2.3.8.14",
       "uid": "mmr_overworldmap_bladefangft_tekky",
       "link": "https://teknoanonymous.github.io/MMR-Map-Tracker/mmr_overworldmap_bladefangft_tekky.zip",
       "variants": [
         {
-          "name": "Regular Map Tracker",
+          "name": "Standard Map Tracker",
           "flags": [
             "map",
             "pins",

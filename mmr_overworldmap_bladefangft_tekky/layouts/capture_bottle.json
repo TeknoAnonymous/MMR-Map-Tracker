@@ -1,0 +1,26 @@
+{
+  "tracker_capture_bottles": {
+    "type": "container",
+    "content": {
+      "type": "itemgrid",
+      "h_alignment": "center",
+      "item_margin": "1,2",
+      "rows": [
+          [
+            "springwater",
+            "fairy",
+            "fish",
+            "bugs",
+            "hsw"
+          ],
+          [
+            "poe",
+            "bigpoe",
+            "mushroom",
+            "egg",
+            "dekuprincess"
+	  ]
+        ]
+    }
+  }
+}

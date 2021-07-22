@@ -33,6 +33,71 @@ function has(item, amount)
   end
 end
 
+function maskcount()
+  masknum = 0
+  if has("postman") then
+    masknum = masknum + 1
+  end
+  if has("anm") then
+    masknum = masknum + 1
+  end
+  if has("blast") then
+    masknum = masknum + 1
+  end
+  if has("stone") then
+    masknum = masknum + 1
+  end
+  if has("gfm") then
+    masknum = masknum + 1
+  end
+  if has("keaton") then
+    masknum = masknum + 1
+  end
+  if has("bunny") then
+    masknum = masknum + 1
+  end
+  if has("dongero") then
+    masknum = masknum + 1
+  end
+  if has("scents") then
+    masknum = masknum + 1
+  end
+  if has("romani") then
+    masknum = masknum + 1
+  end
+  if has("circus") then
+    masknum = masknum + 1
+  end
+  if has("couple") then
+    masknum = masknum + 1
+  end
+  if has("truth") then
+    masknum = masknum + 1
+  end
+  if has("kamaro") then
+    masknum = masknum + 1
+  end
+  if has("gibdo") then
+    masknum = masknum + 1
+  end
+  if has("garo") then
+    masknum = masknum + 1
+  end
+  if has("captain") then
+    masknum = masknum + 1
+  end
+  if has("giant") then
+    masknum = masknum + 1
+  end
+  if has("bremen") then
+    masknum = masknum + 1
+  end
+  if has("kafei") then
+    masknum = masknum + 1
+  end
+  return masknum
+end
+
 function explosives()
   if has("bombs")
   or has("blastmask") then
@@ -97,13 +162,12 @@ function hotspring_access()
 end
 
 function STT_access()
-  if has("goronmask")
-  and has("zoramask")
+  if ((has("goronmask") and has("zoramask")) or (has("zoramask") and has("tricks_on")) or (has("goronmask") and has("tricks_on")))
   and has("hookshot")
+  and (has("gibdomask") or has("garomask"))
   and has("elegy")
   and has("bow")
-  and has("icearrow")
-  and has("sword") then
+  and (has("icearrow") or has("tricks_on")) then
     return true
   else
     return false
@@ -114,7 +178,6 @@ function ISTT_access()
   if has("bow")
   and has("lightarrow")
   and has("magic")
-  and has("sword")
   and STT_access() then
     return true
   else
@@ -125,7 +188,7 @@ end
 function enter_wft()
   if has("dekumask")
   and has("sonata")
-  and has("sword") then
+  and (has("sword") or has("goronmask") or has("zoramask") or has("tricks_on")) then
     return true
   else
     return false
@@ -136,8 +199,7 @@ function enter_sht()
   if has("bow")
   and has("goronmask")
   and has("lullaby")
-  and has("magic")
-  and has("sword") then
+  and (has("magic") or has("tricks_on")) then
     return true
   else
     return false
@@ -145,11 +207,10 @@ function enter_sht()
 end
 
 function enter_gbt()
-  if has("epona")
+  if (has("epona") or (has("bombs") and has("tricks_on")))
   and has("zoramask")
   and has("newwave")
-  and has("hookshot")
-  and has("sword") then
+  and has("hookshot") then
     return true
   else
     return false
@@ -236,6 +297,17 @@ function greatbay_clear()
  (has("shtgreatbay") and has("gohtremains")) or
  (has("gbtgreatbay") and has("gyorgremains")) or
  (has("sttgreatbay") and has("twinmoldremains")) then
+   return true
+  else
+   return false
+  end
+end
+
+function stonetower_clear()
+ if (has("wftstonetower") and has("odolwaremains")) or
+ (has("shtstonetower") and has("gohtremains")) or
+ (has("gbtstonetower") and has("gyorgremains")) or
+ (has("sttstonetower") and has("twinmoldremains")) then
    return true
   else
    return false

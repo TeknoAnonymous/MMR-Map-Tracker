@@ -6,7 +6,7 @@
       {
         "type": "itemgrid",
         "h_alignment": "left",
-        "item_margin": "2,2",
+        "item_margin": "2,0",
         "rows": [
           [
             "ocarina",
@@ -39,14 +39,6 @@
             "oceandeed",
             "express",
             "pendant"
-          ],
-          [
-            "bottle1",
-            "bottle2",
-            "bottle3",
-            "bottle4",
-            "bottle5",
-            "bottle6"
           ]
         ]
       }
@@ -59,7 +51,7 @@
       {
         "type": "itemgrid",
         "h_alignment": "left",
-        "item_margin": "2,2",
+        "item_margin": "2,0",
         "rows": [
           [
             "postmanhat",
@@ -104,57 +96,204 @@
       {
         "type": "itemgrid",
         "h_alignment": "left",
-        "itemgrid": "2,1",
+        "item_margin": "2,0",
         "rows": [
           [
-            "sword",
+            "spinattack",
             "shield1",
-            "notebook",
             "magic",
-            "wallet"
+            "wallet",
+	    "bottle_count",
+ 	    "fairy_ct"
           ],
           [
             "timecheck",
             "healingcheck",
             "eponacheck",
             "soaringcheck",
-            "stormcheck"
+            "stormcheck",
+	    "skull_ss"
           ],
           [
             "sonatacheck",
             "lullabycheck",
             "newwavecheck",
             "elegycheck",
-            "oathcheck"
-          ]
-        ]
-      },
-      {
-        "type": "itemgrid",
-        "h_alignment": "center",
-        "item_margin": "-4,0,-4,0",
-        "margin": "0,0,0,0",
-        "rows": [
-          [
-            "nobombercode",
-            "code1-1",
-            "code2-1",
-            "code3-1",
-            "code4-1",
-            "code5-1"
-          ]
-        ]
-      },
-      {
-        "type": "itemgrid",
-        "h_alignment": "center",
-        "item_margin": "6,5,6,5",
-        "margin": "0,0,0,0",
-        "rows": [
-          ["odolwa", "wftaccess", "goht", "shtaccess"],
-          ["gyorg", "gbtaccess", "twinmold", "sttaccess"]
+            "oathcheck",
+	    "skull_gb"
+          ],
+	  [
+	    "odolwa",
+	    "wftaccess",
+	    "fairy_wf",
+	    "smallkey_wf",
+	    "bosskey_wf"
+	  ],
+	  [
+	    "goht",
+	    "shtaccess",
+	    "fairy_sh",
+	    "smallkey_sh",
+	    "bosskey_sh"
+	  ],
+	  [
+	    "gyorg",
+	    "gbtaccess",
+	    "fairy_gb",
+	    "smallkey_gb",
+	    "bosskey_gb"
+	  ],
+	  [
+	    "twinmold",
+	    "sttaccess",
+	    "fairy_st",
+	    "smallkey_st",
+	    "bosskey_st"
+	  ]
         ]
       }
+    ]
+  },
+  "settings_grid": {
+    "type": "tabbed",
+    "tabs": [
+      {
+        "title": "Item Pool",
+        "content": {
+          "type": "array",
+          "orientation": "vertical",
+          "content": [
+            {
+              "type": "itemgrid",
+              "h_alignment": "left",
+              "item_margin": "2,0",
+              "rows": [
+                        [
+                          "soaring_off",
+        		  "hc_on",
+                          "hp_off",
+	    	          "trade_on",
+                          "nav_on",
+                          "gf_off",
+                        ],
+		        [
+		          "skullsanity_off",
+		          "fairysanity_off",
+		          "keys_off",
+			  "bkeys_off",
+		          "gold_off",
+		          "silver_off",
+		        ],
+		        [
+		          "purple_off",
+		          "red_off",
+		          "blue_off",
+		          "green_off",
+		          "hearts_off",
+		          "jars_off",
+		        ],
+		        [
+		          "shield_off",
+		          "bombchu_off",
+		          "arrow_off",
+		          "bomb_off",
+		          "nut_off",
+		          "stick_off",
+		        ],
+		        [
+		          "cowsanity_off",
+		          "redpotion_off",
+		          "greenpotion_off",
+		          "bluepotion_off",
+		          "chateau_off",
+		          "fairybot_off",
+		        ],
+		        [
+		          "seahorse_off",
+		          "botsanity_off",
+		        ],
+              ]
+            }
+          ]
+        }
+      },
+{
+        "title": "Check Types",
+        "content": {
+          "type": "array",
+          "orientation": "vertical",
+          "content": [
+            {
+              "type": "itemgrid",
+              "h_alignment": "left",
+              "item_margin": "2,0",
+              "rows": [
+		        [
+		          "chests_on",
+			  "npc_off",
+			  "botsanity_off",
+		          "shopsanity_off",
+		          "minigames_off",
+		          "bosses_off",
+
+		        ],
+		        [
+		          "moon_off",
+		          "enemies_off",
+		          "grass_off",
+		          "pots_off",
+		          "crates_off",
+		          "smallsnow_off",
+
+		        ],
+		        [
+		          "bigsnow_off",
+		          "barrels_off",
+		          "hives_off",
+		          "invisible_off",
+		          "events_off",
+		          "soil_off",
+		        ],
+		        [
+		          "hits_off",
+		          "rocks_off",
+		          "glitches_off",
+		        ],
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "title": "Options",
+	"content": {
+          "type": "array",
+          "orientation": "vertical",
+          "content": [
+            {
+              "type": "itemgrid",
+              "h_alignment": "left",
+              "item_margin": "0,0",
+	      "item_width": 300,
+	      "item_height": 45,
+              "rows": [
+                        [
+                          "standard_on"
+                        ],
+                        [
+                          "stdLog"
+                        ],
+                        [
+                          "allowLogic"
+                        ],
+                        [
+                          "banLogic"
+                        ],
+	      ]
+	    }
+	  ]
+	}
+      },
     ]
   },
   "broadcast_grid": {
@@ -165,7 +304,7 @@
         "type": "itemgrid",
         "h_alignment": "left",
         "itemgrid": "1,1",
-        "item_margin": "2,2,2,2",
+        "item_margin": "2,0,2,2",
         "rows": [
           [
             "ocarina",
@@ -208,12 +347,12 @@
             "twinmoldremains"
           ],
           [
-            "bottle1",
-            "bottle2",
-            "bottle3",
-            "bottle4",
-            "bottle5",
-            "bottle6",
+            "bottle_count",
+            "fairy_ct",
+            "fairy_wf",
+            "fairy_sh",
+            "fairy_gb",
+            "fairy_st",
             "timecheck",
             "sonatacheck"
           ],

@@ -7,13 +7,47 @@
     ],
     "sections":[
       {
+        "name": "Entrance Hive",
+        "capture_item": true,
+        "item_count": 1,
+        "access_rules": [
+          "dekumask,magic",
+	  "dekumask,sword",
+	  "dekumask,gfs",
+	  "dekumask,$explosives",
+	  "hookshot",
+	  "bow",
+	  "zoramask"
+        ],
+	"visibility_rules": [
+	  "blue_on"
+	],
+        "chest_unopened_img": "images/zzBlue.png",
+        "chest_opened_img": "images/zzBlueOff.png",
+      },
+      {
         "name": "Key",
         "item_count": 1,
         "capture_item": true,
         "access_rules": [
           "dekumask",
           "hookshot"
-        ]
+        ],
+	"visibility_rules": [
+	  "keys_on",
+	  "keysy",
+	]
+      },
+      {
+        "name": "Key",
+        "hosted_item": "smallkey_wf",
+        "access_rules": [
+          "dekumask",
+          "hookshot"
+        ],
+	"visibility_rules": [
+	  "keys_off"
+	]
       },
       {
         "name": "Map",
@@ -23,34 +57,111 @@
           "dekumask",
           "hookshot,$explosives",
           "hookshot,goronmask"
-        ]
+        ],
+	"visibility_rules": [
+	  "nav_on",
+	  "standard_on",
+	  "chests_on"
+	]
       },
       {
         "name": "Compass",
         "item_count": 1,
         "capture_item": true,
         "access_rules":  [
-          "hookshot",
+          "hookshot,[stdLog]",
           "dekumask,bow",
-          "dekumask"
-        ]
+          "dekumask,smallkey_wf",
+          "dekumask,keysy",
+        ],
+	"visibility_rules": [
+	  "nav_on",
+	  "standard_on",
+	  "chests_on"
+	]
       },
       {
         "name": "Hero's Bow",
         "item_count": 1,
         "capture_item": true,
         "access_rules": [
-          "hookshot",
-          "dekumask,bow"
+          "hookshot,[stdLog]",
+          "dekumask,bow",
+	  "dekumask,smallkey_wf",
+	  "dekumask,keysy",
+	  "chests_on"
         ]
       },
       {
         "name": "Boss Key",
         "item_count": 1,
         "capture_item": true,
+   	"chest_unopened_img": "images/chest_golden_closed.png",
+    	"chest_opened_img": "images/chest_golden_open.png",
         "access_rules": [
           "bow,dekumask"
-        ]
+        ],
+	"visibility_rules": [
+	  "bkeys_on",
+	  "bkeysy"
+	]
+      },
+      {
+        "name": "Boss Key",
+        "hosted_item": "bosskey_wf",
+   	"chest_unopened_img": "images/chest_golden_closed.png",
+    	"chest_opened_img": "images/chest_golden_open.png",
+        "access_rules": [
+          "bow,dekumask"
+        ],
+	"visibility_rules": [
+	  "bkeys_off"
+	]
+      },
+      {
+        "name": "Boss Key Pots",
+        "capture_item": true,
+        "item_count": 4,
+        "access_rules": [
+          "dekumask,bow",
+        ],
+	"visibility_rules": [
+	  "blue_on"
+	],
+        "chest_unopened_img": "images/zzBlue.png",
+	"clear_as_group": false,
+        "chest_opened_img": "images/zzBlueOff.png",
+      }, 
+      {
+        "name": "Pre-Boss Platforms",
+        "capture_item": true,
+        "item_count": 4,
+        "access_rules": [
+          "dekumask,bow",
+	  "dekumask,hookshot,[stdLog]",
+        ],
+	"visibility_rules": [
+	  "blue_on"
+	],
+        "chest_unopened_img": "images/zzBlue.png",
+	"clear_as_group": false,
+        "chest_opened_img": "images/zzBlueOff.png",
+      },
+      {
+        "name": "Pre-Boss Pillars",
+        "capture_item": true,
+        "item_count": 2,
+        "access_rules": [
+          "dekumask,bow",
+	  "dekumask,hookshot,zoramask,[stdLog]",
+	  "dekumask,hookshot,$explosives,[stdLog]"
+        ],
+	"visibility_rules": [
+	  "red_on"
+	],
+        "chest_unopened_img": "images/zzRed.png",
+	"clear_as_group": false,
+        "chest_opened_img": "images/zzRedOff.png",
       },
       {
         "name": "Odolwa",
@@ -60,10 +171,12 @@
         "chest_opened_img": "images/HC_grey.png",
         "chest_unopened_img": "images/HC.png",
         "access_rules": [
-          "bow,hookshot",
-          "bow,dekumask"
+          "bow,hookshot,bosskey_wf,[stdLog]",
+          "bow,dekumask,bosskey_wf",
+	  "bow,dekumask,bkeysy",
+	  "bow,dekumask,[bosskey_wf],standard_on"
         ]
-      }
+      },
     ],
     "map_locations": [
       {
@@ -74,10 +187,234 @@
     ]
   },
   {
+    "name": "Woodfall Fairies",
+    "parent": "South Swamp",
+    "chest_opened_img": "images/fairy_grey.png",
+    "chest_unopened_img": "images/fairy_wf.png",
+    "access_rules": [
+      "$WFT_shuffle"
+    ],
+    "sections":[
+      {
+        "name": "Entrance Fairy",
+        "item_count": 1,
+        "capture_item": true,
+	"visibility_rules": [
+	  "fairysanity_on"
+	]
+      },
+      {
+        "name": "Entrance Platform",
+        "item_count": 1,
+        "capture_item": true,
+        "chest_opened_img": "images/chest_fairy_grey.png",
+        "chest_unopened_img": "images/chest_fairy_open.png",
+        "access_rules": [
+          "dekumask",
+	  "hookshot"
+        ],
+	"visibility_rules": [
+	  "fairysanity_on",
+	  "fairysanity_chest"
+	]
+      },
+      {
+        "name": "Deku Baba",
+        "item_count": 1,
+        "capture_item": true,
+        "access_rules": [
+          "dekumask",
+	  "hookshot"
+        ],
+	"visibility_rules": [
+	  "fairysanity_on",
+	  "enemies_on"
+	]
+      },
+      {
+        "name": "Main Room Jar",
+        "item_count": 1,
+        "capture_item": true,
+        "access_rules": [
+          "hookshot",
+	  "dekumask"
+        ],
+	"visibility_rules": [
+	  "fairysanity_on",
+	  "pots_on"
+	]
+      },
+      {
+        "name": "Main Room Bubble",
+        "item_count": 1,
+        "capture_item": true,
+        "access_rules": [
+          "bow,dekumask",
+	  "dekumask,smallkey_wf",
+	  "dekumask,keysy",
+	  "hookshot,[stdLog]",
+	  "{}"
+        ],
+	"visibility_rules": [
+	  "fairysanity_on",
+	]
+      },
+      {
+        "name": "Main Room Switch",
+        "item_count": 1,
+        "capture_item": true,
+        "chest_opened_img": "images/chest_fairy_grey.png",
+        "chest_unopened_img": "images/chest_fairy_open.png",
+        "access_rules": [
+          "bow,dekumask",
+	  "dekumask,smallkey_wf",
+	  "dekumask,keysy"
+        ],
+	"visibility_rules": [
+	  "fairysanity_on",
+	  "fairysanity_chest"
+	]
+      },
+      {
+        "name": "Key Room Hive",
+        "item_count": 1,
+        "capture_item": true,
+        "access_rules": [
+          "bow,dekumask",
+	  "dekumask,magic",
+	  "hookshot,gfm",
+	  "dekumask,gfm,zoramask"
+        ],
+	"visibility_rules": [
+	  "fairysanity_on",
+	  "hives_on"
+	]
+      },
+      {
+        "name": "Bridge Skulltula",
+        "item_count": 1,
+        "capture_item": true,
+        "access_rules": [
+          "bow,dekumask",
+	  "dekumask,smallkey_wf",
+	  "dekumask,keysy",
+	  "hookshot,[stdLog]"
+        ],
+	"visibility_rules": [
+	  "fairysanity_on",
+	  "enemies_on"
+	]
+      },
+      {
+        "name": "Bridge Hive",
+        "item_count": 1,
+        "capture_item": true,
+        "access_rules": [
+          "bow,dekumask",
+	  "dekumask,smallkey_wf,magic",
+	  "dekumask,keysy,magic",
+	  "hookshot,[stdLog]"
+        ],
+	"visibility_rules": [
+	  "fairysanity_on",
+	  "hives_on"
+	]
+      },
+      {
+        "name": "Under Bridge",
+        "item_count": 1,
+        "capture_item": true,
+        "access_rules": [
+          "bow,dekumask",
+	  "gfm,hookshot,[stdLog]",
+	  "{}"
+        ],
+	"visibility_rules": [
+	  "fairysanity_on",
+	]
+      },
+      {
+        "name": "Dark Room Boes",
+        "item_count": 1,
+        "capture_item": true,
+        "chest_opened_img": "images/chest_fairy_grey.png",
+        "chest_unopened_img": "images/chest_fairy_open.png",
+        "access_rules": [
+          "bow,dekumask",
+	  "dekumask,smallkey_wf",
+	  "dekumask,keysy",
+	  "hookshot,[stdLog]"
+        ],
+	"visibility_rules": [
+	  "fairysanity_on",
+	  "fairysanity_chest"
+	]
+      },
+      {
+        "name": "Pre-Boss UpLeft",
+        "item_count": 1,
+        "capture_item": true,
+        "access_rules": [
+          "bow,dekumask",
+	  "bow,gfm,hookshot,[stdLog]",
+	  "{bow,hookshot}"
+        ],
+	"visibility_rules": [
+	  "fairysanity_on",
+	]
+      },
+      {
+        "name": "Pre-Boss UpRight",
+        "item_count": 1,
+        "capture_item": true,
+        "access_rules": [
+          "bow,dekumask",
+	  "bow,hookshot,[stdLog]"
+        ],
+	"visibility_rules": [
+	  "fairysanity_on",
+	]
+      },
+      {
+        "name": "Pre-Boss LowRight",
+        "item_count": 1,
+        "capture_item": true,
+        "access_rules": [
+          "bow,dekumask",
+	  "bow,hookshot,[stdLog]",
+        ],
+	"visibility_rules": [
+	  "fairysanity_on",
+	]
+      },
+      {
+        "name": "Pre-Boss Pillar",
+        "item_count": 1,
+        "capture_item": true,
+        "access_rules": [
+          "bow,dekumask",
+	  "bow,gfm,hookshot,[stdLog]",
+	  "{bow,hookshot}"
+        ],
+	"visibility_rules": [
+	  "fairysanity_on",
+	]
+      },
+    ],
+    "map_locations": [
+      {
+        "map": "main",
+        "x": 975,
+        "y": 1445
+      }
+    ]
+  },
+  {
     "name": "Snowhead Temple",
     "parent": "Snowhead Peak",
     "access_rules": [
-      "$SHT_shuffle"
+      "$SHT_shuffle,zoramask",
+      "$SHT_shuffle,goronmask"
     ],
     "sections": [
       {
@@ -86,8 +423,17 @@
         "capture_item": true,
         "access_rules": [
           "goronmask,magic",
-          "zoramask"
-        ]
+          "zoramask,[allowLogic]",
+	  "hookshot",
+	  "$explosives,smallkey_sh:2",
+	  "$explosives,keysy",
+	  "$explosives,[allowLogic]"
+        ],
+	"visibility_rules": [
+	  "nav_on",
+	  "standard_on",
+	  "chests_on"
+	]
       },
       {
         "name": "Block Room",
@@ -95,53 +441,232 @@
         "capture_item": true,
         "access_rules": [
           "goronmask,magic",
-          "zoramask"
-        ]
+          "zoramask,[allowLogic]",
+	  "bow,firearrow,magic",
+	  "$explosives,[allowLogic]"
+        ],
+	"visibility_rules": [
+	  "keys_on",
+	  "keysy"
+	]
+      },
+      {
+        "name": "Block Room",
+        "hosted_item": "smallkey_sh",
+        "access_rules": [
+          "goronmask,magic",
+          "zoramask,[allowLogic]",
+	  "bow,firearrow,magic",
+	  "$explosives,[allowLogic]"
+        ],
+	"visibility_rules": [
+	  "keys_off"
+	]
       },
       {
         "name": "Compass",
         "item_count": 1,
         "capture_item": true,
         "access_rules": [
-          "goronmask,magic",
-          "zoramask,hookshot",
-          "goronmask,hookshot,magic"
-        ]
+          "hookshot",
+          "zoramask,[allowLogic]",
+          "smallkey_sh:1",
+	  "keysy"
+        ],
+	"visibility_rules": [
+	  "nav_on",
+	  "standard_on",
+	  "chests_on"
+	]
       },
       {
         "name": "Icicle Room",
         "item_count": 1,
         "capture_item": true,
         "access_rules": [
-          "hookshot,goronmask,$explosives,magic",
-          "hookshot,goronmask,magic",
-          "goronmask,$explosives,magic",
-          "bow,firearrow,goronmask,magic",
-          "zoramask,$explosives",
-          "bow,firearrow,zoramask,magic"
-        ]
+          "hookshot,$explosives,magic",
+          "zoramask,$explosives,[allowLogic]",
+          "goronmask,hookshot,magic,smallkey_sh:1",
+          "$explosives,smallkey_sh:1",
+          "firearrow,bow,magic,smallkey_sh:1",
+          "goronmask,hookshot,magic,keysy",
+          "$explosives,keysy",
+          "firearrow,bow,magic,keysy",
+          "bow,firearrow,zoramask,magic,$explosives"
+        ],
+	"visibility_rules": [
+	  "keys_on",
+	  "keysy"
+	]
+      },
+      {
+        "name": "Icicle Room",
+        "hosted_item": "smallkey_sh",
+        "access_rules": [
+          "hookshot,$explosives,magic",
+          "zoramask,$explosives,[allowLogic]",
+          "goronmask,hookshot,magic,smallkey_sh:1",
+          "$explosives,smallkey_sh:1",
+          "firearrow,bow,magic,smallkey_sh:1",
+          "goronmask,hookshot,magic,keysy",
+          "$explosives,keysy",
+          "firearrow,bow,magic,keysy",
+          "bow,firearrow,zoramask,magic,$explosives"
+        ],
+	"visibility_rules": [
+	  "keys_off"
+	]
+      },
+      {
+        "name": "Icicle Room Snowballs",
+        "capture_item": true,
+        "item_count": 3,
+        "access_rules": [
+          "hookshot,$explosives,magic",
+          "zoramask,$explosives,[allowLogic]",
+          "goronmask,hookshot,magic,smallkey_sh:1",
+          "$explosives,smallkey_sh:1",
+          "firearrow,bow,magic,smallkey_sh:1",
+          "goronmask,hookshot,magic,keysy",
+          "$explosives,keysy",
+          "firearrow,bow,magic,keysy",
+          "bow,firearrow,zoramask,magic,$explosives"
+        ],
+	"visibility_rules": [
+	  "blue_on",
+	  "smallsnow_on"
+	],
+        "chest_unopened_img": "images/zzBlue.png",
+	"clear_as_group": false,
+        "chest_opened_img": "images/zzBlueOff.png",
+      },
+      {
+        "name": "Icicle Room Snowballs",
+        "capture_item": true,
+        "item_count": 2,
+        "access_rules": [
+          "hookshot,$explosives,magic",
+          "zoramask,$explosives,[allowLogic]",
+          "goronmask,hookshot,magic,smallkey_sh:1",
+          "$explosives,smallkey_sh:1",
+          "firearrow,bow,magic,smallkey_sh:1",
+          "goronmask,hookshot,magic,keysy",
+          "$explosives,keysy",
+          "firearrow,bow,magic,keysy",
+          "bow,firearrow,zoramask,magic,$explosives"
+        ],
+	"visibility_rules": [
+	  "arrow_on"
+	],
+        "chest_unopened_img": "images/zzArrow.png",
+	"clear_as_group": false,
+        "chest_opened_img": "images/zzArrowOff.png",
+      },
+      {
+        "name": "Icicle Room Frozen",
+        "capture_item": true,
+        "item_count": 3,
+        "access_rules": [
+          "hookshot,$explosives,magic",
+          "zoramask,$explosives,[allowLogic]",
+          "goronmask,hookshot,magic,smallkey_sh:1",
+          "$explosives,smallkey_sh:1",
+          "firearrow,bow,magic,smallkey_sh:1",
+          "goronmask,hookshot,magic,keysy",
+          "$explosives,keysy",
+          "firearrow,bow,magic,keysy",
+          "bow,firearrow,zoramask,magic,$explosives"
+        ],
+	"visibility_rules": [
+	  "red_on"
+	],
+        "chest_unopened_img": "images/zzRed.png",
+	"clear_as_group": false,
+        "chest_opened_img": "images/zzRedOff.png",
+      },
+      {
+        "name": "Elevator Room Crates",
+        "capture_item": true,
+        "item_count": 5,
+        "access_rules": [
+          "goronmask,magic",
+	  "hookshot",
+	  "$explosives,smallkey_sh:2",
+	  "$explosives,keysy",
+	  "zoramask,[allowLogic]",
+	  "$explosives,[allowLogic]"
+        ],
+	"visibility_rules": [
+	  "blue_on"
+	],
+        "chest_unopened_img": "images/zzBlue.png",
+	"clear_as_group": false,
+        "chest_opened_img": "images/zzBlueOff.png",
+      },
+      {
+        "name": "Main Room Safety Net Pots",
+        "capture_item": true,
+        "item_count": 2,
+        "access_rules": [
+          "hookshot",
+          "$explosives,smallkey_sh:2",
+          "$explosives,smallkey_sh:1,zoramask",
+          "$explosives,keysy",
+          "firearrow,bow,magic",
+        ],
+	"visibility_rules": [
+	  "blue_on"
+	],
+        "chest_unopened_img": "images/zzBlue.png",
+	"clear_as_group": false,
+        "chest_opened_img": "images/zzBlueOff.png",
       },
       {
         "name": "Fire Arrows",
         "item_count": 1,
         "capture_item": true,
         "access_rules": [
-          "goronmask,$explosives,magic",
-          "firearrow,goronmask,bow,magic",
-          "firearrow,zoramask,bow,magic",
-          "hookshot,zoramask",
-          "hookshot,goronmask,magic"
-        ]
+          "goronmask,$explosives,magic,smallkey_sh:2",
+          "goronmask,$explosives,magic,keysy",
+          "firearrow,bow,magic",
+          "$explosives,smallkey_sh:2,[allowLogic]",
+          "$explosives,keysy,[allowLogic]",
+          "hookshot",
+          "goronmask,$explosives,magic,smallkey_sh:1,zoramask",
+	  "zoramask,$explosives,smallkey_sh:1,[allowLogic]"
+        ],
+	"visibility_rules": [
+	  "standard_on",
+	  "chests_on"
+	],
       },
       {
         "name": "Bridge Room",
         "item_count": 1,
         "capture_item": true,
         "access_rules": [
-          "bow,firearrow,goronmask,magic",
-          "hookshot,goronmask,magic",
-          "zoramask"
-        ]
+          "bow,firearrow,magic",
+          "hookshot,goronmask",
+          "zoramask,[allowLogic]",
+	  "$explosives,[allowLogic]"
+        ],
+	"visibility_rules": [
+	  "keys_on",
+	  "keysy"
+	]
+      },
+      {
+        "name": "Bridge Room",
+        "hosted_item": "smallkey_sh",
+        "access_rules": [
+          "bow,firearrow,magic",
+          "hookshot,goronmask",
+          "zoramask,[allowLogic]",
+	  "$explosives,[allowLogic]"
+        ],
+	"visibility_rules": [
+	  "keys_off"
+	]
       },
       {
         "name": "Boss Key",
@@ -149,8 +674,29 @@
         "capture_item": true,
         "access_rules": [
           "goronmask,bow,firearrow,magic",
-          "bow,firearrow,zoramask,magic"
-        ]
+          "bow,firearrow,zoramask,magic,smallkey_sh:1,[allowlogic]",
+          "bow,firearrow,zoramask,magic,keysy,[allowlogic]"
+        ],
+   	"chest_unopened_img": "images/chest_golden_closed.png",
+    	"chest_opened_img": "images/chest_golden_open.png",
+	"visibility_rules": [
+	  "bkeys_on",
+	  "bkeysy"
+	]
+      },
+      {
+        "name": "Boss Key",
+        "hosted_item": "bosskey_sh",
+        "access_rules": [
+          "goronmask,bow,firearrow,magic",
+          "bow,firearrow,zoramask,magic,smallkey_sh:1,[allowLogic]",
+          "bow,firearrow,zoramask,magic,keysy,[allowlogic]"
+        ],
+   	"chest_unopened_img": "images/chest_golden_closed.png",
+    	"chest_opened_img": "images/chest_golden_open.png",
+	"visibility_rules": [
+	  "bkeys_off"
+	]
       },
       {
         "name": "Goht",
@@ -160,7 +706,9 @@
         "chest_opened_img": "images/HC_grey.png",
         "chest_unopened_img": "images/HC.png",
         "access_rules": [
-          "bow,firearrow,goronmask,magic"
+          "bow,firearrow,goronmask,magic,bosskey_sh",
+          "bow,firearrow,goronmask,magic,[bosskey_sh],standard_on",
+          "bow,firearrow,goronmask,magic,bkeysy"
         ]
       }
     ],
@@ -173,6 +721,302 @@
     ]
   },
   {
+    "name": "Snowhead Temple",
+    "parent": "Snowhead Peak",
+    "chest_opened_img": "images/fairy_grey.png",
+    "chest_unopened_img": "images/fairy_wf.png",
+    "access_rules": [
+      "$SHT_shuffle"
+    ],
+    "sections": [
+      {
+        "name": "Bridge Under Ledge",
+        "item_count": 1,
+        "capture_item": true,
+        "access_rules": [
+          "gfm,bow",
+          "gfm,hookshot",
+	  "hookshot,[allowLogic]",
+	  "$explosives,[allowLogic]",
+	  "goronmask,magic,[allowLogic]",
+	  "gfm,zoramask,[allowLogic]",
+	  "zoramask,$explosives,[allowLogic]",
+	  "{}"
+        ],
+	"visibility_rules": [
+	  "fairysanity_on",
+	]
+      },
+      {
+        "name": "Bridge Pillar",
+        "item_count": 1,
+        "capture_item": true,
+        "access_rules": [
+          "gfm,bow",
+          "gfm,hookshot",
+	  "hookshot,[allowLogic]",
+	  "$explosives,[allowLogic]",
+	  "goronmask,magic,[allowLogic]",
+	  "zoramask,[allowLogic]",
+	  "{}"
+        ],
+	"visibility_rules": [
+	  "fairysanity_on",
+	]
+      },
+      {
+        "name": "Map Room Free",
+        "item_count": 1,
+        "capture_item": true,
+        "access_rules": [
+          "goronmask,magic",
+	  "magic",
+	  "$explosives,smallkey_sh:2",
+	  "$explosives,keysy",
+	  "zoramask,[allowLogic]",
+	  "$explosives,[allowLogic]"
+        ],
+	"visibility_rules": [
+	  "fairysanity_on",
+	]
+      },
+      {
+        "name": "Map Room Ledge",
+        "item_count": 1,
+        "capture_item": true,
+        "chest_opened_img": "images/chest_fairy_grey.png",
+        "chest_unopened_img": "images/chest_fairy_open.png",
+        "access_rules": [
+          "hookshot",
+	  "firearrow,bow,magic,hookshot",
+ 	  "hookshot,$explosives,smallkey_sh:2",
+ 	  "hookshot,$explosives,keysy",
+	  "hookshot,$explosives,zora,smallkey_sh:1",
+	  "firearrow,bow,magic,lens",
+	  "$explosives,smallkey_sh:2,goronmask,magic,lens",
+	  "$explosives,keysy,goronmask,magic,lens",
+	  "firearrow,bow,magic,[allowLogic]",
+	  "$explosives,smallkey_sh:2,[allowLogic]",
+	  "$explosives,keysy,[allowLogic]",
+	  "zoramask,$explosives,smallkey_sh:1,[allowLogic]",
+	  "goronmask,$explosives,magic,smallkey_sh:2,[allowLogic]"
+        ],
+	"visibility_rules": [
+	  "fairysanity_on",
+	  "fairysanity_chest"
+	]
+      },
+      {
+        "name": "Basement Switch",
+        "item_count": 1,
+        "chest_opened_img": "images/chest_fairy_grey.png",
+        "chest_unopened_img": "images/chest_fairy_open.png",
+        "capture_item": true,
+        "access_rules": [
+          "goronmask,magic",
+	  "goronmask,hookshot",
+	  "goronmask,$explosives,smallkey_sh:2",
+	  "goronmask,$explosives,keysy",
+	  "goronmask,zoramask,[allowLogic]",
+	  "goronmask,$explosives,[allowLogic]"
+        ],
+	"visibility_rules": [
+	  "fairysanity_on",
+	  "fairysanity_chest"
+	]
+      },
+      {
+        "name": "Main Room Wall",
+        "item_count": 1,
+        "capture_item": true,
+        "chest_opened_img": "images/chest_fairy_grey.png",
+        "chest_unopened_img": "images/chest_fairy_open.png",
+        "access_rules": [
+          "lens,magic,hookshot",
+	  "lens,magic,firearrow,bow",
+          "[allowLogic],magic,hookshot",
+	  "[allowLogic],magic,firearrow,bow"
+        ],
+	"visibility_rules": [
+	  "fairysanity_on",
+	  "fairysanity_chest"
+	]
+      },
+      {
+        "name": "Ceiling Bubble",
+        "item_count": 1,
+        "capture_item": true,
+        "access_rules": [
+          "gfm,lens,magic,$explosives,bow,smallkey_sh:2",
+          "gfm,lens,magic,hookshot,$explosives,smallkey_sh:1",
+          "gfm,lens,magic,$explosives,bow,keysy",
+          "gfm,lens,magic,hookshot,$explosives,keysy",
+	  "gfm,lens,firearrow,magic",
+          "gfm,[allowLogic],magic,$explosives,bow,smallkey_sh:2",
+          "gfm,[allowLogic],magic,hookshot,$explosives,smallkey_sh:1",
+          "gfm,[allowLogic],magic,$explosives,bow,keysy",
+          "gfm,[allowLogic],magic,hookshot,$explosives,keysy",
+	  "gfm,[allowLogic],firearrow,magic",
+	  "zoramask,$explosives,bow,smallkey_sh:1,gfm,[allowLogic]",
+	  "zoramask,$explosives,bow,keysy,gfm,[allowLogic]",
+	  "{lens,magic}"
+        ],
+	"visibility_rules": [
+	  "fairysanity_on",
+	]
+      },
+      {
+        "name": "Push Twin Blocks",
+        "item_count": 1,
+        "chest_opened_img": "images/chest_fairy_grey.png",
+        "chest_unopened_img": "images/chest_fairy_open.png",
+        "capture_item": true,
+        "access_rules": [
+          "hookshot",
+	  "firearrow,bow,magic,smallkey_sh:1",
+	  "firearrow,bow,magic,keysy",
+	  "zoramask,[allowLogic]"
+        ],
+	"visibility_rules": [
+	  "fairysanity_on",
+	  "fairysanity_chest"
+	]
+      },
+      {
+        "name": "Ice Puzzle",
+        "item_count": 1,
+        "chest_opened_img": "images/chest_fairy_grey.png",
+        "chest_unopened_img": "images/chest_fairy_open.png",
+        "capture_item": true,
+        "access_rules": [
+          "magic,firearrow,bow,smallkey_sh:1",
+          "magic,firearrow,bow,keysy",
+	  "magic,firearrow,bow,hookshot",
+	  "magic,firearrow,bow,zoramask"
+        ],
+	"visibility_rules": [
+	  "fairysanity_on",
+	  "fairysanity_chest"
+	]
+      },
+      {
+        "name": "Crate Fairy",
+        "item_count": 1,
+        "capture_item": true,
+        "access_rules": [
+          "goronmask,firearrow,bow,magic,smallkey_sh:1,$explosives",
+	  "goronmask,gfm,smallkey_sh:1,$explosives",
+          "goronmask,firearrow,bow,magic,keysy,$explosives",
+	  "goronmask,gfm,keysy,$explosives",
+	  "hookshot",
+	  "zoramask,$explosives",
+	  "goronmask,zoramask"
+        ],
+	"visibility_rules": [
+	  "fairysanity_on",
+	  "crates_on"
+	]
+      },
+      {
+        "name": "Icicle Wall",
+        "item_count": 1,
+        "chest_opened_img": "images/chest_fairy_grey.png",
+        "chest_unopened_img": "images/chest_fairy_open.png",
+        "capture_item": true,
+        "access_rules": [
+          "lens,magic,$explosives,smallkey_sh:1",
+	  "lens,magic,goronmask,firearrow,bow,smallkey_sh:1",
+          "lens,magic,$explosives,keysy",
+	  "lens,magic,goronmask,firearrow,bow,keysy",
+	  "hookshot,lens,magic,goronmask,$explosives",
+          "[allowLogic],magic,$explosives,smallkey_sh:1",
+	  "[allowLogic],magic,goronmask,firearrow,bow,smallkey_sh:1",
+          "[allowLogic],magic,$explosives,keysy",
+	  "[allowLogic],magic,goronmask,firearrow,bow,keysy",
+	  "hookshot,[allowLogic],magic,goronmask,$explosives",
+	  "$explosives,[allowLogic]",
+	  "{lens,magic}"
+        ],
+	"visibility_rules": [
+	  "fairysanity_on",
+	  "fairysanity_chest"
+	]
+      },
+      {
+        "name": "Pillar Freezards",
+        "item_count": 1,
+        "chest_opened_img": "images/chest_fairy_grey.png",
+        "chest_unopened_img": "images/chest_fairy_open.png",
+        "capture_item": true,
+        "access_rules": [
+          "magic,firearrow,bow"
+        ],
+	"visibility_rules": [
+	  "fairysanity_on",
+	  "fairysanity_chest"
+	]
+      },
+      {
+        "name": "Eenos Wall Bubble",
+        "item_count": 1,
+        "capture_item": true,
+        "access_rules": [
+          "gfm,lens,firearrow,zoramask,bow,magic,smallkey_sh:1,hookshot",
+          "gfm,lens,firearrow,zoramask,bow,magic,keysy,hookshot",
+          "gfm,lens,magic,firearrow,goronmask,bow",
+	  "gfm,lens,magic,hookshot,smallkey_sh:1",
+	  "gfm,lens,magic,hookshot,keysy",
+          "gfm,[allowLogic],firearrow,zoramask,bow,magic,smallkey_sh:1,hookshot",
+          "gfm,[allowLogic],firearrow,zoramask,bow,magic,keysy,hookshot",
+          "gfm,[allowLogic],magic,firearrow,goronmask,bow",
+	  "gfm,[allowLogic],magic,hookshot,smallkey_sh:1",
+	  "firearrow,bow,magic,zoramask,smallkey_sh:1,gfm,[allowLogic]",
+	  "gfm,[allowLogic],magic,hookshot,keysy",
+	  "firearrow,bow,magic,zoramask,keysy,gfm,[allowLogic]",
+	  "{lens,magic}"
+        ],
+	"visibility_rules": [
+	  "fairysanity_on",
+	]
+      },
+      {
+        "name": "Dinolfos 1",
+        "item_count": 1,
+        "capture_item": true,
+        "access_rules": [
+          "magic,firearrow,bow,goronmask",
+	  "magic,firearrow,bow,zoramask,smallkey_sh:1,[allowLogic]",
+	  "magic,firearrow,bow,zoramask,keysy,[allowLogic]"
+        ],
+	"visibility_rules": [
+	  "fairysanity_on",
+	  "enemies_on"
+	]
+      },
+      {
+        "name": "Dinolfos 2",
+        "item_count": 1,
+        "capture_item": true,
+        "access_rules": [
+          "magic,firearrow,bow,goronmask",
+	  "magic,firearrow,bow,zoramask,smallkey_sh:1,[allowLogic]",
+	  "magic,firearrow,bow,zoramask,keysy,[allowLogic]"
+        ],
+	"visibility_rules": [
+	  "fairysanity_on",
+	  "enemies_on"
+	]
+      },
+    ],
+    "map_locations": [
+      {
+        "map": "main",
+        "x": 555,
+        "y": 110
+      }
+    ]
+  },
+  {
     "name": "Great Bay Temple",
     "parent": "South Great Bay",
     "access_rules": [
@@ -180,12 +1024,100 @@
     ],
     "sections": [
       {
+        "name": "First Room by Skulltula",
+        "short_name": "First Room",
+        "capture_item": true,
+        "item_count": 2,
+        "access_rules": [
+          "hookshot,zoramask,icearrow,bow,magic",
+        ],
+	"visibility_rules": [
+	  "green_on"
+	],
+        "chest_unopened_img": "images/zzGreen.png",
+	"clear_as_group": false,
+        "chest_opened_img": "images/zzGreenOff.png",
+      },
+      {
+        "name": "First Room by Skulltula",
+        "short_name": "First Room",
+        "capture_item": true,
+        "item_count": 2,
+        "access_rules": [
+          "hookshot,zoramask,icearrow,bow,magic",
+        ],
+	"visibility_rules": [
+	  "blue_on"
+	],
+        "chest_unopened_img": "images/zzBlue.png",
+	"clear_as_group": false,
+        "chest_opened_img": "images/zzBlueOff.png",
+      },
+      {
+        "name": "First Room by Skulltula",
+        "short_name": "First Room",
+        "capture_item": true,
+        "item_count": 1,
+        "access_rules": [
+          "hookshot,zoramask,icearrow,bow,magic",
+        ],
+	"visibility_rules": [
+	  "red_on"
+	],
+        "chest_unopened_img": "images/zzRed.png",
+        "chest_opened_img": "images/zzRedOff.png",
+      },
+      {
         "name": "Map",
         "item_count": 1,
         "capture_item": true,
         "access_rules": [
           "zoramask,hookshot"
-        ]
+        ],
+	"visibility_rules": [
+	  "nav_on",
+	  "standard_on",
+	  "chests_on"
+	],
+      },
+      {
+        "name": "Red Valve Barrel",
+        "capture_item": true,
+        "item_count": 1,
+        "access_rules": [
+          "hookshot,zoramask,icearrow,bow,magic",
+        ],
+	"visibility_rules": [
+	  "bomb_on"
+	],
+        "chest_unopened_img": "images/zzBomb.png",
+        "chest_opened_img": "images/zzBombOff.png",
+      },
+      {
+        "name": "Red Valve Barrel",
+        "capture_item": true,
+        "item_count": 1,
+        "access_rules": [
+          "hookshot,zoramask,icearrow,bow,magic",
+        ],
+	"visibility_rules": [
+	  "arrow_on"
+	],
+        "chest_unopened_img": "images/zzArrow.png",
+        "chest_opened_img": "images/zzArrowOff.png",
+      },
+      {
+        "name": "Red Valve Crate",
+        "capture_item": true,
+        "item_count": 1,
+        "access_rules": [
+          "hookshot,zoramask,icearrow,bow,magic",
+        ],
+	"visibility_rules": [
+	  "jars_on"
+	],
+        "chest_unopened_img": "images/zzMagic.png",
+        "chest_opened_img": "images/zzMagicOff.png",
       },
       {
         "name": "Compass",
@@ -193,7 +1125,12 @@
         "capture_item": true,
         "access_rules": [
           "zoramask,hookshot"
-        ]
+        ],
+	"visibility_rules": [
+	  "nav_on",
+	  "standard_on",
+	  "chests_on"
+	],
       },
       {
         "name": "Key",
@@ -201,23 +1138,117 @@
         "capture_item": true,
         "access_rules": [
           "zoramask,hookshot"
-        ]
+        ],
+	"visibility_rules": [
+	  "keys_on",
+	  "keysy"
+	]
+      },
+      {
+        "name": "Key",
+        "hosted_item": "smallkey_gb",
+        "access_rules": [
+          "zoramask,hookshot"
+        ],
+	"visibility_rules": [
+	  "keys_off"
+	]
+      },
+      {
+        "name": "Dexihand Rupees",
+        "capture_item": true,
+        "item_count": 2,
+        "access_rules": [
+          "hookshot,zoramask",
+        ],
+	"visibility_rules": [
+	  "red_on"
+	],
+        "chest_unopened_img": "images/zzRed.png",
+	"clear_as_group": false,
+        "chest_opened_img": "images/zzRedOff.png",
       },
       {
         "name": "Ice Arrows",
         "item_count": 1,
         "capture_item": true,
         "access_rules": [
-          "hookshot,zoramask"
-        ]
+          "hookshot,zoramask,smallkey_gb",
+          "hookshot,zoramask,keysy"
+        ],
+	"visibility_rules": [
+	  "nav_on",
+	  "standard_on",
+	  "chests_on"
+	],
+      },
+      {
+        "name": "Green Pump Barrel",
+        "capture_item": true,
+        "item_count": 1,
+        "access_rules": [
+          "hookshot,zoramask,icearrow,bow,magic",
+        ],
+	"visibility_rules": [
+	  "bomb_on"
+	],
+        "chest_unopened_img": "images/zzBomb.png",
+        "chest_opened_img": "images/zzBombOff.png",
+      },
+      {
+        "name": "Green Pump Barrel",
+        "capture_item": true,
+        "item_count": 1,
+        "access_rules": [
+          "hookshot,zoramask,icearrow,bow,magic",
+        ],
+	"visibility_rules": [
+	  "arrow_on"
+	],
+        "chest_unopened_img": "images/zzArrw.png",
+        "chest_opened_img": "images/zzArrowOff.png",
+      },
+      {
+        "name": "Green Pump Rupees",
+        "capture_item": true,
+        "item_count": 2,
+        "access_rules": [
+          "hookshot,zoramask,icearrow,bow,magic",
+        ],
+	"visibility_rules": [
+	  "red_on"
+	],
+        "chest_unopened_img": "images/zzRed.png",
+	"clear_as_group": false,
+        "chest_opened_img": "images/zzRedOff.png",
+      },
+      {
+        "name": "Boss Key",
+        "hosted_item": "bosskey_gb",
+        "access_rules": [
+          "bow,icearrow,zoramask,hookshot,magic,firearrow",
+	  "zoramask,hookshot,[allowLogic]"
+        ],
+   	"chest_unopened_img": "images/chest_golden_closed.png",
+    	"chest_opened_img": "images/chest_golden_open.png",
+	"visibility_rules": [
+	  "bkeys_off"
+	]
       },
       {
         "name": "Boss Key",
         "item_count": 1,
         "capture_item": true,
         "access_rules": [
-          "bow,icearrow,zoramask,hookshot,magic"
-        ]
+          "bow,icearrow,zoramask,hookshot,magic,firearrow",
+	  "zoramask,hookshot,[allowLogic]"
+        ],
+   	"chest_unopened_img": "images/chest_golden_closed.png",
+    	"chest_opened_img": "images/chest_golden_open.png",
+	"visibility_rules": [
+	  "bkeys_on",
+	  "bkeysy"
+	]
       },
       {
         "name": "Gyorg",
@@ -227,7 +1258,12 @@
         "chest_opened_img": "images/HC_grey.png",
         "chest_unopened_img": "images/HC.png",
         "access_rules": [
-          "bow,icearrow,zoramask,dekumask,hookshot,firearrow,magic"
+          "bow,icearrow,zoramask,hookshot,firearrow,magic,bosskey_gb",
+          "bow,icearrow,zoramask,hookshot,firearrow,magic,[bosskey_gb],standard_on",
+          "bow,icearrow,zoramask,hookshot,firearrow,magic,bkeysy",
+	  "bow,icearrow,zoramask,hookshot,magic,bosskey_gb,[allowLogic]",
+	  "bow,icearrow,zoramask,hookshot,magic,bkeysy,[allowLogic]",
+	  "bow,icearrow,zoramask,hookshot,magic,[bosskey_gb],standard_on,[allowLogic]",
         ]
       }
     ],
@@ -240,8 +1276,225 @@
     ]
   },
   {
+    "name": "Great Bay Fairies",
+    "parent": "South Great Bay",
+    "chest_opened_img": "images/fairy_grey.png",
+    "chest_unopened_img": "images/fairy_wf.png",
+    "access_rules": [
+      "$GBT_shuffle,fairysanity_on"
+    ],
+    "sections": [
+      {
+        "name": "Entrance Torches",
+        "item_count": 1,
+        "capture_item": true,
+        "chest_opened_img": "images/chest_fairy_grey.png",
+        "chest_unopened_img": "images/chest_fairy_open.png",
+        "access_rules": [
+          "hookshot"
+        ],
+	"visibility_rules": [
+	  "fairysanity_on",
+	  "fairysanity_chest"
+	]
+      },
+      {
+        "name": "Room 1 Underwater",
+        "item_count": 1,
+        "capture_item": true,
+        "access_rules": [
+          "hookshot,gfm",
+	  "hookshot,zoramask",
+	  "{}"
+        ],
+	"visibility_rules": [
+	  "fairysanity_on",
+	]
+      },
+      {
+        "name": "Skulltula",
+        "item_count": 1,
+        "capture_item": true,
+        "access_rules": [
+          "hookshot"
+        ],
+	"visibility_rules": [
+	  "fairysanity_on",
+	  "enemise_on"
+	]
+      },
+      {
+        "name": "Whirlpool Barrel",
+        "item_count": 1,
+        "capture_item": true,
+        "access_rules": [
+          "hookshot,zoramask"
+        ],
+	"visibility_rules": [
+	  "fairysanity_on",
+	  "barrels_on"
+	]
+      },
+      {
+        "name": "Whirlpool Jar",
+        "item_count": 1,
+        "capture_item": true,
+        "access_rules": [
+          "hookshot,zoramask"
+        ],
+	"visibility_rules": [
+	  "fairysanity_on",
+	  "pots_on"
+	]
+      },
+      {
+        "name": "Map Ledge Jar",
+        "item_count": 1,
+        "capture_item": true,
+        "access_rules": [
+          "hookshot,zoramask,gfm",
+	  "hookshot,zoramask,icearrow,bow,magic",
+	  "hookshot,zoramask,$explosives,[allowLogic]"
+        ],
+	"visibility_rules": [
+	  "fairysanity_on",
+	  "pots_on"
+	]
+      },
+      {
+        "name": "Bio Babas",
+        "item_count": 1,
+        "capture_item": true,
+        "chest_opened_img": "images/chest_fairy_grey.png",
+        "chest_unopened_img": "images/chest_fairy_open.png",
+        "access_rules": [
+          "zoramask,hookshot"
+        ],
+	"visibility_rules": [
+	  "fairysanity_on",
+	  "fairysanity_chest"
+	]
+      },
+      {
+        "name": "Dexihands Jar",
+        "item_count": 1,
+        "capture_item": true,
+        "access_rules": [
+          "hookshot,zoramask"
+        ],
+	"visibility_rules": [
+	  "fairysanity_on",
+	  "pots_on"
+	]
+      },
+      {
+        "name": "Above Green",
+        "item_count": 1,
+        "capture_item": true,
+        "chest_opened_img": "images/chest_fairy_grey.png",
+        "chest_unopened_img": "images/chest_fairy_open.png",
+        "access_rules": [
+          "hookshot,zoramask,icearrow,bow,magic"
+        ],
+	"visibility_rules": [
+	  "fairysanity_on",
+	  "fairysanity_chest"
+	]
+      },
+      {
+        "name": "Waterwheel Torch",
+        "item_count": 1,
+        "capture_item": true,
+        "chest_opened_img": "images/chest_fairy_grey.png",
+        "chest_unopened_img": "images/chest_fairy_open.png",
+        "access_rules": [
+          "hookshot,zoramask,icearrow,bow,magic",
+	  "zoramask,hookshot,$explosives,[allowLogic]"
+        ],
+	"visibility_rules": [
+	  "fairysanity_on",
+	  "fairysanity_chest"
+	]
+      },
+      {
+        "name": "Waterwheel Upper",
+        "item_count": 1,
+        "capture_item": true,
+        "chest_opened_img": "images/chest_fairy_grey.png",
+        "chest_unopened_img": "images/chest_fairy_open.png",
+        "access_rules": [
+          "hookshot,zoramask,icearrow,bow,magic"
+        ],
+	"visibility_rules": [
+	  "fairysanity_on",
+	  "fairysanity_chest"
+	]
+      },
+      {
+        "name": "Under Seesaw Barrel",
+        "item_count": 1,
+        "capture_item": true,
+        "access_rules": [
+          "hookshot,zoramask,icearrow,magic,bow",
+	  "zoramask,hookshot,$explosives,[allowLogic]"
+        ],
+	"visibility_rules": [
+	  "fairysanity_on",
+	  "barrels_on"
+	]
+      },
+      {
+        "name": "Seesaw Room",
+        "item_count": 1,
+        "capture_item": true,
+        "chest_opened_img": "images/chest_fairy_grey.png",
+        "chest_unopened_img": "images/chest_fairy_open.png",
+        "access_rules": [
+          "zoramask,hookshot,firearrow,bow,magic,icearrow",
+	  "zoramask,hookshot,icearrow,bow,magic,[allowLogic]",
+	  "zoramask,hookshot,$explosives,[allowLogic]"
+        ],
+	"visibility_rules": [
+	  "fairysanity_on",
+	  "fairysanity_chest"
+	]
+      },
+      {
+        "name": "Pre-boss Under Switch",
+        "item_count": 1,
+        "capture_item": true,
+        "access_rules": [
+          "zoramask,bow,icearrow,magic,hookshot"
+        ],
+	"visibility_rules": [
+	  "fairysanity_on",
+	]
+      },
+      {
+        "name": "Pre-boss Tunnel",
+        "item_count": 1,
+        "capture_item": true,
+        "access_rules": [
+          "zoramask,bow,icearrow,magic,hookshot"
+        ],
+	"visibility_rules": [
+	  "fairysanity_on",
+	]
+      },
+    ],
+    "map_locations": [
+      {
+        "map": "main",
+        "x": 25,
+        "y": 1105
+      }
+    ]
+  },
+  {
     "name": "Stone Tower Temple",
     "short_name": "STT",
+    "chest_unopened_img": "images/chest_brown_closed.png",
+    "chest_opened_img": "images/chest_brown_open.png",
     "parent": "Stone Tower",
     "access_rules": [
       "$STT_access"
@@ -252,20 +1505,94 @@
         "item_count": 1,
         "capture_item": true,
         "access_rules": [
-          "mirrorshield,goronmask,elegy,$explosives",
-          "bow,lightarrow,goronmask,elegy,$explosives,magic",
-          "bow,lightarrow,zoramask,magic"
-        ]
+          "mirrorshield,goronmask,$explosives",
+          "bow,lightarrow,goronmask,$explosives,magic",
+          "bow,lightarrow,zoramask,magic,smallkey_st:1",
+          "bow,lightarrow,zoramask,magic,keysy"
+        ],
+	"visibility_rules": [
+	  "nav_on",
+	  "standard_on",
+	  "chests_on"
+	],
       },
       {
         "name": "Armos Room",
         "item_count": 1,
         "capture_item": true,
         "access_rules": [
-          "mirrorshield,goronmask,elegy,$explosives",
-          "bow,lightarrow,goronmask,elegy,$explosives,magic",
-          "bow,lightarrow,zoramask,magic"
-        ]
+          "mirrorshield,goronmask,$explosives",
+          "bow,lightarrow,goronmask,$explosives,magic",
+          "bow,lightarrow,zoramask,magic,smallkey_st:1",
+          "bow,lightarrow,zoramask,magic,keysy"
+        ],
+	"visibility_rules": [
+	  "keys_on",
+	  "keysy"
+	]
+      },
+      {
+        "name": "Armos Room",
+        "hosted_item": "smallkey_st",
+        "access_rules": [
+          "mirrorshield,goronmask,$explosives",
+          "bow,lightarrow,goronmask,$explosives,magic",
+          "bow,lightarrow,zoramask,magic,smallkey_st:1",
+          "bow,lightarrow,zoramask,magic,keysy"
+        ],
+	"visibility_rules": [
+	  "keys_off"
+	]
+      },
+      {
+        "name": "Lava Room Rupees",
+        "capture_item": true,
+        "item_count": 3,
+        "access_rules": [
+          "dekumask,mirrorshield,goronmask,zoramask,$explosives,smallkey_st:2",
+          "dekumask,mirrorshield,goronmask,zoramask,$explosives,keysy",
+	  "dekumask,smallkey_st:1,lightarrow,bow,magic",
+	  "dekumask,keysy,lightarrow,bow,magic"
+        ],
+	"visibility_rules": [
+	  "green_on"
+	],
+        "chest_unopened_img": "images/zzGreen.png",
+	"clear_as_group": false,
+        "chest_opened_img": "images/zzGreenOff.png",
+      },
+      {
+        "name": "Lava Room Rupees",
+        "capture_item": true,
+        "item_count": 2,
+        "access_rules": [
+          "dekumask,mirrorshield,goronmask,zoramask,$explosives,smallkey_st:2",
+          "dekumask,mirrorshield,goronmask,zoramask,$explosives,keysy",
+	  "dekumask,smallkey_st:1,lightarrow,bow,magic",
+	  "dekumask,keysy,lightarrow,bow,magic"
+        ],
+	"visibility_rules": [
+	  "blue_on"
+	],
+        "chest_unopened_img": "images/zzBlue.png",
+	"clear_as_group": false,
+        "chest_opened_img": "images/zzBlueOff.png",
+      },
+      {
+        "name": "Lava Room Rupee",
+        "capture_item": true,
+        "item_count": 1,
+        "access_rules": [
+          "dekumask,mirrorshield,goronmask,zoramask,$explosives,smallkey_st:2",
+          "dekumask,mirrorshield,goronmask,zoramask,$explosives,keysy",
+	  "dekumask,smallkey_st:1,lightarrow,bow,magic",
+	  "dekumask,keysy,lightarrow,bow,magic"
+        ],
+	"visibility_rules": [
+	  "red_on"
+	],
+        "chest_unopened_img": "images/zzRed.png",
+        "chest_opened_img": "images/zzRedOff.png",
       },
       {
         "name": "Eyegore Room",
@@ -273,9 +1600,39 @@
         "capture_item": true,
         "access_rules": [
           "bow,lightarrow,zoramask,magic",
-          "goronmask,zoramask,elegy,$explosives",
-          "goronmask,soaring,elegy,$explosives"
-        ]
+          "goronmask,smallkey_st:1,$explosives",
+          "goronmask,keysy,$explosives"
+        ],
+	"visibility_rules": [
+	  "keys_on",
+	  "keysy"
+	]
+      },
+      {
+        "name": "Eyegore Room",
+        "hosted_item": "smallkey_st",
+        "access_rules": [
+          "bow,lightarrow,zoramask,magic",
+          "goronmask,smallkey_st:1,$explosives",
+          "goronmask,keysy,$explosives"
+        ],
+	"visibility_rules": [
+	  "keys_off"
+	]
+      },
+      {
+        "name": "Eyegore Room Rupees",
+        "capture_item": true,
+        "item_count": 2,
+        "access_rules": [
+          "bow,lightarrow,magic,zoramask"
+        ],
+	"visibility_rules": [
+	  "red_on"
+	],
+        "chest_unopened_img": "images/zzRed.png",
+	"clear_as_group": false,
+        "chest_opened_img": "images/zzRedOff.png",
       },
       {
         "name": "Compass",
@@ -283,24 +1640,253 @@
         "capture_item": true,
         "access_rules": [
           "bow,lightarrow,magic",
-          "mirrorshield,goronmask,zoramask,elegy"
-        ]
+          "mirrorshield,goronmask,zoramask,smallkey_st:1",
+          "mirrorshield,goronmask,zoramask,keysy"
+        ],
+	"visibility_rules": [
+	  "nav_on",
+	  "standard_on",
+	  "chests_on"
+	],
+      },
+      {
+        "name": "Mirror Room Crates",
+        "capture_item": true,
+        "item_count": 2,
+        "access_rules": [
+          "dekumask,mirrorshield,goronmask,zoramask,$explosives,smallkey_st:2",
+	  "dekumask,smallkey_st:1,lightarrow,bow,magic",
+          "dekumask,mirrorshield,goronmask,zoramask,$explosives,keysy",
+	  "dekumask,keysy,lightarrow,bow,magic"
+        ],
+	"visibility_rules": [
+	  "red_on"
+	],
+        "chest_unopened_img": "images/zzRed.png",
+	"clear_as_group": false,
+        "chest_opened_img": "images/zzRedOff.png",
+      },
+      {
+        "name": "Thin Bridge Rupees",
+        "capture_item": true,
+        "item_count": 8,
+        "access_rules": [
+          "smallkey_st:1,lightarrow,bow,magic",
+	  "dekumask,smallkey_st:2,mirrorshield,goronmask,zoramask,$explosives",
+          "keysy,lightarrow,bow,magic",
+	  "dekumask,keysy,mirrorshield,goronmask,zoramask,$explosives"
+        ],
+	"visibility_rules": [
+	  "blue_on"
+	],
+        "chest_unopened_img": "images/zzBlue.png",
+	"clear_as_group": false,
+        "chest_opened_img": "images/zzBlueOff.png",
       },
       {
         "name": "Light Arrows",
         "item_count": 1,
         "capture_item": true,
         "access_rules": [
-          "lightarrow,bow,magic",
-          "mirrorshield,goronmask,zoramask,$explosives"
-        ]
+          "lightarrow,bow,magic,smallkey_st:1",
+          "mirrorshield,goronmask,zoramask,$explosives,dekumask,smallkey_st:2",
+          "lightarrow,bow,magic,keysy",
+          "mirrorshield,goronmask,zoramask,$explosives,dekumask,keysy"
+        ],
+	"visibility_rules": [
+	  "standard_on",
+	  "chests_on"
+	],
       }
     ],
     "map_locations": [
       {
         "map": "main",
         "x": 1570,
-        "y": 646
+        "y": 650
+      }
+    ]
+  },
+  {
+    "name": "Stone Tower Temple Fairies",
+    "short_name": "STT Fairies",
+    "chest_opened_img": "images/chest_fairy_grey.png",
+    "chest_unopened_img": "images/chest_fairy_open.png",
+    "parent": "Stone Tower",
+    "access_rules": [
+      "$STT_access"
+    ],
+    "sections": [
+      {
+        "name": "Entrance Eye Switch",
+        "item_count": 1,
+        "capture_item": true,
+        "access_rules": [
+          "bow",
+        ],
+	"visibility_rules": [
+	  "fairysanity_on",
+	  "fairysanity_chest"
+	],
+      },
+      {
+        "name": "Basement Ledge",
+        "item_count": 1,
+        "capture_item": true,
+        "access_rules": [
+          "goronmask,$explosives",
+          "lightarrow,magic,bow,zoramask,smallkey_st:1",
+          "lightarrow,magic,bow,zoramask,keysy"
+        ],
+	"visibility_rules": [
+	  "fairysanity_on",
+	  "fairysanity_chest"
+	],
+      },
+      {
+        "name": "Bridge Crystal",
+        "item_count": 1,
+        "capture_item": true,
+        "access_rules": [
+          "lightarrow,bow,magic,zoramask",
+        ],
+	"visibility_rules": [
+	  "fairysanity_on",
+	  "fairysanity_chest"
+	],
+      },
+      {
+        "name": "Underwater",
+        "item_count": 1,
+        "capture_item": true,
+        "access_rules": [
+          "lightarrow,bow,magic,zoramask,$ISTT_shuffle,dekumask",
+          "lightarrow,bow,magic,$ISTT_shuffle,[allowLogic]",
+	  "lightarrow,bow,magic,icearrow,zoramask,[allowLogic]"
+        ],
+	"visibility_rules": [
+	  "fairysanity_on",
+	  "fairysanity_chest"
+	],
+      },
+      {
+        "name": "Mirror Sun Switch",
+        "item_count": 1,
+        "capture_item": true,
+        "access_rules": [
+          "mirrorshield,$explosives,zoramask,smallkey_st:2,goronmask",
+          "bow,lightarrow,magic,smallkey_st:1",
+          "mirrorshield,$explosives,zoramask,keysy,goronmask",
+          "bow,lightarrow,magic,keysy"
+        ],
+	"visibility_rules": [
+	  "fairysanity_on",
+	  "fairysanity_chest"
+	],
+      },
+      {
+        "name": "Mirror Sun Block",
+        "item_count": 1,
+        "capture_item": true,
+        "access_rules": [
+          "mirrorshield,$explosives,zoramask,smallkey_st:2,goronmask",
+          "bow,lightarrow,magic,smallkey_st:1",
+          "mirrorshield,$explosives,zoramask,keysy,goronmask",
+          "bow,lightarrow,magic,keysy"
+        ],
+	"visibility_rules": [
+	  "fairysanity_on",
+	  "fairysanity_chest"
+	],
+      },
+      {
+        "name": "Lava Room Ledge",
+        "item_count": 1,
+        "capture_item": true,
+        "access_rules": [
+          "dekumask,mirrorshield,goronmask,zoramask,$explosives,smallkey_st:2",
+          "bow,lightarrow,magic,smallkey_st:1",
+          "dekumask,mirrorshield,goronmask,zoramask,$explosives,keysy",
+          "bow,lightarrow,magic,keysy"
+        ],
+	"visibility_rules": [
+	  "fairysanity_on",
+	  "fairysanity_chest"
+	],
+      },
+      {
+        "name": "Lava Fire Ring",
+        "item_count": 1,
+        "capture_item": true,
+        "access_rules": [
+          "mirrorshield,goronmask,dekumask,$explosives,smallkey_st:2",
+          "bow,lightarrow,magic,smallkey_st:1,goronmask",
+          "mirrorshield,goronmask,dekumask,$explosives,keysy",
+          "bow,lightarrow,magic,keysy,goronmask"
+        ],
+	"visibility_rules": [
+	  "fairysanity_on",
+	  "fairysanity_chest"
+	],
+      },
+      {
+        "name": "Eyegore",
+        "item_count": 1,
+        "capture_item": true,
+        "access_rules": [
+          "dekumask,mirrorshield,goronmask,zoramask,$explosives,smallkey_st:2",
+          "bow,lightarrow,magic,smallkey_st:1",
+          "dekumask,mirrorshield,goronmask,zoramask,$explosives,keysy",
+          "bow,lightarrow,magic,keysy"
+        ],
+	"visibility_rules": [
+	  "fairysanity_on",
+	  "fairysanity_chest"
+	],
+      },
+      {
+        "name": "Thin Bridge (Pre-boss)",
+        "item_count": 1,
+        "capture_item": true,
+        "access_rules": [
+          "lightarrow,$explosives,bow,magic,smallkey_st:1,[allowLogic]",
+          "dekumask,lightarrow,goronmask,$ISTT_shuffle,bow,magic,smallkey_st:3",
+	  "dekumask,lightarrow,$ISTT_shuffle,bow,magic,smallkey_st:3",
+	  "dekumask,mirrorshield,goronmask,zoramask,$explosives,smallkey_st:2,[allowLogic]",
+          "lightarrow,$explosives,bow,magic,keysy,[allowLogic]",
+          "dekumask,lightarrow,goronmask,$ISTT_shuffle,bow,magic,keysy",
+	  "dekumask,lightarrow,$ISTT_shuffle,bow,magic,keysy",
+	  "dekumask,mirrorshield,goronmask,zoramask,$explosives,keysy,[allowLogic]"
+        ],
+	"visibility_rules": [
+	  "fairysanity_on",
+	  "fairysanity_chest"
+	],
+      },
+      {
+        "name": "Death Armos (From ISTT)",
+        "item_count": 1,
+        "capture_item": true,
+        "access_rules": [
+          "$ISTT_shuffle,lightarrow,bow,magic,dekumask,goronmask,hookshot,smallkey_st:1",
+          "$ISTT_shuffle,lightarrow,bow,magic,dekumask,hookshot,smallkey_st:1",
+          "$ISTT_shuffle,lightarrow,bow,magic,dekumask,goronmask,hookshot,keysy",
+          "$ISTT_shuffle,lightarrow,bow,magic,dekumask,hookshot,keysy",
+	  "$ISTT_shuffle,$explosives,[allowLogic]",
+	  "$ISTT_shuffle,lightarrow,bow,magic,[allowLogic],dekumask",
+	  "hookshot,bow,lightarrow,magic,[allowLogic]"
+        ],
+	"visibility_rules": [
+	  "fairysanity_on",
+	  "fairysanity_chest"
+	],
+      }
+    ],
+    "map_locations": [
+      {
+        "map": "main",
+        "x": 1605,
+        "y": 650
       }
     ]
   },
@@ -317,32 +1903,168 @@
         "item_count": 1,
         "capture_item": true,
         "access_rules": [
-            "$ISTT_shuffle,bow,lightarrow,magic"
-        ]
+            "$ISTT_shuffle,bow,lightarrow,magic,dekumask",
+	    "$ISTT_shuffle,bow,lightarrow,magic,[allowLogic]"
+        ],
+	"visibility_rules": [
+	  "keys_on",
+	  "keysy"
+	]
+      },
+      {
+        "name": "Updraft Room",
+        "hosted_item": "smallkey_st",
+        "access_rules": [
+            "$ISTT_shuffle,bow,lightarrow,magic,dekumask",
+	    "$ISTT_shuffle,bow,lightarrow,magic,[allowLogic]"
+        ],
+	"visibility_rules": [
+	  "keys_off"
+	]
+      },
+      {
+        "name": "Updraft Rupees",
+        "capture_item": true,
+        "item_count": 2,
+        "access_rules": [
+            "$ISTT_shuffle,bow,lightarrow,magic,dekumask",
+	    "$ISTT_shuffle,bow,lightarrow,magic,hookshot"
+        ],
+	"visibility_rules": [
+	  "red_on"
+	],
+        "chest_unopened_img": "images/zzRed.png",
+	"clear_as_group": false,
+        "chest_opened_img": "images/zzRedOff.png",
+      },
+      {
+        "name": "Dexihand Rupee",
+        "capture_item": true,
+        "item_count": 1,
+        "access_rules": [
+            "$ISTT_shuffle,bow,lightarrow,magic,dekumask",
+	    "$ISTT_shuffle,bow,lightarrow,magic,[allowLogic]"
+        ],
+	"visibility_rules": [
+	  "green_on"
+	],
+        "chest_unopened_img": "images/zzGreen.png",
+        "chest_opened_img": "images/zzGreenOff.png",
+      },
+      {
+        "name": "Dexihand Rupee",
+        "capture_item": true,
+        "item_count": 1,
+        "access_rules": [
+            "$ISTT_shuffle,bow,lightarrow,magic,dekumask",
+	    "$ISTT_shuffle,bow,lightarrow,magic,[allowLogic]"
+        ],
+	"visibility_rules": [
+	  "blue_on"
+	],
+        "chest_unopened_img": "images/zzBlue.png",
+        "chest_opened_img": "images/zzBlueOff.png",
+      },
+      {
+        "name": "Dexihand Rupee",
+        "capture_item": true,
+        "item_count": 1,
+        "access_rules": [
+            "$ISTT_shuffle,bow,lightarrow,magic,dekumask",
+	    "$ISTT_shuffle,bow,lightarrow,magic,[allowLogic]"
+        ],
+	"visibility_rules": [
+	  "red_on"
+	],
+        "chest_unopened_img": "images/zzRed.png",
+        "chest_opened_img": "images/zzRedOff.png",
       },
       {
         "name": "Death Armos Maze",
         "item_count": 1,
         "capture_item": true,
         "access_rules": [
-          "$ISTT_shuffle,dekumask,bow,lightarrow,hookshot,magic"
-        ]
+          "$ISTT_shuffle,dekumask,bow,lightarrow,hookshot,magic,[allowLogic]",
+	  "$ISTT_shuffle,dekumask,bow,lightarrow,magic,[allowLogic]",
+	  "$ISTT_shuffle,dekumask,bow,lightarrow,magic,smallkey_st:1,hookshot",
+	  "$ISTT_shuffle,dekumask,bow,lightarrow,magic,keysy,hookshot"
+        ],
+	"visibility_rules": [
+	  "keys_on",
+	  "keysy"
+	]
+      },
+      {
+        "name": "Death Armos Maze",
+        "hosted_item": "smallkey_st",
+        "access_rules": [
+          "$ISTT_shuffle,dekumask,bow,lightarrow,hookshot,magic,[allowLogic]",
+	  "$ISTT_shuffle,dekumask,bow,lightarrow,magic,[allowLogic]",
+	  "$ISTT_shuffle,dekumask,bow,lightarrow,magic,smallkey_st:1,hookshot",
+	  "$ISTT_shuffle,dekumask,bow,lightarrow,magic,keysy,hookshot"
+        ],
+	"visibility_rules": [
+	  "keys_off"
+	]
       },
       {
         "name": "Boss Key",
         "item_count": 1,
         "capture_item": true,
         "access_rules": [
-          "$ISTT_shuffle,dekumask,hookshot,bow,lightarrow,magic"
-        ]
+          "$ISTT_shuffle,dekumask,hookshot,bow,lightarrow,magic,smallkey_st:1",
+          "$ISTT_shuffle,dekumask,hookshot,bow,lightarrow,magic,keysy",
+	  "$ISTT_shuffle,lightarrow,bow,magic,[allowLogic]"
+        ],
+   	"chest_unopened_img": "images/chest_golden_closed.png",
+    	"chest_opened_img": "images/chest_golden_open.png",
+	"visibility_rules": [
+	  "bkeys_on",
+	  "bkeysy"
+	]
+      },
+      {
+        "name": "Boss Key",
+        "hosted_item": "bosskey_st",
+        "access_rules": [
+          "$ISTT_shuffl,dekumask,hookshot,bow,lightarrow,magic,smallkey_st:1",
+          "$ISTT_shuffle,dekumask,hookshot,bow,lightarrow,magic,keysy",
+	  "$ISTT_shuffle,lightarrow,bow,magic,[allowLogic]"
+        ],
+   	"chest_unopened_img": "images/chest_golden_closed.png",
+    	"chest_opened_img": "images/chest_golden_open.png",
+	"visibility_rules": [
+	  "bkeys_off"
+	]
       },
       {
         "name": "Giant's Mask",
         "item_count": 1,
         "capture_item": true,
         "access_rules": [
-          "$ISTT_shuffle,hookshot,dekumask,lightarrow,bow,magic"
-          ]
+          "$ISTT_shuffle,hookshot,dekumask,lightarrow,bow,magic,smallkey_st:2",
+          "$ISTT_shuffle,hookshot,dekumask,lightarrow,bow,magic,keysy",
+	  "$ISTT_shuffle,hookshot,lightarrow,bow,magic,[allowLogic]"
+          ],
+	"visibility_rules": [
+	  "standard_on",
+	  "chests_on"
+	],
+      },
+      {
+        "name": "Pre-Boss Rupees",
+        "capture_item": true,
+        "item_count": 11,
+        "access_rules": [
+            "$ISTT_shuffle,bow,lightarrow,magic,dekumask",
+	    "$ISTT_shuffle,bow,lightarrow,magic,[allowLogic]"
+        ],
+	"visibility_rules": [
+	  "blue_on"
+	],
+        "chest_unopened_img": "images/zzBlue.png",
+	"clear_as_group": false,
+        "chest_opened_img": "images/zzBlueOff.png",
       },
       {
         "name": "Twinmold",
@@ -352,7 +2074,14 @@
         "chest_opened_img": "images/HC_grey.png",
         "chest_unopened_img": "images/HC.png",
         "access_rules": [
-          "$ISTT_shuffle,hookshot,dekumask,bow,lightarrow,magic"
+          "$ISTT_shuffle,hookshot,dekumask,bow,lightarrow,magic,bosskey_st,smallkey_st:2,giant,sword",
+	  "$ISTT_shuffle,hookshot,dekumask,bow,lightarrow,magic,[bosskey_st],standard_on",
+	  "$ISTT_shuffle,hookshot,dekumask,bow,lightarrow,magic,bosskey_st,smallkey_st:2,[stdLog]",
+	  "$ISTT_shuffle,hookshot,dekumask,bow,lightarrow,magic,bosskey_st,keysy,[stdLog]",
+	  "$ISTT_shuffle,hookshot,dekumask,bow,lightarrow,magic,bkeysy,smallkey_st:2,[stdLog]",
+	  "$ISTT_shuffle,hookshot,dekumask,bow,lightarrow,magic,bkeysy,keysy,[stdLog]",
+	  "$ISTT_shuffle,hookshot,bow,lightarrow,magic,bosskey_st,[allowLogic]",
+	  "$ISTT_shuffle,hookshot,bow,lightarrow,magic,bkeysy,[allowLogic]",
         ]
       }
     ],
@@ -365,30 +2094,134 @@
     ]
   },
   {
+    "name": "Inverted Stone Tower Temple Fairies",
+    "short_name": "ISTT Fairies",
+    "chest_opened_img": "images/chest_fairy_grey.png",
+    "chest_unopened_img": "images/chest_fairy_open.png",
+    "parent": "Ikana Canyon",
+    "access_rules": [
+      "$ISTT_shuffle"
+    ],
+    "sections": [
+      {
+        "name": "Entrance by Boss Warp",
+        "item_count": 1,
+        "capture_item": true,
+        "access_rules": [
+          "bow,lightarrow,magic"
+        ],
+	"visibility_rules": [
+	  "fairysanity_on",
+	  "fairysanity_chest"
+	],
+      },
+      {
+        "name": "Updraft Frozen Eye",
+        "item_count": 1,
+        "capture_item": true,
+        "access_rules": [
+          "firearrow,lightarrow,bow,magic,dekumask",
+          "firearrow,lightarrow,bow,magic,hookshot"
+        ],
+	"visibility_rules": [
+	  "fairysanity_on",
+	  "fairysanity_chest"
+	],
+      },
+      {
+        "name": "Updraft Fire Ring",
+        "item_count": 1,
+        "capture_item": true,
+        "access_rules": [
+            "$STT_access,lightarrow,bow,magic,zoramask,dekumask"
+        ],
+	"visibility_rules": [
+	  "fairysanity_on",
+	  "fairysanity_chest"
+	],
+      },
+      {
+        "name": "Wizzrobe",
+        "item_count": 1,
+        "capture_item": true,
+        "access_rules": [
+          "dekumask,lightarrow,bow,magic,hookshot,goronmask,smallkey_st:1",
+          "dekumask,lightarrow,bow,magic,smallkey_st:1",
+          "dekumask,lightarrow,bow,magic,hookshot,goronmask,keysy",
+          "dekumask,lightarrow,bow,magic,keysy",
+	  "lightarrow,bow,magic,[allowLogic],dekumask",
+	  "lightarrow,bow,magic,[allowLogic],sword",
+	  "lightarrow,bow,magic,[allowLogic],gfs",
+	  "lightarrow,bow,magic,[allowLogic],sticks",
+	  "lightarrow,bow,magic,[allowLogic],zoramask",
+	  "$explosives,hookshot,[allowLogic]"
+        ],
+	"visibility_rules": [
+	  "fairysanity_on",
+	  "fairysanity_chest"
+	],
+      },
+    ],
+    "map_locations": [
+      {
+        "map": "main",
+        "x": 1605,
+        "y": 615
+      }
+    ]
+  },
+  {
     "name": "Pirate Fortress",
     "short_name": "PF",
     "parent": "North Great Bay",
     "access_rules": [
-      "zoramask,sword"
+      "zoramask"
     ],
     "children": [
       {
         "name": "PF Interior",
         "children": [
           {
-            "name": "Hookshot",
-            "access_rules": [
-              "goronmask,bow",
-              "goronmask,dekumask",
-              "hookshot,bow",
-              "hookshot,dekumask"
-            ],
+            "name": "Hookshot Room",
             "sections": [
               {
-                "name": "Scare Guards",
+                "name": "Hookshot Chest",
                 "item_count": 1,
-                "capture_item": true
-              }
+                "capture_item": true,
+                "access_rules": [
+                  "goronmask,bow",
+                  "goronmask,dekumask,magic",
+                  "hookshot,bow",
+                  "hookshot,dekumask,magic"
+                ],
+	          "visibility_rules": [
+	          "standard_on",
+	          "chests_on"
+	        ],
+              },
+              {
+                "name": "Pots Above Room",
+                "item_count": 2,
+                "capture_item": true,
+                "visibility_rules": [
+                  "arrow_on",
+                ],
+                "chest_unopened_img": "images/zzArrow.png",
+                "chest_opened_img": "images/zzArrowOff.png",
+		"clear_as_group": false,
+              },
+              {
+                "name": "Skull Flag",
+                "item_count": 3,
+                "capture_item": true,
+                "visibility_rules": [
+                  "green_on",
+	          "hits_on"
+                ],
+                "chest_unopened_img": "images/zzGreen.png",
+                "chest_opened_img": "images/zzGreenOff.png",
+		"clear_as_group": false,
+              },
             ],
             "map_locations": [
               {
@@ -399,7 +2232,7 @@
             ]
           },
           {
-            "name": "Pirate Fortress Maze",
+            "name": "Pirate Fortress Sewer",
             "access_rules": [
               "goronmask"
             ],
@@ -407,41 +2240,123 @@
               {
                 "name": "Fortress HP",
                 "item_count": 1,
-                "capture_item": true
+                "capture_item": true,
+    		"chest_opened_img": "images/HP_grey.png",
+    		"chest_unopened_img": "images/HP.png",
+		"visibility_rules": [
+		  "hp_on",
+		  "standard_on"
+		],
               },
               {
                 "name": "Fortress Maze 20 Rupees",
                 "item_count": 1,
                 "capture_item": true,
-                "access_rules": [
-                  "everything_on"
-                ],
-                "visibility_rules": [
-                  "everything_on"
-                ]
+		"visibility_rules": [
+		  "red_on",
+		  "standard_on",
+		  "chests_on"
+		],
               },
               {
                 "name": "HP Room 20 Rupees",
                 "item_count": 1,
                 "capture_item": true,
-                "access_rules": [
-                  "everything_on"
-                ],
-                "visibility_rules": [
-                  "everything_on"
-                ]
+		"visibility_rules": [
+		  "red_on",
+		  "standard_on",
+		  "chests_on"
+		],
               },
               {
                 "name": "HP Room 5 Rupees",
                 "item_count": 1,
                 "capture_item": true,
-                "access_rules": [
-                  "everything_on"
-                ],
-                "visibility_rules": [
-                  "everything_on"
-                ]
-              }
+		"visibility_rules": [
+		  "blue_on",
+		  "standard_on",
+		  "chests_on"
+		],
+              },
+              {
+                "name": "HP Room Pot",
+                "item_count": 1,
+                "capture_item": true,
+		"visibility_rules": [
+		  "arrow_on",
+	          "pots_on"
+		],
+                "chest_unopened_img": "images/zzArrow.png",
+                "chest_opened_img": "images/zzArrwOff.png",
+              },
+              {
+                "name": "HP Room Barrel",
+                "item_count": 1,
+                "capture_item": true,
+		"visibility_rules": [
+		  "blue_on",
+	   	  "barrels_on"
+		],
+                "chest_unopened_img": "images/zzBlue.png",
+                "chest_opened_img": "images/zzBlueOff.png",
+              },
+              {
+                "name": "HP Room Barrels",
+                "item_count": 4,
+                "capture_item": true,
+		"visibility_rules": [
+		  "green_on",
+	   	  "barrels_on"
+		],
+                "chest_unopened_img": "images/zzGreen.png",
+                "chest_opened_img": "images/zzGreenOff.png",
+		"clear_as_group": false,
+              },
+              {
+                "name": "Gate Pot",
+                "item_count": 1,
+                "capture_item": true,
+		"visibility_rules": [
+		  "arrow_on",
+	   	  "pots_on"
+		],
+                "chest_unopened_img": "images/zzArrow.png",
+                "chest_opened_img": "images/zzArrowOff.png",
+              },
+              {
+                "name": "Exit Barrels",
+                "item_count": 3,
+                "capture_item": true,
+		"visibility_rules": [
+		  "blue_on",
+	   	  "barrels_on"
+		],
+                "chest_unopened_img": "images/zzBlue.png",
+                "chest_opened_img": "images/zzBlueOff.png",
+		"clear_as_group": false,
+              },
+              {
+                "name": "Exit Pot",
+                "item_count": 1,
+                "capture_item": true,
+		"visibility_rules": [
+		  "arrow_on",
+	   	  "pots_on"
+		],
+                "chest_unopened_img": "images/zzArrow.png",
+                "chest_opened_img": "images/zzArrowOff.png",
+              },
+              {
+                "name": "Exit Pot",
+                "item_count": 1,
+                "capture_item": true,
+		"visibility_rules": [
+		  "nut_on",
+	   	  "pots_on"
+		],
+                "chest_unopened_img": "images/zzNut.png",
+                "chest_opened_img": "images/zzNutOff.png",
+              },
             ],
             "map_locations": [
               {
@@ -454,17 +2369,30 @@
           {
             "name": "Egg Tank 20 Rupees",
             "access_rules": [
-              "hookshot,everything_on"
-            ],
-            "visibility_rules": [
-              "everything_on"
+              "hookshot"
             ],
             "sections": [
               {
                 "name": "Dive Down",
                 "item_count": 1,
-                "capture_item": true
-              }
+                "capture_item": true,
+		"visibility_rules": [
+		  "red_on",
+		  "standard_on",
+		  "chests_on"
+		],
+              },
+              {
+                "name": "Pot by Tank",
+                "item_count": 1,
+                "capture_item": true,
+		"visibility_rules": [
+		  "arrow_on",
+	 	  "pots_on"
+		],
+                "chest_unopened_img": "images/zzArrow.png",
+                "chest_opened_img": "images/zzArrowOff.png",
+              },
             ],
             "map_locations": [
               {
@@ -477,46 +2405,121 @@
           {
             "name": "Guard Room 100 Rupees",
             "access_rules": [
-              "hookshot,everything_on"
-            ],
-            "visibility_rules": [
-              "everything_on"
+              "hookshot",
+	      "[allowLogic]"
             ],
             "sections": [
               {
                 "name": "Open It",
                 "item_count": 1,
-                "capture_item": true
-              }
+                "capture_item": true,
+		"visibility_rules": [
+		  "silver_on",
+		  "standard_on",
+		  "chests_on"
+		],
+              },
+              {
+                "name": "Pot by Tank",
+                "item_count": 1,
+                "capture_item": true,
+		"visibility_rules": [
+		  "arrow_on",
+	 	  "pots_on"
+		],
+                "chest_unopened_img": "images/zzArrow.png",
+                "chest_opened_img": "images/zzArrowOff.png",
+              },
+              {
+                "name": "Corner Hearts",
+                "item_count": 3,
+                "capture_item": true,
+		"visibility_rules": [
+		  "hearts_on",
+		],
+                "chest_unopened_img": "images/zzHeart.png",
+                "chest_opened_img": "images/zzHeartOff.png",
+		"clear_as_group": false,
+              },
             ],
             "map_locations": [
               {
                 "map": "main",
-                "x": 300,
-                "y": 300
+                "x": 295,
+                "y": 310
               }
             ]
           },
           {
-            "name": "Courtyard 20 Rupees",
+            "name": "Outside Skull Flag",
             "access_rules": [
-              "hookshot,everything_on",
-              "goronmask,everything_on"
+              "hookshot",
+              "goronmask"
             ],
-            "visibility_rules": [
-              "everything_on"
+            "sections": [
+              {
+                "name": "Left Eye",
+                "item_count": 3,
+                "capture_item": true,
+		"visibility_rules": [
+		  "green_on",
+	 	  "hits_on"
+		],
+                "access_rules": [
+                  "hookshot",
+		  "goronmask",
+                ],
+		"clear_as_group": false,
+                "chest_unopened_img": "images/zzGreen.png",
+                "chest_opened_img": "images/zzGreenOff.png",
+              },
+              {
+                "name": "Right Eye",
+                "item_count": 3,
+                "capture_item": true,
+		"visibility_rules": [
+		  "green_on",
+	 	  "hits_on"
+		],
+                "access_rules": [
+                  "hookshot",
+		  "goronmask",
+                ],
+		"clear_as_group": false,
+                "chest_unopened_img": "images/zzGreen.png",
+                "chest_opened_img": "images/zzGreenOff.png",
+              },
+            ],
+            "map_locations": [
+              {
+                "map": "main",
+                "x": 330,
+                "y": 365
+              }
+            ]
+          },
+          {
+            "name": "Lower 20 Rupees",
+            "access_rules": [
+              "hookshot",
+              "goronmask"
             ],
             "sections": [
               {
                 "name": "Open It",
                 "item_count": 1,
-                "capture_item": true
+                "capture_item": true,
+		"visibility_rules": [
+		  "red_on",
+		  "standard_on",
+		  "chests_on"
+		],
               }
             ],
             "map_locations": [
               {
                 "map": "main",
-                "x": 360,
+                "x": 365,
                 "y": 360
               }
             ]
@@ -524,17 +2527,41 @@
           {
             "name": "Upper 20 Rupees",
             "access_rules": [
-              "hookshot,everything_on"
-            ],
-            "visibility_rules": [
-              "everything_on"
+              "hookshot"
             ],
             "sections": [
               {
-                "name": "Open It",
+                "name": "Upper Chest",
                 "item_count": 1,
-                "capture_item": true
-              }
+                "capture_item": true,
+		"visibility_rules": [
+		  "red_on",
+		  "standard_on",
+		  "chests_on"
+		],
+              },
+              {
+                "name": "Pot by Tank",
+                "item_count": 1,
+                "capture_item": true,
+		"visibility_rules": [
+		  "blue_on",
+	 	  "pots_on"
+		],
+                "chest_unopened_img": "images/zzBlue.png",
+                "chest_opened_img": "images/zzBlueOff.png",
+              },
+              {
+                "name": "Pot by Tank",
+                "item_count": 1,
+                "capture_item": true,
+		"visibility_rules": [
+		  "arrow_on",
+	 	  "pots_on"
+		],
+                "chest_unopened_img": "images/zzArrow.png",
+                "chest_opened_img": "images/zzArrowOff.png",
+              },
             ],
             "map_locations": [
               {
@@ -548,16 +2575,16 @@
       },
       {
         "name": "Underwater Chest 1",
-        "access_rules": [
-                  "everything_on"
-        ],
-        "visibility_rules": [
-                  "everything_on"
-        ],
         "sections": [
           {
             "name": "Dive Down",
-            "item_count": 1
+            "item_count": 1,
+                "capture_item": true,
+		"visibility_rules": [
+		  "red_on",
+		  "standard_on",
+		  "chests_on"
+		],
           }
         ],
         "map_locations": [
@@ -570,16 +2597,16 @@
       },
       {
         "name": "Underwater Chest 2",
-        "access_rules": [
-                  "everything_on"
-        ],
-        "visibility_rules": [
-            "everything_on"
-        ],
         "sections": [
           {
             "name": "Dive Down",
-            "item_count": 1
+            "item_count": 1,
+                "capture_item": true,
+		"visibility_rules": [
+		  "red_on",
+		  "standard_on",
+		  "chests_on"
+		],
           }
         ],
         "map_locations": [
@@ -592,16 +2619,16 @@
       },
       {
         "name": "Underwater Chest 3",
-        "access_rules": [
-                  "everything_on"
-        ],
-        "visibility_rules": [
-                  "everything_on"
-        ],
         "sections": [
           {
             "name": "Dive Down",
-            "item_count": 1
+            "item_count": 1,
+            "capture_item": true,
+	     "visibility_rules": [
+		"red_on",
+		"standard_on",
+		"chests_on"
+	     ],
           }
         ],
         "map_locations": [
@@ -624,37 +2651,103 @@
       {
         "name": "Deku HP // 1 Mask",
         "item_count": 1,
-        "capture_item": true
+        "capture_item": true,
+        "access_rules": [
+           "$maskcount:1,dekumask"
+         ],
+    	"chest_opened_img": "images/HP_grey.png",
+    	"chest_unopened_img": "images/HP.png",
+	"visibility_rules": [
+	   "hp_on"
+	],
       },
       {
         "name": "Goron HP // 2 Masks",
         "item_count": 1,
-        "capture_item": true
+        "capture_item": true,
+        "access_rules": [
+           "$maskcount:2,goronmask,magic"
+         ],
+    	"chest_opened_img": "images/HP_grey.png",
+    	"chest_unopened_img": "images/HP.png",
+	"visibility_rules": [
+	   "hp_on"
+	],
       },
       {
         "name": "Zora HP // 3 Masks",
         "item_count": 1,
-        "capture_item": true
+        "capture_item": true,
+        "access_rules": [
+           "$maskcount:3,zoramask"
+         ],
+    	"chest_opened_img": "images/HP_grey.png",
+    	"chest_unopened_img": "images/HP.png",
+	"visibility_rules": [
+	   "hp_on"
+	],
       },
       {
         "name": "Hide and Seek HP // 4 Masks",
         "item_count": 1,
-        "capture_item": true
+        "capture_item": true,
+        "access_rules": [
+           "$maskcount:4,$explosives,bow,firearrow,hookshot,magic"
+         ],
+    	"chest_opened_img": "images/HP_grey.png",
+    	"chest_unopened_img": "images/HP.png",
+	"visibility_rules": [
+	   "hp_on"
+	],
+      },
+      {
+        "name": "Link Trial Pots",
+        "item_count": 4,
+        "capture_item": true,
+        "access_rules": [
+           "$maskcount:4"
+        ],
+	"visibility_rules": [
+	   "jars_on",
+	   "pots_on"
+	],
+        "chest_unopened_img": "images/zzMagic.png",
+	"clear_as_group": false,
+        "chest_opened_img": "images/zzMagicOff.png",
       },
       {
         "name": "Link Trial 30 Arrows",
         "item_count": 1,
-        "capture_item": true
+        "capture_item": true,
+        "access_rules": [
+           "$maskcount:4,hookshot"
+         ],
+	"visibility_rules": [
+	   "arrow_on"
+	],
       },
       {
         "name": "Link Trial 10 Bombchu",
         "item_count": 1,
-        "capture_item": true
+        "capture_item": true,
+        "access_rules": [
+           "$maskcount:4,hookshot"
+         ],
+	"visibility_rules": [
+	   "bombchu_on"
+	],
       },
       {
         "name": "Fierce Deity Mask // All Masks",
         "item_count": 1,
-        "capture_item": true
+        "capture_item": true,
+        "access_rules": [
+           "$maskcount:20,$explosives,bow,firearrow,hookshot,magic"
+         ],
+	"visibility_rules": [
+	   "moon_on",
+	   "standard_on"
+	],
       }
     ],
     "map_locations": [

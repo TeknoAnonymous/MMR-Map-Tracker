@@ -1,33 +1,1060 @@
 [
   {
-    "name": "Everything Else",
-    "type": "progressive",
-    "allow_disabled": false,
-    "loop": true,
-    "stages": [
-      {
-        "img": "images/settings_everything_off.png",
-        "codes": "everything_off"
-      },
-      {
-        "img": "images/settings_everything_on.png",
-        "codes": "everything_on"
-      }
-    ]
-  },
-  {
     "name": "Shopsanity",
     "type": "progressive",
     "allow_disabled": false,
     "loop": true,
     "stages": [
       {
-        "img": "images/settings_shopsanity_off.png",
-        "codes": "shopsanity_off"
+        "img": "images/zzShopsOff.png",
+        "codes": "shopsanity_off",
+	"inherit_codes": false
       },
       {
-        "img": "images/settings_shopsanity_on.png",
-        "codes": "shopsanity_on"
+        "img": "images/zzShops.png",
+        "codes": "shopsanity_on",
+	"inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Fairysanity",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/zzFairyOff.png",
+        "codes": "fairysanity_off",
+	"inherit_codes": false
+      },
+      {
+        "img": "images/zzFairy.png",
+        "codes": "fairysanity_on",
+	"inherit_codes": false
+      },
+      {
+        "img": "images/zzChestFairy.png",
+        "codes": "fairysanity_chest",
+	"inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Skullsanity",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/zzSkullsOff.png",
+        "codes": "skullsanity_off",
+	"inherit_codes": false
+      },
+      {
+        "img": "images/zzSkulls.png",
+        "codes": "skullsanity_on",
+	"inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Cowsanity",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/zzCowsOff.png",
+        "codes": "cowsanity_off",
+	"inherit_codes": false
+      },
+      {
+        "img": "images/zzCows.png",
+        "codes": "cowsanity_on",
+	"inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Standard Tricks",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/zzStdLogic.png",
+        "codes": "stdLog",
+	"inherit_codes": false
+      },
+      {
+        "img": "images/zzStdNon.png",
+        "codes": "stdNon",
+	"inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Allowed Tricks",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/zzAllowShow.png",
+        "codes": "allowShow",
+	"inherit_codes": false
+      },
+      {
+        "img": "images/zzAllowLogic.png",
+        "codes": "allowLogic",
+	"inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Banned Tricks",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/zzBannedHide.png",
+        "codes": "banHide",
+	"inherit_codes": false
+      },
+      {
+        "img": "images/zzBannedLogic.png",
+        "codes": "banLogic",
+	"inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Small Keys",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/zzKeysy.png",
+        "codes": "keysy",
+	"inherit_codes": false
+      },
+      {
+        "img": "images/zzKeysOff.png",
+        "codes": "keys_off",
+	"inherit_codes": false
+      },
+      {
+        "img": "images/zzKeys.png",
+        "codes": "keys_on",
+	"inherit_codes": false
+      },
+    ]
+  },
+  {
+    "name": "Boss Keys",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/zzBossKeyOff.png",
+        "codes": "bkeys_off",
+	"inherit_codes": false
+      },
+      {
+        "img": "images/zzBossKey.png",
+        "codes": "bkeys_on",
+	"inherit_codes": false
+      },
+      {
+        "img": "images/zzBossKeysy.png",
+        "codes": "bkeysy",
+	"inherit_codes": false
+      },
+    ]
+  },
+  {
+    "name": "Bottlesanity",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/zzBottlesOff.png",
+        "codes": "botsanity_off",
+	"inherit_codes": false
+      },
+      {
+        "img": "images/zzBottles.png",
+        "codes": "botsanity_on",
+	"inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Randomize Soaring",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/zzSoaringOff.png",
+        "codes": "soaring_off",
+	"inherit_codes": false
+      },
+      {
+        "img": "images/zzSoaring.png",
+        "codes": "soaring_on",
+	"inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Gold Rupees",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/zzGoldOff.png",
+        "codes": "gold_off",
+	"inherit_codes": false
+      },
+      {
+        "img": "images/zzGold.png",
+        "codes": "gold_on",
+	"inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Purple Rupees",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/zzPurpleOff.png",
+        "codes": "purple_off",
+	"inherit_codes": false
+      },
+      {
+        "img": "images/zzPurple.png",
+        "codes": "purple_on",
+	"inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Blue Rupees",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/zzBlueOff.png",
+        "codes": "blue_off",
+	"inherit_codes": false
+      },
+      {
+        "img": "images/zzBlue.png",
+        "codes": "blue_on",
+	"inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Silver Rupees",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/zzSilverOff.png",
+        "codes": "silver_off",
+	"inherit_codes": false
+      },
+      {
+        "img": "images/zzSilver.png",
+        "codes": "silver_on",
+	"inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Red Rupees",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/zzRedOff.png",
+        "codes": "red_off",
+	"inherit_codes": false
+      },
+      {
+        "img": "images/zzRed.png",
+        "codes": "red_on",
+	"inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Green Rupees",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/zzGreenOff.png",
+        "codes": "green_off",
+	"inherit_codes": false
+      },
+      {
+        "img": "images/zzGreen.png",
+        "codes": "green_on",
+	"inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Recovery Hearts",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/zzHeartOff.png",
+        "codes": "hearts_off",
+	"inherit_codes": false
+      },
+      {
+        "img": "images/zzHeart.png",
+        "codes": "hearts_on",
+	"inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Magic Jars",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/zzMagicOff.png",
+        "codes": "jars_off",
+	"inherit_codes": false
+      },
+      {
+        "img": "images/zzMagic.png",
+        "codes": "jars_on",
+	"inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Heart Pieces",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/zzHPOff.png",
+        "codes": "hp_off",
+	"inherit_codes": false
+      },
+      {
+        "img": "images/zzHP.png",
+        "codes": "hp_on",
+	"inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Great Fairy Rewards",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/zzGFOff.png",
+        "codes": "gf_off",
+	"inherit_codes": false
+      },
+      {
+        "img": "images/zzGF.png",
+        "codes": "gf_on",
+	"inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Randomzie Seahorse",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/zzSeahorseOff.png",
+        "codes": "seahorse_off",
+	"inherit_codes": false
+      },
+      {
+        "img": "images/zzSeahorse.png",
+        "codes": "seahorse_on",
+	"inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Deku Nuts",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/zzNutOff.png",
+        "codes": "nut_off",
+	"inherit_codes": false
+      },
+      {
+        "img": "images/zzNut.png",
+        "codes": "nut_on",
+	"inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Crazy Starting Items",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/zzStartOff.png",
+        "codes": "start_off",
+	"inherit_codes": false
+      },
+      {
+        "img": "images/zzStart.png",
+        "codes": "start_on",
+	"inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Ammo (Bombs, Nuts, Sticks, Beans, Arrows)",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/zzCollectOff.png",
+        "codes": "ammo_off",
+	"inherit_codes": false
+      },
+      {
+        "img": "images/zzCollect.png",
+        "codes": "ammo_on",
+	"inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Bombchus",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/zzBombchuOff.png",
+        "codes": "bombchu_off",
+	"inherit_codes": false
+      },
+      {
+        "img": "images/zzBombchu.png",
+        "codes": "bombchu_on",
+	"inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Heart Containers",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/zzHC.png",
+        "codes": "HC_on",
+	"inherit_codes": false
+      },
+      {
+        "img": "images/zzHCoff.png",
+        "codes": "HC_off",
+	"inherit_codes": false
+      },
+    ]
+  },
+  {
+    "name": "Trade Items",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/zzTrade.png",
+        "codes": "trade_on",
+	"inherit_codes": false
+      },
+      {
+        "img": "images/zzTradeoff.png",
+        "codes": "trade_off",
+	"inherit_codes": false
+      },
+    ]
+  },
+  {
+    "name": "Navigation Items",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/zzNav.png",
+        "codes": "nav_on",
+	"inherit_codes": false
+      },
+      {
+        "img": "images/zzNavOff.png",
+        "codes": "nav_off",
+	"inherit_codes": false
+      },
+    ]
+  },
+  {
+    "name": "Hero's Shields",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/zzShieldOff.png",
+        "codes": "shield_off",
+	"inherit_codes": false
+      },
+      {
+        "img": "images/zzShield.png",
+        "codes": "shield_on",
+	"inherit_codes": false
+      },
+    ]
+  },
+  {
+    "name": "Arrows",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/zzArrowOff.png",
+        "codes": "arrow_off",
+	"inherit_codes": false
+      },
+      {
+        "img": "images/zzArrow.png",
+        "codes": "arrow_on",
+	"inherit_codes": false
+      },
+    ]
+  },
+  {
+    "name": "Bombs",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/zzBombOff.png",
+        "codes": "bomb_off",
+	"inherit_codes": false
+      },
+      {
+        "img": "images/zzBomb.png",
+        "codes": "bomb_on",
+	"inherit_codes": false
+      },
+    ]
+  },
+  {
+    "name": "Deku Sticks",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/zzStickOff.png",
+        "codes": "stick_off",
+	"inherit_codes": false
+      },
+      {
+        "img": "images/zzStick.png",
+        "codes": "stick_on",
+	"inherit_codes": false
+      },
+    ]
+  },
+  {
+    "name": "Red Potions",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/zzRedPotOff.png",
+        "codes": "redpotion_off",
+	"inherit_codes": false
+      },
+      {
+        "img": "images/zzRedPot.png",
+        "codes": "redpotion_on",
+	"inherit_codes": false
+      },
+    ]
+  },
+  {
+    "name": "Green Potions",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/zzGreenPotOff.png",
+        "codes": "greenpotion_off",
+	"inherit_codes": false
+      },
+      {
+        "img": "images/zzGreenPot.png",
+        "codes": "greenpotion_on",
+	"inherit_codes": false
+      },
+    ]
+  },
+  {
+    "name": "Blue Potions",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/zzBluePotOff.png",
+        "codes": "bluepotion_off",
+	"inherit_codes": false
+      },
+      {
+        "img": "images/zzBluePot.png",
+        "codes": "bluepotion_on",
+	"inherit_codes": false
+      },
+    ]
+  },
+  {
+    "name": "Chateaus",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/zzChateauOff.png",
+        "codes": "chateau_off",
+	"inherit_codes": false
+      },
+      {
+        "img": "images/zzChateau.png",
+        "codes": "chateau_on",
+	"inherit_codes": false
+      },
+    ]
+  },
+  {
+    "name": "Bottled Fairies",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/zzFairyBotOff.png",
+        "codes": "fairybot_off",
+	"inherit_codes": false
+      },
+      {
+        "img": "images/zzFairyBot.png",
+        "codes": "fairybot_on",
+	"inherit_codes": false
+      },
+    ]
+  },
+  {
+    "name": "Chests",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/zzChest.png",
+        "codes": "chests_on",
+	"inherit_codes": false
+      },
+      {
+        "img": "images/zzChestOff.png",
+        "codes": "chests_off",
+	"inherit_codes": false
+      },
+    ]
+  },
+  {
+    "name": "NPC Rewards",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/zzNPCOff.png",
+        "codes": "npc_off",
+	"inherit_codes": false
+      },
+      {
+        "img": "images/zzNPC.png",
+        "codes": "npc_on",
+	"inherit_codes": false
+      },
+    ]
+  },
+  {
+    "name": "Minigames",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/zzMinigameOff.png",
+        "codes": "minigames_off",
+	"inherit_codes": false
+      },
+      {
+        "img": "images/zzMinigame.png",
+        "codes": "minigames_on",
+	"inherit_codes": false
+      },
+    ]
+  },
+  {
+    "name": "Bosses & Mini-bosses",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/zzBossOff.png",
+        "codes": "bosses_off",
+	"inherit_codes": false
+      },
+      {
+        "img": "images/zzBoss.png",
+        "codes": "bosses_on",
+	"inherit_codes": false
+      },
+    ]
+  },
+  {
+    "name": "Moon Items",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/zzMoonOff.png",
+        "codes": "moon_off",
+	"inherit_codes": false
+      },
+      {
+        "img": "images/zzMoon.png",
+        "codes": "moon_on",
+	"inherit_codes": false
+      },
+    ]
+  },
+  {
+    "name": "Enemies",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/zzEnemiesOff.png",
+        "codes": "enemies_off",
+	"inherit_codes": false
+      },
+      {
+        "img": "images/zzEnemies.png",
+        "codes": "enemies_on",
+	"inherit_codes": false
+      },
+    ]
+  },
+  {
+    "name": "Grass",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/zzGrassOff.png",
+        "codes": "grass_off",
+	"inherit_codes": false
+      },
+      {
+        "img": "images/zzGrass.png",
+        "codes": "grass_on",
+	"inherit_codes": false
+      },
+    ]
+  },
+  {
+    "name": "Pots",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/zzPotsOff.png",
+        "codes": "pots_off",
+	"inherit_codes": false
+      },
+      {
+        "img": "images/zzPots.png",
+        "codes": "pots_on",
+	"inherit_codes": false
+      },
+    ]
+  },
+  {
+    "name": "Crates",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/zzCrateOff.png",
+        "codes": "crates_off",
+	"inherit_codes": false
+      },
+      {
+        "img": "images/zzCrate.png",
+        "codes": "crates_on",
+	"inherit_codes": false
+      },
+    ]
+  },
+  {
+    "name": "Small Snowballs",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/zzLilSnowOff.png",
+        "codes": "smallsnow_off",
+	"inherit_codes": false
+      },
+      {
+        "img": "images/zzLilSnow.png",
+        "codes": "smallsnow_on",
+	"inherit_codes": false
+      },
+    ]
+  },
+  {
+    "name": "Large Snowballs",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/zzBigSnowOff.png",
+        "codes": "bigsnow_off",
+	"inherit_codes": false
+      },
+      {
+        "img": "images/zzBigSnow.png",
+        "codes": "bigsnow_on",
+	"inherit_codes": false
+      },
+    ]
+  },
+  {
+    "name": "Barrels",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/zzBarrelOff.png",
+        "codes": "barrels_off",
+	"inherit_codes": false
+      },
+      {
+        "img": "images/zzBarrel.png",
+        "codes": "barrel_on",
+	"inherit_codes": false
+      },
+    ]
+  },
+  {
+    "name": "Hives",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/zzHiveOff.png",
+        "codes": "hives_off",
+	"inherit_codes": false
+      },
+      {
+        "img": "images/zzHive.png",
+        "codes": "hives_on",
+	"inherit_codes": false
+      },
+    ]
+  },
+  {
+    "name": "Invisible Items",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/zzInvisibleOff.png",
+        "codes": "invisible_off",
+	"inherit_codes": false
+      },
+      {
+        "img": "images/zzInvisible.png",
+        "codes": "invisible_on",
+	"inherit_codes": false
+      },
+    ]
+  },
+  {
+    "name": "Event Items",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/zzEventsOff.png",
+        "codes": "events_off",
+	"inherit_codes": false
+      },
+      {
+        "img": "images/zzEvents.png",
+        "codes": "events_on",
+	"inherit_codes": false
+      },
+    ]
+  },
+  {
+    "name": "Soil Patches",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/zzSoilOff.png",
+        "codes": "soil_off",
+	"inherit_codes": false
+      },
+      {
+        "img": "images/zzSoil.png",
+        "codes": "soil_on",
+	"inherit_codes": false
+      },
+    ]
+  },
+  {
+    "name": "Hit Spots",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/zzHitsOff.png",
+        "codes": "hits_off",
+	"inherit_codes": false
+      },
+      {
+        "img": "images/zzHits.png",
+        "codes": "hits_on",
+	"inherit_codes": false
+      },
+    ]
+  },
+  {
+    "name": "Rocks",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/zzRockOff.png",
+        "codes": "rocks_off",
+	"inherit_codes": false
+      },
+      {
+        "img": "images/zzRock.png",
+        "codes": "rocks_on",
+	"inherit_codes": false
+      },
+    ]
+  },
+  {
+    "name": "Glitches Required",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/zzGlitchOff.png",
+        "codes": "glitches_off",
+	"inherit_codes": false
+      },
+      {
+        "img": "images/zzGlitch.png",
+        "codes": "glitches_on",
+	"inherit_codes": false
+      },
+    ]
+  },
+  {
+    "name": "Standard",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/zzStandard.png",
+        "codes": "standard_on",
+	"inherit_codes": false
+      },
+      {
+        "img": "images/zzStandardOff.png",
+        "codes": "standard_off",
+	"inherit_codes": false
       }
     ]
   }

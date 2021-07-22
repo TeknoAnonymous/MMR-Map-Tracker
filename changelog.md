@@ -1,3 +1,38 @@
+# 2.0.0.0
+```
+Hey there, Tekky here! I have since stopped really working on the tracker, but ZombiePhoenix has stepped in and made quite a few overhauls to the tracker. I don't know how
+much I'll be able to help out bugtesting, but this change really has overhauled a lot of stuff in the backend.
+ZombiePhoenix's changelog:
++ Added all 1041 checks added in current release, including keysanity, skullsanity, and mundane checks.
++ Updated logic to match current release.
++ Added options based on new item list layout in randomizer. You can now add checks based on vanilla item (left column in randomizer) or by check type (top row in randomizer).
++ Added Spin Attack as trackable by right clicking sword. This impacts Keaton grass logic.
++ Added keysy and chest fairies as an option. 
++ Improved settings icons courtesy of max chewy.
+
++ Optimized tracking for standard racing. When you open the tracker, it will default to have standard on (this is also the the only option for the regular map tracker).
+Including...
++ Updates to handling of tricks by splitting into 3 categories:
+  Standard Tricks: Logic = tricks enabled in standard are active in tracker, so checks will show green (i.e. tracker expects Poison Swamp as Zora).
+  Standard Tricks: Show = these checks will appear in yellow instead.
+  Allowed Tricks: Show = tricks that are not in logic for racing but are not banned will show as yellow.
+  Allowed Tricks: Logic = checks accessible by these tricks will be green.
+  Banned Tricks: Hide = tricks banned in racing (i.e. Goron Fence Jump) will no longer show at all normally.
+  Banned Tricks: Logic = shows banned tricks in green.
++ Bottle contents now have capture boxes shown in the bottom left of the map so you can take notes on which scoops are which when scoops are randomized.
+
++ Probably a bunch of stuff i'm not thinking of. This update was a hefty one.
+
+If there are any bugs, make sure to tell ZombiePhoenix#4490 on Discord so any changes will be made.
+```
+
+# 1.4.0.0
+```
++ Race Mode
+  Added a new version of the tracker that reflects the current race
+  settings (08-08-20). Removes and adds certain checks.
+```
+
 # 1.3.1.0
 ```
 + Logic Updates

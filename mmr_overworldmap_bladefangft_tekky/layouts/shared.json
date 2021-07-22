@@ -112,4 +112,22 @@
       }
     ]
   }
-}
+},
+{
+  "settings_grid": {
+    "type": "array",
+    "margin": "3,4",
+    "content": [
+      {
+        "type": "group",
+        "header": "Options",
+        "content": [
+          {
+            "type": "item",
+            "item": "icearrow",
+          },
+        ]
+      }
+    ]
+  }
+},
